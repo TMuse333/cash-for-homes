@@ -14,7 +14,7 @@ import { reverse } from "dns";
 import Testimonials from "@/components/testimonials";
 import { TextParallaxContentExample } from "@/components/parallaxText";
 import { dunk } from "@/data/data";
-
+import thumb from ''
 
 const lorem = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem ad debitis nemo qui praesentium sequi architecto vel repellat cum magni sint voluptatibus totam, animi ex atque? Tenetur itaque adipisci facilis, officia repellat, voluptatum quaerat incidunt sit assumenda quam quod.'
 
@@ -51,8 +51,6 @@ const links = [
     images={heroImages}
     />
 
-   
-
  
     <Closer
     {...openingText}
@@ -62,8 +60,7 @@ const links = [
 alt="meme"
 isVideo={true}
 description={lorem}
-muted={false}
-thumbnail={cashHome1.src}
+muted={true}
 
 
     />

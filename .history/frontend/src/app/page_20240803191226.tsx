@@ -63,7 +63,7 @@ alt="meme"
 isVideo={true}
 description={lorem}
 muted={false}
-thumbnail={cashHome1.src}
+thumbnail={cashHome1}
 
 
     />

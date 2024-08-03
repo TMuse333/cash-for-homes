@@ -124,7 +124,7 @@ const Video:React.FC<VideoProps> = (
    
     <motion.video
       ref={videoRef}
-      className="w-full h-full object-contain relative z-[4000]"
+      className="w-[100vw] h-full object-contain relative z-[4000]"
       
       preload="auto"
      muted
@@ -165,7 +165,7 @@ const Video:React.FC<VideoProps> = (
       ) : (
         <motion.video
           ref={videoRef}
-          className="w-screen h-screen object-contain
+          className="w-full h-full object-cover
           relative z-[3999]"
           src={src}
           muted={muted}

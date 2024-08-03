@@ -51,7 +51,7 @@ const links = [
     images={heroImages}
     />
 
-   
+    <img src={cashHome1.src}/>
 
  
     <Closer

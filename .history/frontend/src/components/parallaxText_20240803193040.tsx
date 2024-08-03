@@ -137,7 +137,7 @@ const Video:React.FC<VideoProps> = (
 ) : <>
 
 {!playing ? (
-        <div className="relative w-full h-full z-[4000]">
+        <div className="relative w-screen h-full z-[4000]">
           <motion.img
             src={thumbnail}
             
@@ -165,7 +165,7 @@ const Video:React.FC<VideoProps> = (
       ) : (
         <motion.video
           ref={videoRef}
-          className="w-screen h-screen object-contain
+          className="w-full h-full object-cover
           relative z-[3999]"
           src={src}
           muted={muted}

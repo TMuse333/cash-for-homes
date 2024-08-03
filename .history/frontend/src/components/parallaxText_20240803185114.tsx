@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform, motionValue, MotionValue} from "framer
 // import { FiArrowUpRight } from "react-icons/fi";
 // import laptop from '../../media/laptop.jpg'
 import { AppContext, useAppContext } from "@/context/context";
-import { useVideoIntersectionObserver} from "./intersectionObserver";
+import {useIntersectionObserver, useVideoIntersectionObserver} from "./intersectionObserver";
 
 
 
@@ -15,7 +15,7 @@ interface Props {
     isVideo:boolean
     description?:string,
     muted?:boolean,
-    thumbnail?:string
+    thumbnail?:boolean
    
 }
 
@@ -61,7 +61,7 @@ const Video:React.FC<VideoProps> = (
   }, [inView, videoPlaying]);
 
   useEffect(() => {
-    if(videoRef.current && !inView && muted){
+    if(videoRef.current && !inView){
       setVideoPlaying(false)
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
@@ -72,60 +72,25 @@ const Video:React.FC<VideoProps> = (
   },[inView])
 
   useEffect(() => {
-    if (videoPlaying && videoRef.current && muted) {
+    if (videoPlaying && videoRef.current) {
       videoRef.current.play().catch((error) => {
         console.error("Error playing video:", error);
       });
     }
   }, [videoPlaying]);
 
-  useEffect(()=>{
-    console.log('thumbnail,',thumbnail)
-  },[])
-
-
-
-
-  const [playing, setPlaying] = useState(false);
-
-  const handlePlayClick = () => {
-    console.log('clickage occured')
-    setPlaying(true);
-    if (videoRef.current) {
-      console.log('passed in')
-      videoRef.current.play();
-      
-      // Enter fullscreen mode
-      const videoElement = videoRef.current as HTMLVideoElement & {
-        requestFullscreen?: () => void;
-        mozRequestFullScreen?: () => void;
-        webkitRequestFullscreen?: () => void;
-        msRequestFullscreen?: () => void;
-      };
-      if (videoElement.requestFullscreen) {
-        videoElement.requestFullscreen();
-      } else if (videoElement.mozRequestFullScreen) { // Firefox
-        videoElement.mozRequestFullScreen();
-      } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari, and Opera
-        videoElement.webkitRequestFullscreen();
-      } else if (videoElement.msRequestFullscreen) { // IE/Edge
-        videoElement.msRequestFullscreen();
-      }
-    }
-  }
-
 
   return (
    <>
   
-{muted === true ? (
+{muted ? (
 
 
    
     <motion.video
       ref={videoRef}
       className="w-full h-full object-contain relative z-[4000]"
-      
+      loop
       preload="auto"
      muted
       aria-label="A great video" // For accessibility
@@ -135,53 +100,6 @@ const Video:React.FC<VideoProps> = (
     </motion.video>
 
 ) : <>
-
-{!playing ? (
-        <div className="relative w-full h-full z-[4000]">
-          <motion.img
-            src={thumbnail}
-            
-            className="w-full h-full object-contain cursor-pointer"
-            onClick={handlePlayClick}
-          />
-          <button
-            className="absolute inset-0 flex items-center justify-center"
-            onClick={handlePlayClick}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-12 h-12 text-white"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M5 3l14 9-14 9V3z" />
-            </svg>
-          </button>
-        </div>
-      ) : (
-        <motion.video
-          ref={videoRef}
-          className="w-screen h-screen object-contain
-          relative z-[3999]"
-          src={src}
-          muted={muted}
-          controls
-          autoPlay
-          
-        >
-          Your browser does not support the video tag.
-        </motion.video>
-      )}
- 
-  );
-    
- 
-
-
 </>}
       
    
@@ -194,8 +112,7 @@ const Video:React.FC<VideoProps> = (
 
 
 export const TextParallaxContentExample:React.FC<Props>
- = ({src,alt,isVideo, description,muted,
-thumbnail}) => {
+ = ({src,alt,isVideo, description,muted}) => {
   return (
     <div className=" relative">
       <TextParallaxContent
@@ -205,7 +122,6 @@ thumbnail}) => {
         heading="Main title here"
         isVideo={isVideo}
       muted={muted}
-      thumbnail={thumbnail}
        
       >
         {description && (
@@ -231,8 +147,7 @@ const TextParallaxContent = ({
   children,
   alt,
   isVideo,
-  muted,
-  thumbnail
+  muted
 
  
 }: {
@@ -242,8 +157,7 @@ const TextParallaxContent = ({
   children?: ReactNode;
   alt:string
   isVideo:boolean,
-  muted?:boolean,
-  thumbnail?:string
+  muted?:boolean
 
 }) => {
   return (
@@ -258,8 +172,6 @@ const TextParallaxContent = ({
         imgUrl={imgUrl}
         isVideo={isVideo}
         alt={alt}
-        muted={muted}
-        thumbnail={thumbnail}
         
        />
         <OverlayCopy heading={heading} subheading={subheading} />
@@ -269,10 +181,8 @@ const TextParallaxContent = ({
   );
 };
 
-const StickyImage = ({ imgUrl, isVideo, alt,muted,thumbnail }: { imgUrl: string, isVideo?:boolean
-  alt:string,muted?:boolean,
-  thumbnail?:string,
- }) => {
+const StickyImage = ({ imgUrl, isVideo, alt,muted }: { imgUrl: string, isVideo?:boolean,muted?:boolean,
+alt:string }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -344,7 +254,6 @@ const StickyImage = ({ imgUrl, isVideo, alt,muted,thumbnail }: { imgUrl: string,
           src={imgUrl}
           alt={alt}
           muted={muted}
-          thumbnail={thumbnail}
          />
         
         )

@@ -51,8 +51,6 @@ const links = [
     images={heroImages}
     />
 
-   
-
  
     <Closer
     {...openingText}

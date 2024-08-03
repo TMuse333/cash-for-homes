@@ -90,7 +90,6 @@ const Video:React.FC<VideoProps> = (
 
   const handlePlayClick = () => {
     console.log('clickage occured')
-    setPlaying(true);
     if (videoRef.current) {
       console.log('passed in')
       videoRef.current.play();
@@ -141,7 +140,7 @@ const Video:React.FC<VideoProps> = (
           <motion.img
             src={thumbnail}
             
-            className="w-full h-full object-contain cursor-pointer"
+            className="w-full h-full object-cover cursor-pointer"
             onClick={handlePlayClick}
           />
           <button
@@ -165,13 +164,11 @@ const Video:React.FC<VideoProps> = (
       ) : (
         <motion.video
           ref={videoRef}
-          className="w-screen h-screen object-contain
-          relative z-[3999]"
+          className="w-full h-full object-cover"
           src={src}
           muted={muted}
           controls
           autoPlay
-          
         >
           Your browser does not support the video tag.
         </motion.video>

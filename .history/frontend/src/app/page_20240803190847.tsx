@@ -51,7 +51,7 @@ const links = [
     images={heroImages}
     />
 
-   
+    <img src={cash}
 
  
     <Closer

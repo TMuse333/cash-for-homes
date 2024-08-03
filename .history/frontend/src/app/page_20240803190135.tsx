@@ -51,8 +51,6 @@ const links = [
     images={heroImages}
     />
 
-   
-
  
     <Closer
     {...openingText}
@@ -62,8 +60,7 @@ const links = [
 alt="meme"
 isVideo={true}
 description={lorem}
-muted={false}
-thumbnail={cashHome1.src}
+muted={true}
 
 
     />

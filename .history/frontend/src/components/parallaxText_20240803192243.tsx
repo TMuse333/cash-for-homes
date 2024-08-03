@@ -165,13 +165,12 @@ const Video:React.FC<VideoProps> = (
       ) : (
         <motion.video
           ref={videoRef}
-          className="w-screen h-screen object-contain
+          className="w-full h-full object-contain
           relative z-[3999]"
           src={src}
           muted={muted}
           controls
           autoPlay
-          
         >
           Your browser does not support the video tag.
         </motion.video>
