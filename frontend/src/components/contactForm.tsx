@@ -55,13 +55,14 @@ const ContactForm = () => {
 
     return (
         <section className='flex overflow-x-hidden justify-center items-center bg-gray-200
-        text-black'>
+        text-black mb-8'>
             <div className='hidden sm:block sm:w-[50vw] ml-auto mr-auto flex flex-col items-start'>
                 <Image
                     src={logo}
                     alt="Q3 logo"
                     className='w-[40vw] mt-[-10rem] ml-auto mr-auto
-                    max-h-[540px] max-w-[411px] object-cover'
+                    max-h-[540px] max-w-[411px] object-cover
+                    mt-auto'
                 />
                 {/* <ul className='text-center'>
                     {tenets.map((tenet, index) => (

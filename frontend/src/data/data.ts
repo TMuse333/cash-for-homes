@@ -18,6 +18,19 @@ interface ContentType {
 
 }
 
+interface ParallaxContentType {
+    src:string,
+    alt:string,
+    isVideo:boolean
+    description?:string,
+    muted?:boolean,
+    thumbnail?:string,
+    heading:string,
+    subHeading:string
+}
+
+const lorem30 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime temporibus debitis autem molestiae? '
+
 export const heroImages = [
     {
         src:'/home.jpg',
@@ -93,7 +106,25 @@ export const content1Data:ContentType= {
 
   export const dunk = '/videos/best_dunk.mp4'
 
+  export const jvParallaxContent:ParallaxContentType = {
+        src:dunk,
+        isVideo:true,
+        description:lorem30,
+        muted:false,
+        thumbnail:'/cash_for_home1.jpg',
+        heading:'JV Partners',
+        subHeading:'A fantastic opportunity',
+        alt:'Aria label nation'
+  }
 
+  // src:string,
+  //   alt:string,
+  //   isVideo:boolean
+  //   description?:string,
+  //   muted?:boolean,
+  //   thumbnail?:string,
+  //   heading:string,
+  //   subHeading:string
 
 //   image:string,
 //     title:string,

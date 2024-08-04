@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                 <Link href='/'>
 
 
-                <p className="ml-2  text-3xl lg:text-4xl mr-auto lg:mr-0 pl-6 lg:pl-0 text-black
+                <p className="ml-2 text-sm mt-auto mb-auto  lg:text-4xl mr-auto lg:mr-0 pl-6 lg:pl-0 text-black
                 ">Cash for Homes</p>
                 </Link>
                 <div

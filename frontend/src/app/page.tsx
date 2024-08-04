@@ -23,30 +23,34 @@ export default function Home() {
 
 const links = [
   {
-    name:'Tab 1',
-    destination:'/',
+    name:'How it works',
+    destination:'process',
     hasScroll:false
   },
   {
-    name:'Tab 2',
-    destination:'/',
+    name:'JV Partners',
+    destination:'jv-partners',
     hasScroll:false
   },
   {
-    name:'Tab 3',
-    destination:'/',
+    name:'About us',
+    destination:'about',
     hasScroll:false
   },
+  {
+    name:'Contact Us',
+    destination:'contact'
+  }
 ]
 
   return (
     
     <>
     
-    {/* <Navbar
+    <Navbar
     links={links}
-    /> */}
-  <main className="bg-gray-200 mt-[8rem]
+    />
+  <main className="bg-gray-200 mt-[6rem]
    
  ">
     <ImageHero
@@ -63,6 +67,8 @@ const links = [
     src={dunk}
 alt="meme"
 isVideo={true}
+heading='Your title Here'
+subHeading="Subtitle here"
 description={lorem}
 muted={true}
 thumbnail={cashHome1.src}

@@ -116,7 +116,7 @@ const nullVariant: Variants = {
   
 
   return (
-    <section className={`w-screen
+    <section className={`w-screen overflow-x-hidden
     ${background ? `${background}` : ''}`}>
 
 
@@ -135,7 +135,7 @@ const nullVariant: Variants = {
 
       {video ? (
            <motion.video
-           className='w-[90vw] h-[55vw] object-cover ml-auto mr-auto max-h-[567px] max-w-[668px] rounded-md'
+           className='w-[90vw] h-[55vw] object-cover object-bottom sm:object-contain ml-auto mr-auto max-h-[567px] max-w-[668px] rounded-md'
            controls
            preload="auto"
            variants={hasAnimation ? imageVariants : nullVariant}

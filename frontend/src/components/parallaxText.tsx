@@ -15,7 +15,9 @@ interface Props {
     isVideo:boolean
     description?:string,
     muted?:boolean,
-    thumbnail?:string
+    thumbnail?:string,
+    heading:string,
+    subHeading:string
    
 }
 
@@ -26,6 +28,43 @@ interface VideoProps {
     muted?:boolean
 }
 
+
+
+
+
+
+
+
+export const TextParallaxContentExample:React.FC<Props>
+ = ({src,alt,isVideo, description,muted,
+thumbnail,subHeading,heading }) => {
+  return (
+    <div className=" relative bg-gray-200 mb-4">
+      <TextParallaxContent
+        imgUrl={src}
+        alt={alt}
+        subheading={subHeading}
+        heading={heading}
+        isVideo={isVideo}
+      muted={muted}
+      thumbnail={thumbnail}
+       
+      >
+        {description && (
+            <p className="rounded-md bg-gray-400
+            w-[80%] ml-auto mr-auto relative
+            p-8 rounded-xl sm:text-xl">
+              {description}
+            </p>
+        )}
+       
+      </TextParallaxContent>
+    
+    </div>
+  );
+};
+
+const IMG_PADDING = 12;
 
 const Video:React.FC<VideoProps> = (
   {src,muted,thumbnail }
@@ -124,11 +163,13 @@ const Video:React.FC<VideoProps> = (
    
     <motion.video
       ref={videoRef}
-      className="w-full h-full object-contain relative z-[4000]"
+      className="w-full h-full object-contain relative z-[4000]
+      bg-gray-200"
       
       preload="auto"
      muted
       aria-label="A great video" // For accessibility
+      loop
     >
       <source src={src} type="video/mp4" />
       Your browser does not support the video tag.
@@ -137,7 +178,7 @@ const Video:React.FC<VideoProps> = (
 ) : <>
 
 {!playing ? (
-        <div className="relative w-full h-full z-[4000]">
+        <div className="relative w-full h-full z-[4000] bg-gray-200">
           <motion.img
             src={thumbnail}
             
@@ -188,41 +229,6 @@ const Video:React.FC<VideoProps> = (
  </>
   )
 }
-
-
-
-
-
-export const TextParallaxContentExample:React.FC<Props>
- = ({src,alt,isVideo, description,muted,
-thumbnail}) => {
-  return (
-    <div className=" relative ">
-      <TextParallaxContent
-        imgUrl={src}
-        alt={alt}
-        subheading="Subtitle here"
-        heading="Main title here"
-        isVideo={isVideo}
-      muted={muted}
-      thumbnail={thumbnail}
-       
-      >
-        {description && (
-            <p className="rounded-md bg-gray-400
-            w-[80%] ml-auto mr-auto relative
-            p-8 rounded-xl sm:text-xl">
-              {description}
-            </p>
-        )}
-       
-      </TextParallaxContent>
-    
-    </div>
-  );
-};
-
-const IMG_PADDING = 12;
 
 const TextParallaxContent = ({
   imgUrl,
