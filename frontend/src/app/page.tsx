@@ -43,10 +43,12 @@ const links = [
     
     <>
     
-    <Navbar
+    {/* <Navbar
     links={links}
-    />
-  <main className="bg-gray-200 mt-[8rem]">
+    /> */}
+  <main className="bg-gray-200 mt-[8rem]
+   
+ ">
     <ImageHero
     images={heroImages}
     />
@@ -62,7 +64,7 @@ const links = [
 alt="meme"
 isVideo={true}
 description={lorem}
-muted={false}
+muted={true}
 thumbnail={cashHome1.src}
 
 

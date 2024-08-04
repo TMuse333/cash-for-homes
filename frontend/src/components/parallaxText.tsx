@@ -150,7 +150,7 @@ const Video:React.FC<VideoProps> = (
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-12 h-12 text-white"
+              className="w-12 h-12 text-white relative"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -197,7 +197,7 @@ export const TextParallaxContentExample:React.FC<Props>
  = ({src,alt,isVideo, description,muted,
 thumbnail}) => {
   return (
-    <div className=" relative">
+    <div className=" relative ">
       <TextParallaxContent
         imgUrl={src}
         alt={alt}
@@ -210,7 +210,7 @@ thumbnail}) => {
       >
         {description && (
             <p className="rounded-md bg-gray-400
-            w-[80%] ml-auto mr-auto
+            w-[80%] ml-auto mr-auto relative
             p-8 rounded-xl sm:text-xl">
               {description}
             </p>
@@ -325,6 +325,7 @@ const StickyImage = ({ imgUrl, isVideo, alt,muted,thumbnail }: { imgUrl: string,
         top: IMG_PADDING,
         scale,
         filter: `brightness(${imgBrightness})`,
+        
        
       }}
       ref={targetRef}
@@ -333,7 +334,7 @@ const StickyImage = ({ imgUrl, isVideo, alt,muted,thumbnail }: { imgUrl: string,
         {!isVideo ? (
 
        
-        <motion.img className="w-full h-full object-contain"
+        <motion.img className="w-full h-full object-contain relative"
         src={imgUrl}
         alt={alt}
        
@@ -352,7 +353,7 @@ const StickyImage = ({ imgUrl, isVideo, alt,muted,thumbnail }: { imgUrl: string,
          }
        
       <motion.div
-        className="absolute inset-0 "
+        className="absolute inset-0 relative "
         style={{
           opacity,
         }}
