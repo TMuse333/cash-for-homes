@@ -270,7 +270,18 @@ const TextParallaxContent = ({
        />
         <OverlayCopy heading={heading} subheading={subheading} />
       </div>
-      {children}
+      <motion.div
+        className=" inset-0 flex flex-col items-center justify-center"
+        style={{
+          scale: useTransform(
+            useScroll().scrollYProgress,
+            [0, 1],
+            [1, 0.65]
+          )
+        }}
+      >
+        {children}
+      </motion.div>
     </div>
   );
 };

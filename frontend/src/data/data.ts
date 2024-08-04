@@ -117,6 +117,43 @@ export const content1Data:ContentType= {
         alt:'Aria label nation'
   }
 
+  export const processCarouselData = {
+    images: [
+      {
+        src:'/cash_for_home1.jpg',
+        alt:'alt nation',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime'
+      },
+      {
+        src:'/cash_for_home1.jpg',
+        alt:'alt nation',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime'
+      },
+      {
+        src:'/cash_for_home1.jpg',
+        alt:'alt nation',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime'
+      },
+      {
+        src:'/cash_for_home1.jpg',
+        alt:'alt nation',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime'
+      },
+
+    ],
+    title:'Quick and easy',
+    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime'
+
+  }
+
+//   images: {
+//     src: string,
+//     alt: string,
+//     description: string
+// }[]
+// title?: string,
+// description?: string
+
   // src:string,
   //   alt:string,
   //   isVideo:boolean

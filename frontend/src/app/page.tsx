@@ -60,9 +60,9 @@ const links = [
    
 
  
-    <Closer
+    {/* <Closer
     {...openingText}
-    />
+    /> */}
        <TextParallaxContentExample
     src={dunk}
 alt="meme"
@@ -85,17 +85,18 @@ thumbnail={cashHome1.src}
     isAnimated={true}/>}
     image={cashHome1}
    hasAnimation={true}
-   reverse={true}
+   reverse={false}
   //  background='bg-gradient-to-b from-blue-300 via-blue-500 to-blue-400 '
     />
 
     <Content
     image={cashHome1}
+
     customText={<Accordion
     {...accordionProps}
   />
 }
-reverse={false}
+reverse={true}
 />
 
 

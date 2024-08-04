@@ -8,9 +8,10 @@ interface NavbarProps {
         name: string,
         destination: string
     }[]
+    relative?:boolean
 }
 
-const Navbar: React.FC<NavbarProps> = ({ links }) => {
+const Navbar: React.FC<NavbarProps> = ({ links,relative }) => {
     const [subMenuClicked, setSubMenuClicked] = useState(false);
 
     function handleSubmenuClick() {
@@ -18,9 +19,9 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
     }
 
     return (
-        <nav className="fixed top-0 z-20 w-screen left-0 bg-gray-300 h-[100px]
+        <nav className={` top-0 z-20 w-screen left-0 bg-gray-300 h-[100px]
          flex justify-between items-center border-b-4 border-blue-500 text-gray-500
-          z-[100] text-black">
+          z-[100] text-black ${relative ? 'relative' : 'fixed'}`}>
             <div className="relative flex justify-between 
              items-center  w-screen lg:w-[80vw] max-w-[1300px] lg:justify-between lg:items-stretch
             z-[100]  ml-auto mr-auto">
@@ -31,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                 ">Cash for Homes</p>
                 </Link>
                 <div
-                    className={`fixed right-[5%] top-[45px] flex flex-col justify-center items-center lg:relative lg:top-auto lg:right-auto`}
+                    className={`absolute right-[5%] top-1/2 flex flex-col justify-center items-center lg:relative lg:top-auto lg:right-auto`}
                     onClick={handleSubmenuClick}
                 >
                     <div className="   lg:hidden w-[140px] lg:w-auto flex flex-col justify-center items-center">

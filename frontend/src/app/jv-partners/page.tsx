@@ -11,10 +11,25 @@ const ContactPage = () => {
     const links = [
         {
             name:'Home',
-            destination:'/'
+            destination:'/',
+            hasScroll:false
+          },
+        {
+          name:'How it works',
+          destination:'process',
+          hasScroll:false
         },
        
-    ]
+        {
+          name:'About us',
+          destination:'about',
+          hasScroll:false
+        },
+        {
+          name:'Contact Us',
+          destination:'contact'
+        }
+      ]
 
     return <>
     <Navbar links={links}
@@ -29,6 +44,8 @@ const ContactPage = () => {
 
         <Footer
         links={links}/>
+
+
     </main>
     </>
 }

@@ -70,7 +70,7 @@ const Footer:React.FC<links> = ({links}) => {
   pb-12
       ml-auto mr-auto
       text-center
-     bg-gray-400
+     bg-gray-500
     '>
       <div className="
       pt-8
