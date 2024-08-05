@@ -191,7 +191,8 @@ const Video:React.FC<VideoProps> = (
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-12 h-12 text-white relative"
+              className="w-12 h-12 p-2  text-white relative
+              scale-[3] "
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"

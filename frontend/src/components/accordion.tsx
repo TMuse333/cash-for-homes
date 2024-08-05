@@ -85,7 +85,7 @@ inContent}) => {
         )}
         <section className={`mt-[3rem]  rounded-xl
         text-white bg-opacity-75 text-black 
-        ${margin ? `${margin}` : ''}`}
+        ${margin ? `md:${margin}` : ''}`}
         ref={componentRef}>
             {text.map((text,index:number) => (
                 <div key={index}
