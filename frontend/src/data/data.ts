@@ -14,7 +14,8 @@ interface ContentType {
     buttonLink?:string,
     buttonText?:string,
     alt:string,
-    video?:boolean
+    video?:boolean,
+    poster?:string
 
 }
 
@@ -119,7 +120,8 @@ export const content1Data:ContentType= {
     buttonLink:'contact',
     buttonText:'Book a consultation',
     alt:'A lovely picture',
-    video:true
+    video:true,
+    poster:cashHome2
 
   };
 

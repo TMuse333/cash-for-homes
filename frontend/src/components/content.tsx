@@ -21,7 +21,8 @@ interface contentProps {
   buttonLink?:string,
   buttonText?:string,
   background?:string
-  video?:boolean
+  video?:boolean,
+  poster?:string
 }
 
 const Content: React.FC<contentProps> = ({
