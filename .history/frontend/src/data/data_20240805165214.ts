@@ -121,7 +121,7 @@ export const content1Data:ContentType= {
     buttonText:'Book a consultation',
     alt:'A lovely picture',
     video:true,
-    poster:cashHome2.src
+    poster:cashHome2
 
   };
 
