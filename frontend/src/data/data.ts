@@ -107,7 +107,7 @@ export const content1Data:ContentType= {
 
 
   export const content2Data:ContentType= {
-    image:'./videos/best_dunk.mp4',// Directly import the image as StaticImageData
+    image:'./videos/q3-lion-speech.mp4',// Directly import the image as StaticImageData
     customText: null,
     description: [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum sit, dolore at est quidem blanditiis dicta doloremque beatae similique voluptate?',
