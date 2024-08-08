@@ -140,7 +140,7 @@ export const content1Data:ContentType= {
 
   export const dunk = '/videos/q3-lion-speech.mp4'
 
-  
+  export const 
 
   export const jvParallaxContent:ParallaxContentType = {
         src:dunk,
@@ -153,16 +153,7 @@ export const content1Data:ContentType= {
         alt:'Aria label nation'
   }
 
-  export const processParallax:ParallaxContentType = {
-    src:dunk,
-    isVideo:true,
-    description:lorem30,
-    muted:false,
-    thumbnail:'/dark-gray-home.jpg',
-    heading:'Main title here 2',
-    subHeading:'Subtitle here',
-    alt:'Aria label nation',
-
+  export const contactParallax:ParallaxContentType = {
 
   }
 

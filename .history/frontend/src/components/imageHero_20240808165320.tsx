@@ -42,7 +42,7 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
           
 <h1 className="relative text-4xl mb-4 mt-4 sm:text-6xl bg-gradient-to-b from-black to-gray-800 bg-clip-text text-transparent 
 ">
-  Ontario Cash for Houses
+  Ontario Cash for Homes
 </h1>
 
             <p className="mt-4 sm:text-xl pr-4 pl-4 mb-5 text-black">We will quickly buy your home for cash</p>

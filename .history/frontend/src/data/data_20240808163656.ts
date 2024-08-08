@@ -3,9 +3,6 @@ import cashHome2 from '../../public/cash-for-home2.jpg'
 // import dunk from '../../public/best_dunk.mp
 import canadianDollar from '../../public/canadian-dollars.jpeg'
 
-import twenty from '../../public/twenty-bills.jpeg'
-
-
 
 interface ContentType {
     image: StaticImageData | string;
@@ -53,7 +50,7 @@ export const heroImages = [
         alt:'A picture of a home'
     },
     {
-        src:'/canadian-dollars.jpeg',
+        src:canadianDollar,
         alt:'A lot of cash'
     }
 ]
@@ -79,7 +76,7 @@ export const accordionProps = {
 
 
 export const content1Data:ContentType= {
-    image:canadianDollar,// Directly import the image as StaticImageData
+    image:cashHome2,// Directly import the image as StaticImageData
     customText: null,
     description: [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum sit, dolore at est quidem blanditiis dicta doloremque beatae similique voluptate?',
@@ -95,7 +92,7 @@ export const content1Data:ContentType= {
   };
 
   export const content3Data:ContentType= {
-    image:canadianDollar,// Directly import the image as StaticImageData
+    image:cashHome2,// Directly import the image as StaticImageData
     customText: null,
     description: [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum sit, dolore at est quidem blanditiis dicta doloremque beatae similique voluptate?',
@@ -125,13 +122,13 @@ export const content1Data:ContentType= {
     buttonText:'Book a consultation',
     alt:'A lovely picture',
     video:true,
-    poster:canadianDollar.src
+    poster:cashHome2.src
 
   };
 
 
   export const openingText = {
-    image:'/twenty-bills.jpeg',
+    image:'cash_for_home1.jpg',
     title:'Closing Statement',
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum animi, itaque veniam cumque laboriosam omnis iure accusantium! Veniam ea vero dolor aliquid, ipsa nisi nesciunt esse repellendus laboriosam explicabo maxime.',
     buttonText:'Book a consulation',
@@ -140,51 +137,36 @@ export const content1Data:ContentType= {
 
   export const dunk = '/videos/q3-lion-speech.mp4'
 
-  
-
   export const jvParallaxContent:ParallaxContentType = {
         src:dunk,
         isVideo:true,
         description:lorem30,
         muted:false,
-        thumbnail:'/horizontal-home.jpg',
+        thumbnail:'/cash_for_home1.jpg',
         heading:'Main title here',
         subHeading:'Subtitle here',
         alt:'Aria label nation'
   }
 
-  export const processParallax:ParallaxContentType = {
-    src:dunk,
-    isVideo:true,
-    description:lorem30,
-    muted:false,
-    thumbnail:'/dark-gray-home.jpg',
-    heading:'Main title here 2',
-    subHeading:'Subtitle here',
-    alt:'Aria label nation',
-
-
-  }
-
   export const processCarouselData = {
     images: [
       {
-        src:'/twenty-bills.jpeg',
+        src:'/cash_for_home1.jpg',
         alt:'alt nation',
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime'
       },
       {
-        src:'/canadian-dollars.jpeg',
+        src:'/cash_for_home1.jpg',
         alt:'alt nation',
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime'
       },
       {
-        src:'/dark-gray-home.jpg',
+        src:'/cash_for_home1.jpg',
         alt:'alt nation',
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime'
       },
       {
-        src:'/old-brick-home.jpg',
+        src:'/cash_for_home1.jpg',
         alt:'alt nation',
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime'
       },
@@ -197,7 +179,7 @@ export const content1Data:ContentType= {
 
 
  export const aboutContent1:Content2Type = {
-    image:canadianDollar,
+    image:cashHome2,
     title:'About us',
     alt:'About us picture',
     description:lorem30,
@@ -206,7 +188,7 @@ export const content1Data:ContentType= {
   }
 
   export const contactContent2:Content2Type = {
-    image:canadianDollar,
+    image:cashHome2,
     title:'Contact us',
     alt:'About us picture',
     description:lorem30,
@@ -228,37 +210,37 @@ export const content1Data:ContentType= {
   export const circleInfographicData1:InfographicType = {
     images:[
       {
-        src:twenty,
+        src:cashHome2,
         title:'Title here',
         alt:'alt',
         description:lorem30
       },
       {
-        src:canadianDollar,
+        src:cashHome2,
         title:'Title here',
         alt:'alt',
         description:lorem30
       },
       {
-        src:canadianDollar,
+        src:cashHome2,
         title:'Title here',
         alt:'alt',
         description:lorem30
       },
       {
-        src:canadianDollar,
+        src:cashHome2,
         title:'Title here',
         alt:'alt',
         description:lorem30
       },
       {
-        src:canadianDollar,
+        src:cashHome2,
         title:'Title here',
         alt:'alt',
         description:lorem30
       },
       {
-        src:canadianDollar,
+        src:cashHome2,
         title:'Title here',
         alt:'alt',
         description:lorem30

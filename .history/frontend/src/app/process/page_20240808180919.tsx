@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar"
 import SlideShowCarousel from "@/components/slideShowCarousel"
 import React from "react"
 import { processCarouselData, jvParallaxContent,
-openingText,processParallax, dunk,
+openingText,processParallax,
 accordionProps} from "@/data/data"
 import { TextParallaxContentExample } from "@/components/parallaxText"
 import Closer from "@/components/closer"
@@ -49,7 +49,6 @@ const Process = () => {
                 
                 <TextParallaxContentExample
                 {...processParallax}
-               
                 />
 
                 <p className="text-center text-gray-800 text-2xl sm:text-3xl md:text-4xl mb-4">Quick and easy</p>

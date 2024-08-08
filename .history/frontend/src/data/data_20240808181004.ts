@@ -158,11 +158,11 @@ export const content1Data:ContentType= {
     isVideo:true,
     description:lorem30,
     muted:false,
-    thumbnail:'/dark-gray-home.jpg',
+    thumbnail:'/old-gray-home.jpg',
     heading:'Main title here 2',
     subHeading:'Subtitle here',
     alt:'Aria label nation',
-
+    poster:''
 
   }
 

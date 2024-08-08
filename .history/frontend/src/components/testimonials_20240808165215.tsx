@@ -100,14 +100,14 @@ const Testimonials: React.FC<TestimonialProps> = ({ testimonials = testimonialsD
           </motion.p>
         </AnimatePresence>
 
-        {/* <AnimatePresence mode='wait'>
+        <AnimatePresence mode='wait'>
           <motion.p key={currentTestimonial} className="pl-8 pr-8 sm:pl-12 sm:text-lg"
           initial={{ opacity: 0, y:30 }}
           animate={{ opacity: 1, y:0,transition: { delay: 0.8 } }}
             exit={{ opacity: 0 }}>
             {testimonials[currentTestimonial].title}
           </motion.p>
-        </AnimatePresence> */}
+        </AnimatePresence>
 
         </section>
     );

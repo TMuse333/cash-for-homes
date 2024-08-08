@@ -49,7 +49,7 @@ const Process = () => {
                 
                 <TextParallaxContentExample
                 {...processParallax}
-               
+                s
                 />
 
                 <p className="text-center text-gray-800 text-2xl sm:text-3xl md:text-4xl mb-4">Quick and easy</p>

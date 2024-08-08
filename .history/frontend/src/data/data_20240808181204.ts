@@ -157,7 +157,7 @@ export const content1Data:ContentType= {
     src:dunk,
     isVideo:true,
     description:lorem30,
-    muted:false,
+    muted:true,
     thumbnail:'/dark-gray-home.jpg',
     heading:'Main title here 2',
     subHeading:'Subtitle here',

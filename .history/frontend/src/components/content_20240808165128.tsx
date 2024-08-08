@@ -125,7 +125,7 @@ const nullVariant: Variants = {
       ref={componentRef}
       className={`flex flex-col justify-center align-center pt-8 pb-8
        relative mr-auto ml-auto
-       md:w-[100vw] md:max-w-[1200px] sm:max-w-[668px] z-1
+       md:w-[95vw] md:max-w-[1200px] sm:max-w-[668px] z-1
       
         ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}
         style={{
@@ -155,7 +155,7 @@ const nullVariant: Variants = {
       ) : (
         <motion.img
         className='w-[90vw] h-[55vw] object-cover ml-auto mr-auto
-        md:w-[50vw] md:mr-0 max-h-[567px] max-w-[668px]
+        md:w-[50vw]  max-h-[567px] max-w-[668px]
         rounded-md'
          variants={hasAnimation ? imageVariants : nullVariant}
           initial={hasAnimation ? 'initial' : ''}

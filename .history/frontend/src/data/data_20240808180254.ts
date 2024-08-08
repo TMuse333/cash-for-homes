@@ -6,7 +6,6 @@ import canadianDollar from '../../public/canadian-dollars.jpeg'
 import twenty from '../../public/twenty-bills.jpeg'
 
 
-
 interface ContentType {
     image: StaticImageData | string;
     customText: string | null;
@@ -140,8 +139,6 @@ export const content1Data:ContentType= {
 
   export const dunk = '/videos/q3-lion-speech.mp4'
 
-  
-
   export const jvParallaxContent:ParallaxContentType = {
         src:dunk,
         isVideo:true,
@@ -151,19 +148,6 @@ export const content1Data:ContentType= {
         heading:'Main title here',
         subHeading:'Subtitle here',
         alt:'Aria label nation'
-  }
-
-  export const processParallax:ParallaxContentType = {
-    src:dunk,
-    isVideo:true,
-    description:lorem30,
-    muted:false,
-    thumbnail:'/dark-gray-home.jpg',
-    heading:'Main title here 2',
-    subHeading:'Subtitle here',
-    alt:'Aria label nation',
-
-
   }
 
   export const processCarouselData = {
@@ -184,7 +168,7 @@ export const content1Data:ContentType= {
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime'
       },
       {
-        src:'/old-brick-home.jpg',
+        src:'/twenty-bills.jpg',
         alt:'alt nation',
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime'
       },

@@ -125,7 +125,7 @@ const nullVariant: Variants = {
       ref={componentRef}
       className={`flex flex-col justify-center align-center pt-8 pb-8
        relative mr-auto ml-auto
-       md:w-[100vw] md:max-w-[1200px] sm:max-w-[668px] z-1
+       md:w-[95vw] md:max-w-[1200px] sm:max-w-[668px] z-1
       
         ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}
         style={{

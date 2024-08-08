@@ -153,16 +153,8 @@ export const content1Data:ContentType= {
         alt:'Aria label nation'
   }
 
-  export const processParallax:ParallaxContentType = {
-    src:dunk,
-    isVideo:true,
-    description:lorem30,
-    muted:false,
-    thumbnail:'/dark-gray-home.jpg',
-    heading:'Main title here 2',
-    subHeading:'Subtitle here',
-    alt:'Aria label nation',
-
+  export const contactParallax:ParallaxContentType = {
+    src:dunk
 
   }
 

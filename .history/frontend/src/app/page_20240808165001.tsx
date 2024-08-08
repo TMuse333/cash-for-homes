@@ -17,7 +17,7 @@ import { dunk } from "@/data/data";
 import { CircleInfoGraphic } from "@/components/circleInfographic";
 import { useAppContext } from "@/context/context";
 import canadianDollar from '../../public/canadian-dollars.jpeg'
-import twenty from '../../public/twenty-bills.jpeg'
+import twenty from ''
 
 
 const lorem = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem ad debitis nemo qui praesentium sequi architecto vel repellat cum magni sint voluptatibus totam, animi ex atque? Tenetur itaque adipisci facilis, officia repellat, voluptatum quaerat incidunt sit assumenda quam quod.'
@@ -130,7 +130,7 @@ thumbnail={canadianDollar.src}
     customText={<TextFormat
     reverse={true}
     isAnimated={true}/>}
-    image={twenty}
+    image={cashHome1}
    hasAnimation={true}
    reverse={false}
   //  background='bg-gradient-to-b from-blue-300 via-blue-500 to-blue-400 '
