@@ -18,6 +18,8 @@ import { CircleInfoGraphic } from "@/components/circleInfographic";
 import { useAppContext } from "@/context/context";
 import canadianDollar from '../../public/canadian-dollars.jpeg'
 import twenty from '../../public/twenty-bills.jpeg'
+import { intro } from "@/data/data";
+import theresaDog from '../../public/theresa-dog.webp'
 
 
 const lorem = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem ad debitis nemo qui praesentium sequi architecto vel repellat cum magni sint voluptatibus totam, animi ex atque? Tenetur itaque adipisci facilis, officia repellat, voluptatum quaerat incidunt sit assumenda quam quod.'
@@ -68,7 +70,7 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     
     <>
 
-    {!loggedIn && 10 === 12 ? (
+    {!loggedIn  ? (
        <div className="top-[40%] fixed 
        left-1/2 -translate-x-1/2">
         <h1 className="text-3xl text-black
@@ -104,14 +106,14 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
  
    
        <TextParallaxContentExample
-    src={dunk}
+    src={intro}
 alt="meme"
 isVideo={true}
-heading='Your title Here'
-subHeading="Subtitle here"
+heading='Welcome to Cash for Houses Ontario'
+subHeading="Selling cash for houses quickly"
 description={lorem}
 muted={false}
-thumbnail={canadianDollar.src}
+thumbnail={theresaDog.src}
 
 
     />

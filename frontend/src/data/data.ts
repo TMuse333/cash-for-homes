@@ -140,6 +140,10 @@ export const content1Data:ContentType= {
 
   export const dunk = '/videos/q3-lion-speech.mp4'
 
+  export const intro = './videos/theresa-intro.mp4'
+
+  export const process = './videos/theresa-process.mp4'
+
   
 
   export const jvParallaxContent:ParallaxContentType = {

@@ -132,6 +132,7 @@ const Video:React.FC<VideoProps> = (
     setPlaying(true);
     if (videoRef.current) {
       console.log('passed in')
+      videoRef.current.currentTime = 0;
       videoRef.current.play();
       
       // Enter fullscreen mode
