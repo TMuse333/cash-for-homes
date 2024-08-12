@@ -124,7 +124,7 @@ export const content1Data:ContentType= {
     buttonLink:'contact',
     buttonText:'Book a consultation',
     alt:'A lovely picture',
-    video:false,
+    video:true,
     poster:canadianDollar.src
 
   };

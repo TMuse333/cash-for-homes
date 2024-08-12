@@ -112,7 +112,7 @@ export const content1Data:ContentType= {
 
 
   export const content2Data:ContentType= {
-    image:canadianDollar,// Directly import the image as StaticImageData
+    image:canadianDollar.src,// Directly import the image as StaticImageData
     customText: null,
     description: [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum sit, dolore at est quidem blanditiis dicta doloremque beatae similique voluptate?',
@@ -124,7 +124,7 @@ export const content1Data:ContentType= {
     buttonLink:'contact',
     buttonText:'Book a consultation',
     alt:'A lovely picture',
-    video:false,
+    video:true,
     poster:canadianDollar.src
 
   };
