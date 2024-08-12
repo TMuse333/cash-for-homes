@@ -162,7 +162,7 @@ export const content1Data:ContentType= {
     isVideo:true,
     description:lorem30,
     muted:false,
-    thumbnail:'/theresa-sitting.webp',
+    thumbnail:'/frontend/public/theresa-sitting.webp',
     heading:'How it works',
     subHeading:'',
     alt:'Aria label nation',
