@@ -217,7 +217,7 @@ className='absolute z-[14] text-white w-2/5 text-sm sm:text-lg md:text-4xl top-[
                 src={src}
                 alt={alt}
                 className={`w-[80%] ml-auto mr-auto object-cover 
-                h-full max-w-[1200px] overflow-y-hidden
+                h-full max-w-[1200px] max-h-[800px] overflow-y-hidden
                `}
                 style={{ filter:'brightness(0.6)',
               objectPosition:'50% 50%' }}
@@ -294,8 +294,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
             <div id='slideshow-container'
                 className=" flex 
                 w-screen relative
-                h-[60vh]
-                sm:h-[85vw] 
+                h-[100vw] 
                 max-h-[800px]
                 overflow-y-scroll
                 overflow-x-scroll

@@ -99,6 +99,8 @@ const Video:React.FC<VideoProps> = (
     };
   }, [inView, videoPlaying]);
 
+
+
   useEffect(() => {
     if(videoRef.current && !inView && muted){
       setVideoPlaying(false)
@@ -108,6 +110,12 @@ const Video:React.FC<VideoProps> = (
       // videoRef.current.src = ''; // Temporarily remove src
       // videoRef.current.src = src;
     }
+
+    else if(videoRef.current && !inView &&!muted){
+      setVideoPlaying(false)
+      videoRef.current.pause();
+    }
+
   },[inView])
 
   useEffect(() => {
@@ -165,7 +173,7 @@ const Video:React.FC<VideoProps> = (
     <motion.video
       ref={videoRef}
       className="w-full h-full object-contain relative z-[4000]
-      bg-gray-200"
+      bg-black"
       
       preload="auto"
      muted
@@ -179,7 +187,7 @@ const Video:React.FC<VideoProps> = (
 ) : <>
 
 {!playing ? (
-        <div className="relative w-full h-full z-[4000] bg-gray-200">
+        <div className="relative w-full h-full z-[4000] bg-black">
           <motion.img
             src={thumbnail}
             
@@ -209,7 +217,7 @@ const Video:React.FC<VideoProps> = (
         <motion.video
           ref={videoRef}
           className="w-screen h-screen object-contain
-          relative z-[3999]"
+          relative z-[3999] bg-black"
           src={src}
           muted={muted}
           controls
