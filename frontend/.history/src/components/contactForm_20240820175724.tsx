@@ -59,7 +59,6 @@ const ContactForm = () => {
         <section className='flex overflow-x-hidden justify-center items-center bg-gray-200
         text-black mb-8 max-w-[1300px] mx-auto'>
             <div className='hidden sm:block sm:w-[50vw] ml-auto mr-auto flex flex-col items-start
-            self-start
             '>
                 <Image
                     src={logo}

@@ -59,14 +59,13 @@ const ContactForm = () => {
         <section className='flex overflow-x-hidden justify-center items-center bg-gray-200
         text-black mb-8 max-w-[1300px] mx-auto'>
             <div className='hidden sm:block sm:w-[50vw] ml-auto mr-auto flex flex-col items-start
-            self-start
             '>
                 <Image
                     src={logo}
                     alt="Jv Partner home"
-                    className='w-[45vw] ml-auto mr-auto
-                     max-w-[411px] object-contain 
-                     h-[40vw] mb-auto'
+                    className='w-[40vw] mt-[-10rem] ml-auto mr-auto
+                    max-h-[540px] max-w-[411px] object-cover
+                    mt-auto '
                 />
                 {/* <ul className='text-center'>
                     {tenets.map((tenet, index) => (

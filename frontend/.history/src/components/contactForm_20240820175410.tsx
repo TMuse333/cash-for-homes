@@ -59,14 +59,13 @@ const ContactForm = () => {
         <section className='flex overflow-x-hidden justify-center items-center bg-gray-200
         text-black mb-8 max-w-[1300px] mx-auto'>
             <div className='hidden sm:block sm:w-[50vw] ml-auto mr-auto flex flex-col items-start
-            self-start
             '>
                 <Image
                     src={logo}
                     alt="Jv Partner home"
-                    className='w-[45vw] ml-auto mr-auto
-                     max-w-[411px] object-contain 
-                     h-[40vw] mb-auto'
+                    className='w-[40vw] mt-[-10rem] ml-auto mr-auto
+                    max-h-[540px] max-w-[411px] object-cover
+                    mt-auto '
                 />
                 {/* <ul className='text-center'>
                     {tenets.map((tenet, index) => (
@@ -110,7 +109,7 @@ const ContactForm = () => {
                     max-h-[590px]
                     max-w-[445px]'
                 />
-                <section className='w-[90%] sm:w-auto mt-5 mr-auto max-w-[600px]
+                <section className='w-[90%] sm:w-auto mt-5  max-w-[600px]
                 md:mx-auto '>
                     <p>
                     Collaborate with industry leaders dedicated to achieving outstanding results. Our JV partnerships are built on trust, shared goals, and a commitment to excellence. Together, we can create opportunities that drive growth and deliver significant value.
@@ -120,8 +119,9 @@ const ContactForm = () => {
                     Unlock new possibilities by joining forces with a team that understands the power of strategic alliances. Our approach to JV partnerships focuses on synergy and innovation, ensuring that our combined efforts lead to greater success for all parties involved.
                     </p>
                
-                <form onSubmit={handleSubmit} className='w-[90vw] mt-5 ml-auto mr-auto flex flex-col justify-center items-center'>
-                    <label className='mb-2 w-[90vw] max-w-[600px] mr-auto'>
+                <form onSubmit={handleSubmit} className='w-[90vw]
+                justify-center mt-5 flex flex-col justify-center items-center'>
+                    <label className='mb-2 w-[90vw] max-w-[600px] '>
                         <input
                             type='text'
                             name='name'
@@ -133,13 +133,13 @@ const ContactForm = () => {
                             placeholder='Name'
                         />
                     </label>
-                    <label className='mb-2 w-[90vw] sm:w-[40vw] mr-auto max-w-[600px] mr-auto max-w-[600px] mr-auto'>
+                    <label className='mb-2 w-[90vw] sm:w-[40vw]  max-w-[600px]  max-w-[600px] '>
                         <input
                             type='email'
                             name='email'
                             value={formData.email}
                             onChange={handleChange}
-                            className='border-2 w-full mr-auto border-blue-500 p-2 rounded mt-1 bg-gray-800
+                            className='border-2 w-full border-blue-500 p-2 rounded mt-1 bg-gray-800
                             max-w-[600px] mx-auto md:mr-auto'
                             required
                             placeholder='Email address'

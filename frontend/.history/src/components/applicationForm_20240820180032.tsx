@@ -12,13 +12,13 @@ const ApplicationForm = () => {
     return (
         <section className="w-screen flex flex-col ml-auto
         mr-auto md:flex-row bg-gray-200 mb-8">
-            <section className="md:w-[50vw] ">
+            <section className="md:w-[50vw] bg-blue-400">
                 <h1 className="text-2xl text-center
-                mt-4 mb-4 text-black">Ontario Cash for Houses</h1>
+                mt-4 mb-4">Ontario Cash for Houses</h1>
                <Image
                src={dog}
                alt='logo'
-               className='w-[40vw] mx-auto'
+               className='w-[40vw]'
                width={1200}
                height={630}
                />

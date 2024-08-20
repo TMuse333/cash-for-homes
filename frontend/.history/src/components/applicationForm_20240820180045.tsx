@@ -14,7 +14,7 @@ const ApplicationForm = () => {
         mr-auto md:flex-row bg-gray-200 mb-8">
             <section className="md:w-[50vw] ">
                 <h1 className="text-2xl text-center
-                mt-4 mb-4 text-black">Ontario Cash for Houses</h1>
+                mt-4 mb-4">Ontario Cash for Houses</h1>
                <Image
                src={dog}
                alt='logo'

@@ -59,14 +59,13 @@ const ContactForm = () => {
         <section className='flex overflow-x-hidden justify-center items-center bg-gray-200
         text-black mb-8 max-w-[1300px] mx-auto'>
             <div className='hidden sm:block sm:w-[50vw] ml-auto mr-auto flex flex-col items-start
-            self-start
             '>
                 <Image
                     src={logo}
                     alt="Jv Partner home"
-                    className='w-[45vw] ml-auto mr-auto
-                     max-w-[411px] object-contain 
-                     h-[40vw] mb-auto'
+                    className='w-[40vw] mt-[-10rem] ml-auto mr-auto
+                    max-h-[540px] max-w-[411px] object-cover
+                    mt-auto '
                 />
                 {/* <ul className='text-center'>
                     {tenets.map((tenet, index) => (
@@ -111,7 +110,7 @@ const ContactForm = () => {
                     max-w-[445px]'
                 />
                 <section className='w-[90%] sm:w-auto mt-5 mr-auto max-w-[600px]
-                md:mx-auto '>
+                mx-auto '>
                     <p>
                     Collaborate with industry leaders dedicated to achieving outstanding results. Our JV partnerships are built on trust, shared goals, and a commitment to excellence. Together, we can create opportunities that drive growth and deliver significant value.
                     </p>
@@ -133,7 +132,7 @@ const ContactForm = () => {
                             placeholder='Name'
                         />
                     </label>
-                    <label className='mb-2 w-[90vw] sm:w-[40vw] mr-auto max-w-[600px] mr-auto max-w-[600px] mr-auto'>
+                    <label className='mb-2 w-[90vw] sm:w-[40vw]  max-w-[600px] mr-auto max-w-[600px] '>
                         <input
                             type='email'
                             name='email'

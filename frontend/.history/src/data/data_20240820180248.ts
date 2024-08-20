@@ -264,7 +264,7 @@ export const content1Data:ContentType= {
     image:canadianDollar,
     title:'Contact us',
     alt:'About us picture',
-    description:`Embarking on the journey to sell your home is a significant step, and we’re here to guide you toward greatness. Our dedicated team is committed to ensuring you receive the best possible cash offer for your property, helping you achieve your goals swiftly and effortlessly. With our streamlined process and personalized support, you can trust that you're making the right choice for your future. Contact us today to discover how we can turn your property into a remarkable opportunity and unlock the door to a brighter tomorrow.`,
+    description:'lorem30',
     bg:''
   }
 

@@ -55,7 +55,7 @@ const Process = () => {
                 />
 
                 <p className="text-center text-gray-800 text-2xl sm:text-3xl md:text-4xl mb-4">Quick and simple</p>
-                
+                <p className="text-center text-gray-800 text-lg sm:text-xl md:text-xl mb-4">Discover how easy it is to sell your home with our streamlined process. We’ve simplified every step to ensure a hassle-free experience, guiding you from the initial call to the final closing. Let’s explore the five key steps that make selling your house quick and straightforward!</p>
 
                 <SlideShowCarousel
                 {...processCarouselData}/>

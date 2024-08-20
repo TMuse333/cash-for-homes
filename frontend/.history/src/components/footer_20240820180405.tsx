@@ -116,8 +116,7 @@ const Footer:React.FC<links> = ({links}) => {
 
 <Link href='www.focusflowsoftware.com'>
 <p className='mt-6
-      sm:text-2xl text-white 
-      hover:text-[#00bfff]'>Created by FocusFlow Software</p>
+      sm:text-2xl text-white '>Created by FocusFlow Software</p>
 </Link>
      
       {/* <Link 

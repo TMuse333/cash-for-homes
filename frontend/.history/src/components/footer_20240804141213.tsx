@@ -114,12 +114,9 @@ const Footer:React.FC<links> = ({links}) => {
        items-center justify-center
      '>
 
-<Link href='www.focusflowsoftware.com'>
-<p className='mt-6
-      sm:text-2xl text-white 
-      hover:text-[#00bfff]'>Created by FocusFlow Software</p>
-</Link>
-     
+
+      <p className='mt-6
+      sm:text-2xl text-white '>Q3 Designs 2024</p>
       {/* <Link 
             to='https://q3designs.netlify.app'
             >
