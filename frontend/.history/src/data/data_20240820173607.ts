@@ -73,7 +73,7 @@ export const accordionProps = {
 };
 
 
-export const processFAQ = {
+export const accordionProps = {
   text: [
       { 
           title: "What is the first step in your process?", 

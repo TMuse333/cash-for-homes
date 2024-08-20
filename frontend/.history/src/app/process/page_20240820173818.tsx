@@ -71,7 +71,7 @@ const Process = () => {
          
              <button className="mt-4 bg-blue-500 p-3 rounded-xl hover:scale-[1.05]
              hover:bg-white transition-all hover:text-blue-500">
-                Let&apos;s get started
+                Let's get started
              </button>
              </Link>
             </p>

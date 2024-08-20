@@ -4,8 +4,7 @@ import SlideShowCarousel from "@/components/slideShowCarousel"
 import React from "react"
 import { processCarouselData, jvParallaxContent,
 openingText,processParallax, dunk,
-accordionProps,
-processFAQ} from "@/data/data"
+accordionProps} from "@/data/data"
 import { TextParallaxContentExample } from "@/components/parallaxText"
 import Closer from "@/components/closer"
 import Footer from "@/components/footer"
@@ -64,20 +63,20 @@ const Process = () => {
             w-[95%] ml-auto mr-auto relative
             p-8 rounded-xl sm:text-xl mt-[-8rem] mb-[4rem]
             max-w-[1200px]">
-            Don&apos;t wait any longer to get the best value for your property with our straightforward and hassle-free process. Contact us today to take the first step toward a quick and easy sale. Let’s work together to make your real estate journey smooth and successful.
+            Don’t wait any longer to get the best value for your property with our straightforward and hassle-free process. Contact us today to take the first step toward a quick and easy sale. Let’s work together to make your real estate journey smooth and successful.
             <br/>
             <Link href="/contact">
 
          
              <button className="mt-4 bg-blue-500 p-3 rounded-xl hover:scale-[1.05]
              hover:bg-white transition-all hover:text-blue-500">
-                Let&apos;s get started
+                Let's get started
              </button>
              </Link>
             </p>
 
             <Accordion
-            {...processFAQ}
+            {...proce}
             />
 
                 

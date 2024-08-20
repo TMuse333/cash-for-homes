@@ -73,50 +73,6 @@ export const accordionProps = {
 };
 
 
-export const processFAQ = {
-  text: [
-      { 
-          title: "What is the first step in your process?", 
-          description: "The first step is an initial phone call where we gather basic information about your property and situation. This helps us understand your needs and allows us to offer a tailored solution." 
-      },
-      { 
-          title: "Do I need to make any repairs before selling?", 
-          description: "No, you don’t need to make any repairs. We buy houses in any condition, so you can sell your property as-is without worrying about repairs or renovations." 
-      },
-      { 
-          title: "How do you evaluate my property?", 
-          description: "We schedule a property evaluation at a time that’s convenient for you. Our team assesses your property’s current condition and considers various factors to ensure you receive a fair cash offer." 
-      },
-      { 
-          title: "How quickly can I get a cash offer?", 
-          description: "After evaluating your property, we present you with a cash offer based on the evaluation and market conditions. This offer is competitive, fair, and comes without any obligations." 
-      },
-      { 
-          title: "What happens after I accept the offer?", 
-          description: "Once you accept the offer, we handle all the legal work and details. You have the flexibility to choose the closing date that works best for you, making the process smooth and stress-free." 
-      },
-      { 
-          title: "When will I receive my money?", 
-          description: "At closing, all necessary documents are sent to your lawyer. You’ll meet with your lawyer to finalize the sale, and the money will be directly transferred to you from your lawyer." 
-      },
-      { 
-          title: "Are there any hidden fees?", 
-          description: "No, there are no hidden fees. You receive a straightforward cash offer without any realtor fees, commissions, or additional costs." 
-      },
-      { 
-          title: "Can I choose my closing date?", 
-          description: "Yes, you have the flexibility to choose a closing date that fits your schedule. We accommodate your needs to make the process as convenient as possible for you." 
-      },
-      { 
-          title: "Why should I choose your service over others?", 
-          description: "Our service offers a hassle-free, quick, and reliable way to sell your house. With no realtor fees, no need for repairs, and fast cash offers, we make the process simple and stress-free." 
-      }
-  ],
-  hasIntro: true,
-  intro: "Frequently Asked Questions",
-  description: "Selling your house can be a daunting process, but we aim to make it as simple and straightforward as possible. Below, you'll find answers to common questions about our process and how we can help you sell your house quickly and easily.",
-  link: ''
-};
 
 
 
