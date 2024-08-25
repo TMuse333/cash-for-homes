@@ -5,7 +5,7 @@ import canadianDollar from '../../public/canadian-dollars.jpeg'
 
 import twenty from '../../public/twenty-bills.jpeg'
 
-
+import group from '../../public/whole-group.webp'
 
 interface ContentType {
     image: StaticImageData | string;
@@ -252,7 +252,7 @@ export const content1Data:ContentType= {
 
 
  export const aboutContent1:Content2Type = {
-    image:canadianDollar,
+    image:group,
     title:'About us',
     alt:'About us picture',
     description:lorem30,
@@ -397,8 +397,9 @@ export const content1Data:ContentType= {
 //   buttonText?:string
 
 export const introDescription = 
-"Sell your house fast in Ontario regardless of condition, age, size or situation.\n\n" +
-"We buy houses by providing home sellers with a cash offer to purchase. If you are happy with the offer, we move forward and close the transaction when it’s most convenient for you.\n\n" +
-"Are you looking for a way out of a situation that involves a house you own in Ontario? You’ve found the right place! I’m confident we can help you.\n\n" +
-"We are a professional house buying company that buys houses fast in Ontario. We pay cash for homes, which makes the entire process simple and quick.\n\n" +
-"Our guaranteed all-cash offer is the reason so many of our customers choose us.";
+"Sell your Ontario home quickly, no matter the condition or situation.\n\n" +
+"Looking to sell your house in Ontario? We specialize in buying homes, offering a quick, hassle-free process that puts cash in your hands—fast.\n\n" +
+"We provide a competitive, all-cash offer for your home. If you're happy with the offer, we close the transaction on your timeline, making the process convenient and stress-free.\n\n" +
+"As a professional home buying company, we simplify selling your house by taking care of all the details, so you can move forward with confidence.\n\n" +
+"Our guaranteed cash offer is why so many homeowners across Ontario choose us.";
+

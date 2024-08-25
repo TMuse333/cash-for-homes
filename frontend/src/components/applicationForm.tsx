@@ -23,7 +23,7 @@ const ApplicationForm = () => {
                height={630}
                />
             </section>
-            <section className="overflow-y-scroll h-[400px]
+            <section className="
             md:w-[50vw]">
                 <InputForm
                 questions={applicationQuestions}

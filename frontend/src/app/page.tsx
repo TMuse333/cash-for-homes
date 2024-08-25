@@ -114,7 +114,8 @@ subHeading=""
 description={introDescription}
 muted={false}
 thumbnail={theresaDog.src}
-
+destination='/contact'
+buttonText="Get Your Cash Offer"
 
     />
     <Content

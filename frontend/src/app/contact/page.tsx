@@ -19,18 +19,18 @@ const Contact = () => {
           },
         {
           name:'How it works',
-          destination:'process',
+          destination:'/process',
           hasScroll:false
         },
        
         {
           name:'JV Partners',
-          destination:'jv-partners',
+          destination:'/jv-partners',
           hasScroll:false
         },
         {
-          name:'Contact Us',
-          destination:'contact'
+          name:'About Us',
+          destination:'/about'
         }
       ]
 

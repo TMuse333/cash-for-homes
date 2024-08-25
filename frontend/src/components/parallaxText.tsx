@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform, motionValue, MotionValue} from "framer
 // import laptop from '../../media/laptop.jpg'
 import { AppContext, useAppContext } from "@/context/context";
 import { useVideoIntersectionObserver} from "./intersectionObserver";
+import Link from "next/link";
 
 
 
@@ -17,7 +18,9 @@ interface Props {
     muted?:boolean,
     thumbnail?:string,
     heading:string,
-    subHeading:string
+    subHeading:string,
+    buttonText?:string,
+    destination?:string
    
 }
 
@@ -37,7 +40,7 @@ interface VideoProps {
 
 export const TextParallaxContentExample:React.FC<Props>
  = ({src,alt,isVideo, description,muted,
-thumbnail,subHeading,heading }) => {
+thumbnail,subHeading,heading,buttonText,destination }) => {
   return (
     <div className=" relative bg-gray-200 mb-4">
       <TextParallaxContent
@@ -58,6 +61,26 @@ thumbnail,subHeading,heading }) => {
               whiteSpace:'pre-line'
             }}>
               {description}
+              {destination && (
+                <>
+                <br/><br/>
+                <Link href={destination}
+                passHref>
+
+               
+                <button className="bg-black
+                p-3 text-white 
+                rounded-xl hover:text-black
+                hover:bg-white
+                transition-colors">
+{buttonText}
+                </button>
+                </Link>
+                </>
+                
+              )}
+              
+
             </p>
         )}
        
