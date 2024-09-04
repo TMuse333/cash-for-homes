@@ -20,10 +20,13 @@ import canadianDollar from '../../public/canadian-dollars.jpeg'
 import twenty from '../../public/twenty-bills.jpeg'
 import { intro } from "@/data/data";
 import theresaDog from '../../public/theresa-dog.webp'
-
+import theresaSeated from '../../public/seated-theresa.webp'
+import Link from "next/link";
+import { introDescription } from "@/data/data";
+import handshake from '../../public/handshake.webp'
 
 const lorem = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem ad debitis nemo qui praesentium sequi architecto vel repellat cum magni sint voluptatibus totam, animi ex atque? Tenetur itaque adipisci facilis, officia repellat, voluptatum quaerat incidunt sit assumenda quam quod.'
-import { introDescription } from "@/data/data";
+
 
 export default function Home() {
 
@@ -133,7 +136,7 @@ buttonText="Get Your Cash Offer"
     customText={<TextFormat
     reverse={true}
     isAnimated={true}/>}
-    image={twenty}
+    image={handshake}
    hasAnimation={true}
    reverse={false}
   //  background='bg-gradient-to-b from-blue-300 via-blue-500 to-blue-400 '
@@ -147,13 +150,19 @@ buttonText="Get Your Cash Offer"
        </div>
 
     <Content
-    image={canadianDollar}
+    image={theresaSeated}
 
-    customText={<Accordion
+    customText={
+      <>
+    <Accordion
     {...accordionProps}
     inContent={true}
     margin='mr-12'
+    link="about"
   />
+
+ 
+  </>
 }
 reverse={true}
 />

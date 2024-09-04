@@ -6,6 +6,8 @@ import canadianDollar from '../../public/canadian-dollars.jpeg'
 import twenty from '../../public/twenty-bills.jpeg'
 
 import group from '../../public/whole-group.webp'
+import oldGray from '../../public/old-gray.webp'
+import properTrade from '../../public/proper-trade.webp'
 
 interface ContentType {
     image: StaticImageData | string;
@@ -48,6 +50,10 @@ interface Content2Type {
 const lorem30 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime temporibus debitis autem molestiae? '
 
 export const heroImages = [
+  {
+    src:'/proper-trade.webp',
+    alt:'Trading cash for a house'
+  },
     {
         src:'/home.jpg',
         alt:'A picture of a home'
@@ -157,7 +163,7 @@ export const content1Data:ContentType= {
 
 
   export const content2Data:ContentType= {
-    image:canadianDollar,// Directly import the image as StaticImageData
+    image:oldGray,// Directly import the image as StaticImageData
     customText: null,
     description: [
       `Unlock the secrets to a hassle-free home sale. Our proven process ensures that you get the best offer with minimal effort. Say goodbye to the traditional selling headaches and hello to a streamlined, straightforward experience.
@@ -220,12 +226,12 @@ export const content1Data:ContentType= {
   export const processCarouselData = {
     images: [
       {
-        src: '/twenty-bills.jpeg',
+        src: '/preview.webp',
         alt: 'Initial Phone Call',
         description: 'The first step in our process is a simple phone call where we gather basic information about your property and understand your situation. This allows us to get a clear picture of what’s going on so that we can provide the best possible solution tailored to your needs.'
       },
       {
-        src: '/canadian-dollars.jpeg',
+        src: '/evaluation.webp',
         alt: 'Property Evaluation',
         description: 'Our team will schedule a property evaluation at a time that’s convenient for you. The condition of your property is not an issue—we assess it as is. Our experts will carefully evaluate the property, considering various factors to ensure you receive a fair and accurate cash offer.'
       },
@@ -240,7 +246,7 @@ export const content1Data:ContentType= {
         description: 'Once you’ve reviewed and accepted the cash offer, we’ll handle all the legal work and details. You have the flexibility to choose the closing date that works best for you, ensuring a smooth and stress-free transaction process.'
       },
       {
-        src: '/old-brick-home.jpg',
+        src: '/proper-trade.webp',
         alt: 'Closing and Getting Paid',
         description: 'At closing, we’ll send all necessary documents to your lawyer. You’ll meet with your lawyer to finalize the sale, and the money will be directly received from your lawyer. It’s that simple—you get your cash quickly and securely.'
       }
@@ -261,7 +267,7 @@ export const content1Data:ContentType= {
   }
 
   export const contactContent2:Content2Type = {
-    image:canadianDollar,
+    image:properTrade,
     title:'Contact us',
     alt:'About us picture',
     description:`Embarking on the journey to sell your home is a significant step, and we’re here to guide you toward greatness. Our dedicated team is committed to ensuring you receive the best possible cash offer for your property, helping you achieve your goals swiftly and effortlessly. With our streamlined process and personalized support, you can trust that you're making the right choice for your future. Contact us today to discover how we can turn your property into a remarkable opportunity and unlock the door to a brighter tomorrow.`,
