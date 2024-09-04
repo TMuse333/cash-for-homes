@@ -221,12 +221,14 @@ const Video:React.FC<VideoProps> = (
             onClick={handlePlayClick}
           />
           <button
-            className="absolute inset-0 flex items-center justify-center"
+            className="absolute inset-0 flex items-center justify-center
+            "
             onClick={handlePlayClick}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-12 h-12 p-2  text-white relative
+              bg-gray-400 rounded-full hover:bg-gray-600 transition-colors
               scale-[3] "
               viewBox="0 0 24 24"
               fill="none"
