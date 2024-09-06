@@ -166,10 +166,10 @@ export const content1Data:ContentType= {
     image:oldGray,// Directly import the image as StaticImageData
     customText: null,
     description: [
-      `Unlock the secrets to a hassle-free home sale. Our proven process ensures that you get the best offer with minimal effort. Say goodbye to the traditional selling headaches and hello to a streamlined, straightforward experience.
+      `Unlock the secrets to a hassle-free property sale. Our proven process ensures that you get the best offer with minimal effort. Say goodbye to the traditional selling headaches and hello to a streamlined, straightforward experience.
 
       `,
-      `Ready to take control of your home-selling journey? Visit our Process page to see how we turn a complex process into a quick and easy solution. Your dream sale is just a click away—learn more and get started today.`,
+      `Ready to take control of your property-selling journey? Visit our Process page to see how we turn a complex process into a quick and easy solution. Your dream sale is just a click away—learn more and get started today.`,
     ],
     mainTitle: 'Cash for Houses, Quickly',
     reverse: true,
@@ -270,7 +270,7 @@ export const content1Data:ContentType= {
     image:properTrade,
     title:'Contact us',
     alt:'About us picture',
-    description:`Embarking on the journey to sell your home is a significant step, and we’re here to guide you toward greatness. Our dedicated team is committed to ensuring you receive the best possible cash offer for your property, helping you achieve your goals swiftly and effortlessly. With our streamlined process and personalized support, you can trust that you're making the right choice for your future. Contact us today to discover how we can turn your property into a remarkable opportunity and unlock the door to a brighter tomorrow.`,
+    description:`Embarking on the journey to sell your property is a significant step, and we’re here to guide you toward greatness. Our dedicated team is committed to ensuring you receive the best possible cash offer for your property, helping you achieve your goals swiftly and effortlessly. With our streamlined process and personalized support, you can trust that you're making the right choice for your future. Contact us today to discover how we can turn your property into a remarkable opportunity and unlock the door to a brighter tomorrow.`,
     bg:''
   }
 
@@ -292,13 +292,13 @@ export const content1Data:ContentType= {
         src: twenty,
         title: 'We Pay More',
         alt: 'alt',
-        description: 'Our extensive experience in purchasing properties allows us to save significantly on closing and contractor fees. These savings enable us to present you with a more competitive offer, ensuring you receive the maximum value for your home.'
+        description: 'Our extensive experience in purchasing properties allows us to save significantly on closing and contractor fees. These savings enable us to present you with a more competitive offer, ensuring you receive the maximum value for your property.'
       },
       {
         src: canadianDollar,
         title: 'Avoid Making Repairs',
         alt: 'alt',
-        description: 'We purchase homes in any condition, offering you the convenience of selling without the need for costly and time-consuming repairs. By paying in cash, we streamline the process, so you can sell your house as-is, hassle-free.'
+        description: 'We purchase houses in any condition, offering you the convenience of selling without the need for costly and time-consuming repairs. By paying in cash, we streamline the process, so you can sell your house as-is, hassle-free.'
       },
       {
         src: canadianDollar,
@@ -310,7 +310,7 @@ export const content1Data:ContentType= {
         src: canadianDollar,
         title: 'No Commissions',
         alt: 'alt',
-        description: 'By selling directly to us, you avoid the hefty commissions that real estate agents typically charge. We act as your direct buyer, eliminating the middleman and ensuring you retain more of your home’s value.'
+        description: 'By selling directly to us, you avoid the hefty commissions that real estate agents typically charge.'
       },
       {
         src: canadianDollar,
@@ -403,9 +403,9 @@ export const content1Data:ContentType= {
 //   buttonText?:string
 
 export const introDescription = 
-"Sell your Ontario home quickly, no matter the condition or situation.\n\n" +
-"Looking to sell your house in Ontario? We specialize in buying homes, offering a quick, hassle-free process that puts cash in your hands—fast.\n\n" +
-"We provide a competitive, all-cash offer for your home. If you're happy with the offer, we close the transaction on your timeline, making the process convenient and stress-free.\n\n" +
-"As a professional home buying company, we simplify selling your house by taking care of all the details, so you can move forward with confidence.\n\n" +
+"Sell your Ontario property quickly, no matter the condition or situation.\n\n" +
+"Looking to sell your house in Ontario? We specialize in buying properties, offering a quick, hassle-free process that puts cash in your hands—fast.\n\n" +
+"We provide a competitive, all-cash offer for your house. If you're happy with the offer, we close the transaction on your timeline, making the process convenient and stress-free.\n\n" +
+"As a professional house buying company, we simplify selling your house by taking care of all the details, so you can move forward with confidence.\n\n" +
 "Our guaranteed cash offer is why so many homeowners across Ontario choose us.";
 

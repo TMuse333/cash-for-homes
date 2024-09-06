@@ -88,7 +88,7 @@ const TextFormat: React.FC<TextFormatProps> = ({ isAnimated, reverse  }) => {
      
       {/* <div className={`${reverse ? 'md:-translate-x-0' : 'md:translate-x-6'}`}> */}
       <motion.h1 className="text-2xl pb-2 text-left ml-0 font-bold ">
-      Who we buy houses to help</motion.h1>
+      Who we buy properties to help</motion.h1>
       <motion.p variants={isAnimated ? textVariants : nullVariants}
        initial="initial" 
        animate={isVisible ? "animate" : "initial"}

@@ -106,6 +106,7 @@ title, description, index,titleInView}) => {
         sm:w-[45vw] sm:h-[50vw]
         xl:w-[32vw] xl:h-[32vw]
         relative z-10
+        text-white
        
       `}
      
