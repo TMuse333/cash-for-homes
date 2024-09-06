@@ -1,7 +1,7 @@
 "use client"
 import Content2 from "@/components/content2"
 import Navbar from "@/components/navbar"
-import { aboutContent1 } from "@/data/data"
+import { aboutCloser, aboutContent1, aboutContent3, aboutContent4 } from "@/data/data"
 import React from "react"
 import Content from "../../components/content";
 import { content1Data, openingText } from "@/data/data";
@@ -45,17 +45,17 @@ const About = () => {
                 />
 
 <Content
-            {...content1Data}
+            {...aboutContent3}
             />
 
-            <Content
-            {...content1Data}
+            {/* <Content
+            {...aboutContent4}
             reverse={true}
             background='bg-gradient-to-tr from-blue-400 via-blue-300 to-blue-200'
-            />
+            /> */}
 
             <Closer
-            {...openingText}
+            {...aboutCloser}
             />
 
             <Footer

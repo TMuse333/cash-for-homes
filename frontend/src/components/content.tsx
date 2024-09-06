@@ -201,18 +201,25 @@ const nullVariant: Variants = {
              >
               {description != null ? description[1] :
                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident odio labore recusandae est accusantium voluptatibus ad doloremque! Quo corrupti cum delectus ad praesentium minus voluptates soluta consectetur perspiciatis veniam? Pariatur vel, error cum possimus ad asperiores inventore obcaecati suscipit.'}
+                {description != null && (
+                  description[2] 
+                )}
                 <br/>
+                
 
-                <Link href={buttonLink ? buttonLink : ''}>
+                {buttonLink && (
+                  <Link href={buttonLink ? buttonLink : ''}>
+
+<motion.button
+  variants={headerVariants(1.2)}
+  initial={hasAnimation ? 'initial' : ''}
+  animate={hasAnimation && inView ? 'animate' : ''}
+ className="mt-6 bg-blue-500 p-3 rounded-xl hover:gray-200 text-gray-200
+ hover:text-blue-500 hover:bg-white transition-all">{buttonText  ? buttonText : 'button'}</motion.button>
+  </Link>
+                )}
 
                 
-                <motion.button
-                  variants={headerVariants(1.2)}
-                  initial={hasAnimation ? 'initial' : ''}
-                  animate={hasAnimation && inView ? 'animate' : ''}
-                 className="mt-6 bg-blue-500 p-3 rounded-xl hover:gray-200 text-gray-200
-                 hover:text-blue-500 hover:bg-white transition-all">{buttonText  ? buttonText : 'button'}</motion.button>
-                  </Link>
             </motion.p>
             
          

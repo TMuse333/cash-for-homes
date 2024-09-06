@@ -9,6 +9,7 @@ import group from '../../public/whole-group.webp'
 import oldGray from '../../public/old-gray.webp'
 import properTrade from '../../public/proper-trade.webp'
 import handshake from '../../public/handshake.webp'
+import multiHome from '../../public/multi-home.webp'
 
 interface ContentType {
     image: StaticImageData | string;
@@ -266,7 +267,7 @@ export const content1Data:ContentType= {
     image:group,
     title:'About us',
     alt:'About us picture',
-    description:lorem30,
+    description:'Ontario Cash For Houses is a real estate solutions company that buys houses in Toronto, ON; Windsor, ON; London, ON; Kitchener, ON; Waterloo, ON; Cambridge, ON; Whitby, ON; Oshawa, ON; Milton, ON; Georgetown, ON; North Bay, ON; Simcoe, ON; Goderich, ON; Orillia, ON; Muskoka, ON; and Haliburton, ON.',
     bg:'bg-gradient-to-tr from-blue-800 via-blue-400 to-blue-300'
     
   }
@@ -423,4 +424,51 @@ export const introDescription =
 "We provide a competitive, all-cash offer for your property. If you're happy with the offer, we close the transaction on your timeline, making the process convenient and stress-free.\n\n" +
 "As a professional property buying company, we simplify you selling your property by taking care of all the details, so you can move forward with your life.\n\n" +
 "Our guaranteed cash offer is why so many motivated sellers across Ontario choose us.";
+
+
+export const aboutCloser = {
+  image:'/twenty-bills.jpeg',
+    title:'Ready to Take the Next Step?',
+    description:`At Ontario Cash For Houses, we empower homeowners to confidently sell their properties, whether inherited, rental, urban, or rural. We offer competitive cash offers for your home, understanding that every house has a unique story. We’re compassionate, ethical, and experienced real estate problem-solvers, focused on making your home-selling process simple and fast.
+
+    Whether facing foreclosure, repairs, probate, or other challenges, we aim to provide a hassle-free experience. No realtor fees, no closing costs, no repairs needed—we can close in as little as 24 hours. Call us today for a no-obligation cash offer: (226) 917-2806.`,
+    destination:'/contact',
+    buttonText:'Book a consulation',
+} 
+
+
+
+
+export const aboutContent3:ContentType = {
+  image:multiHome,// Directly import the image as StaticImageData
+    customText: null,
+    description: [
+      'We’re a family-owned business that focuses on helping homeowners like you find solutions for your problem property, whether you’re going through a foreclosure, divorce, inherited property, nuisance property, back taxes, can’t sell your property, or just need to sell your house for ANY reason. We can help!\n\n',
+      `We'll make you a full cash offer—and close fast, so there's no time to waste. Plus, we'll purchase your home AS-IS and pay all closing costs.`,
+      `We'll buy houses even in rural towns and counties. Regardless of the condition of your home, age, size or situation. Give us a call and let's talk about your property so we can learn more and make you a full cash offer.`,
+    ],
+    mainTitle: '',
+    reverse: false,
+    hasAnimation:true,
+    // buttonLink:'contact',
+    // buttonText:'Book a consultation',
+    alt:'A fantastic Home'
+
+}
+
+export const aboutContent4:ContentType = {
+  image:canadianDollar,// Directly import the image as StaticImageData
+    customText: null,
+    description: [
+      'We’re a family-owned business that focuses on helping homeowners like you find solutions for your problem property, whether you’re going through a foreclosure, divorce, inherited property, nuisance property, back taxes, can’t sell your property, or just need to sell your house for ANY reason. We can help!',
+      // 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum sit, dolore at est quidem blanditiis dicta doloremque beatae similique voluptate?',
+    ],
+    mainTitle: '',
+    reverse: false,
+    hasAnimation:true,
+    // buttonLink:'contact',
+    // buttonText:'Book a consultation',
+    alt:'A fantastic Home'
+
+}
 
