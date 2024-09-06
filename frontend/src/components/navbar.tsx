@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ links,relative }) => {
     }
 
     return (
-        <nav className={` top-0 z-20 w-screen left-0 bg-gray-300 h-[100px] overflow-x-hidden
+        <nav className={` top-0 z-[20] w-screen left-0 bg-gray-300 h-[100px] 
          flex justify-between items-center border-b-4 border-blue-500 text-gray-500
           z-[100] text-black ${relative ? 'relative' : 'fixed'}`}>
             <div className="relative flex justify-between 

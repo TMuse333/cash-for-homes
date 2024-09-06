@@ -25,6 +25,7 @@ import Link from "next/link";
 import { introDescription } from "@/data/data";
 
 import nicerHome from '../../public/nicer-home.webp'
+import TextFormat2 from "@/components/textFormat2";
 
 const lorem = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem ad debitis nemo qui praesentium sequi architecto vel repellat cum magni sint voluptatibus totam, animi ex atque? Tenetur itaque adipisci facilis, officia repellat, voluptatum quaerat incidunt sit assumenda quam quod.'
 
@@ -47,11 +48,11 @@ const links = [
     name:'Contact Us',
     destination:'contact'
   },
-  {
-    name:'JV Partners',
-    destination:'jv-partners',
-    hasScroll:false
-  },
+  // {
+  //   name:'JV Partners',
+  //   destination:'jv-partners',
+  //   hasScroll:false
+  // },
 ]
 
 const { loggedIn, setLoggedIn } = useAppContext()
@@ -134,13 +135,22 @@ buttonText="Get Your Cash Offer"
            
        </div>
 
+       <Content
+    customText={<TextFormat2
+    />}
+    image={nicerHome}
+   hasAnimation={true}
+   reverse={false}
+  //  background='bg-gradient-to-b from-blue-300 via-blue-500 to-blue-400 '
+    />
+
     <Content
     customText={<TextFormat
     reverse={true}
     isAnimated={true}/>}
     image={nicerHome}
    hasAnimation={true}
-   reverse={false}
+   reverse={true}
   //  background='bg-gradient-to-b from-blue-300 via-blue-500 to-blue-400 '
     />
 
@@ -160,7 +170,7 @@ objectContain={true}
     {...accordionProps}
     inContent={true}
     margin='mr-12'
-    link="about"
+    // link="about"
   />
 
  

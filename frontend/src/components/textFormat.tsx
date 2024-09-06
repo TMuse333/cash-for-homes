@@ -1,6 +1,7 @@
 import React, {  useState } from "react";
 import { motion, Variants } from "framer-motion";
 import {useIntersectionObserver} from './intersectionObserver'
+import Link from "next/link";
 
 interface TextFormatProps {
   isAnimated: boolean ,
@@ -71,7 +72,7 @@ const TextFormat: React.FC<TextFormatProps> = ({ isAnimated, reverse  }) => {
     <motion.article
       ref={componentRef}
       className="w-[90vw] pl-0 pr-4 relative mt-5 
-   
+   md:mt-0
       mr-auto
       max-h-[567px]
     ml-auto
@@ -81,14 +82,18 @@ const TextFormat: React.FC<TextFormatProps> = ({ isAnimated, reverse  }) => {
      sm:pl-0
        sm:max-w-[668px]
       md:max-w-[350px] 
-      bg-gradient-to-b from-gray-800 to-gray-500 bg-clip-text text-transparent"   
+      bg-gradient-to-b from-gray-800 to-gray-500 bg-clip-text text-transparent
+      md:-translate-y-[2rem]
+      "   
       
     >
 
      
       {/* <div className={`${reverse ? 'md:-translate-x-0' : 'md:translate-x-6'}`}> */}
-      <motion.h1 className="text-2xl pb-2 text-left ml-0 font-bold ">
-      Who we buy properties to help</motion.h1>
+      <motion.h3 className="text-2xl pb-2 text-left ml-0 font-bold 
+      md:mb-[-1rem] sm:text-3xl
+      bg-gradient-to-b from-gray-800 to-gray-500 bg-clip-text text-transparent ">
+      Who we buy properties to help</motion.h3>
       <motion.p variants={isAnimated ? textVariants : nullVariants}
        initial="initial" 
        animate={isVisible ? "animate" : "initial"}
@@ -105,7 +110,7 @@ const TextFormat: React.FC<TextFormatProps> = ({ isAnimated, reverse  }) => {
       <motion.ul className="text-left  pl-4  list-disc
      ">
         {points.map((point, index) => (
-          <motion.li className="text-gray-800 mb-2"
+          <motion.li className="text-gray-800 mb-2 md:text-lg"
            key={index} 
           variants={isAnimated ? pointVariants(index) : nullVariants}
            initial="initial" 
@@ -114,6 +119,9 @@ const TextFormat: React.FC<TextFormatProps> = ({ isAnimated, reverse  }) => {
             {point}
           </motion.li>
         ))}
+        <Link href='about'>
+
+        
          <motion.button
         className="mt-5 w-[150px] ml-0  rounded-xl
         bg-blue-500 p-3 text-white
@@ -125,6 +133,7 @@ const TextFormat: React.FC<TextFormatProps> = ({ isAnimated, reverse  }) => {
       >
         Learn more
       </motion.button>
+      </Link>
       </motion.ul>
       {/* </div> */}
     </motion.article>

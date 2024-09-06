@@ -356,6 +356,16 @@ export const content1Data:ContentType= {
       question:'Property address',
       placeholder:'Property address',
       required:true
+    },
+    {
+      question:'City',
+      placeholder:'Enter city here',
+      required:true
+    },
+    {
+      question:'Province',
+      placeholder:'Enter Province here',
+      required:true
     }
 
     // {

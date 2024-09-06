@@ -34,11 +34,11 @@ const Process = () => {
           name:'Contact Us',
           destination:'/contact'
         },
-        {
-          name:'JV Partners',
-          destination:'/jv-partners',
-          hasScroll:false
-        },
+        // {
+        //   name:'JV Partners',
+        //   destination:'/jv-partners',
+        //   hasScroll:false
+        // },
       ]
 
     return (
