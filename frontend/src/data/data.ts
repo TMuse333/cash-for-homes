@@ -8,6 +8,7 @@ import twenty from '../../public/twenty-bills.jpeg'
 import group from '../../public/whole-group.webp'
 import oldGray from '../../public/old-gray.webp'
 import properTrade from '../../public/proper-trade.webp'
+import handshake from '../../public/handshake.webp'
 
 interface ContentType {
     image: StaticImageData | string;
@@ -50,9 +51,13 @@ interface Content2Type {
 const lorem30 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus quo rerum corrupti exercitationem et ut libero dicta, natus neque nisi, aperiam cupiditate inventore. Labore maxime temporibus debitis autem molestiae? '
 
 export const heroImages = [
+  // {
+  //   src:'/proper-trade.webp',
+  //   alt:'Trading cash for a house'
+  // },
   {
-    src:'/proper-trade.webp',
-    alt:'Trading cash for a house'
+    src:'/handshake.webp',
+    alt:'trading cash for a house'
   },
     {
         src:'/home.jpg',
@@ -120,7 +125,7 @@ export const processFAQ = {
   ],
   hasIntro: true,
   intro: "Frequently Asked Questions",
-  description: "Selling your house can be a daunting process, but we aim to make it as simple and straightforward as possible. Below, you'll find answers to common questions about our process and how we can help you sell your house quickly and easily.",
+  description: "Selling your property can be daunting, but we aim to make it as simple and straightforward as possible. Below, you'll find answers to common questions about our process and how we can help you sell your property quickly and easily.",
   link: ''
 };
 
@@ -171,7 +176,7 @@ export const content1Data:ContentType= {
       `,
       `Ready to take control of your property-selling journey? Visit our Process page to see how we turn a complex process into a quick and easy solution. Your dream sale is just a click away—learn more and get started today.`,
     ],
-    mainTitle: 'Cash for Houses, Quickly',
+    mainTitle: 'Cash for your property, Quickly',
     reverse: true,
     hasAnimation:true,
     buttonLink:'process',
@@ -186,7 +191,7 @@ export const content1Data:ContentType= {
   export const openingText = {
     image:'/twenty-bills.jpeg',
     title:'Ready to Take the Next Step?',
-    description:`Your home deserves a smooth, stress-free selling experience, and we're here to make that happen. With our expertise, transparent process, and commitment to providing the best offers, selling your house has never been easier. Don't wait—unlock the potential of your property today. Click the button below to book your free consultation and discover how quickly and easily you can sell your home for cash`,
+    description:`You deserve a smooth, stress-free selling experience, and we're happy to make that happen. With our expertise, transparent process, and commitment to providing the best offers, selling your property has never been easier. Don't wait—unlock the potential of your property today. Click the button below to book your free consultation and discover how quickly and easily you can sell your property for cash`,
     buttonText:'Book a consulation',
     destination:'/contact'
   }
@@ -213,7 +218,7 @@ export const content1Data:ContentType= {
   export const processParallax:ParallaxContentType = {
     src:process,
     isVideo:true,
-    description:'Discover how easy it is to sell your home with our streamlined process. We’ve simplified every step to ensure a hassle-free experience, guiding you from the initial call to the final closing. Let’s explore the five key steps that make selling your house quick and straightforward!',
+    description:'Discover how easy it is to sell your property with our streamlined process. We’ve simplified every step to ensure a hassle-free experience, guiding you from the initial call to the final closing. Let’s explore the five key steps to make selling your property quick and straightforward!',
     muted:false,
     thumbnail:'/theresa-sitting.webp',
     heading:'How it works',
@@ -267,7 +272,7 @@ export const content1Data:ContentType= {
   }
 
   export const contactContent2:Content2Type = {
-    image:properTrade,
+    image:handshake,
     title:'Contact us',
     alt:'About us picture',
     description:`Embarking on the journey to sell your property is a significant step, and we’re here to guide you toward greatness. Our dedicated team is committed to ensuring you receive the best possible cash offer for your property, helping you achieve your goals swiftly and effortlessly. With our streamlined process and personalized support, you can trust that you're making the right choice for your future. Contact us today to discover how we can turn your property into a remarkable opportunity and unlock the door to a brighter tomorrow.`,
@@ -403,9 +408,9 @@ export const content1Data:ContentType= {
 //   buttonText?:string
 
 export const introDescription = 
-"Sell your Ontario property quickly, no matter the condition or situation.\n\n" +
-"Looking to sell your house in Ontario? We specialize in buying properties, offering a quick, hassle-free process that puts cash in your hands—fast.\n\n" +
-"We provide a competitive, all-cash offer for your house. If you're happy with the offer, we close the transaction on your timeline, making the process convenient and stress-free.\n\n" +
-"As a professional house buying company, we simplify selling your house by taking care of all the details, so you can move forward with confidence.\n\n" +
-"Our guaranteed cash offer is why so many homeowners across Ontario choose us.";
+"Sell your property in Ontario quickly, no matter the condition or situation.\n\n" +
+"Looking to sell your property in Ontario? We specialize in buying properties, offering a quick, hassle-free process that puts cash in your hands—fast.\n\n" +
+"We provide a competitive, all-cash offer for your property. If you're happy with the offer, we close the transaction on your timeline, making the process convenient and stress-free.\n\n" +
+"As a professional property buying company, we simplify you selling your property by taking care of all the details, so you can move forward with your life.\n\n" +
+"Our guaranteed cash offer is why so many motivated sellers across Ontario choose us.";
 

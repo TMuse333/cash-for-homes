@@ -33,7 +33,7 @@ const CarouselController: React.FC<ControllerProps> = ({
   carouselLength,
   currentElement,
   setCurrentElement,
- inView,
+
  shift,
  setShift
 }) => {
@@ -43,7 +43,18 @@ const CarouselController: React.FC<ControllerProps> = ({
   const [showRefreshBar, setShowRefreshBar] = useState(false);
   const [slideShowPaused, setSlideShowPaused] = useState(false);
 
+  const [inView, setInView] = useState(false);
 
+  const {isMobile} = useAppContext()
+
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: !isMobile ? 0.5 : 0.8,
+    toggle:true
+  };
+    
+  const componentRef = useIntersectionObserver(setInView, options, false, true);
 
   // const scrollToElement = (id: string, index: number) => {
   //   if(!inView){
@@ -85,27 +96,29 @@ useEffect(()=> {
   setSlideProgressReset(true);
 },[currentElement])
 
+const handleSlide = (interval:NodeJS.Timeout) => {
+  if (slideProgress < 100) {
+    console.log('filling the bar');
+    setShowRefreshBar(false);
+    setSlideProgressReset(false);
+    setSlideProgress((curr) => curr + 4); // Increment by 8 to reach 100 in a slower time
+  } else if (currentElement < carouselLength - 1) {
+    setCurrentElement(currentElement + 1);
+    setShift((prev) => prev - 1);
+    setSlideProgressReset(true);
+    clearInterval(interval); // Stop the interval when slideProgress reaches 100
+    setSlideProgress(0);
+  }
+};
+
 useEffect(() => {
   const interval = setInterval(() => {
-    if(slideShowPaused || !inView){
-      
+    if (slideShowPaused || !inView) {
+      console.log('not in view');
       return;
     }
 
-    if (slideProgress < 100 ) {
-      console.log('filling the bar')
-      setShowRefreshBar(false);
-      setSlideProgressReset(false);
-      setSlideProgress((curr) => curr + 8); // Increment by 8 to reach 100 in a slower time
-
-    } else if (currentElement < carouselLength - 1) {
-      setCurrentElement(currentElement + 1);
-      // scrollToElement(`carousel-element-${currentElement + 1}`, currentElement + 1);
-      setShift((prev)=>prev - 1)
-      setSlideProgressReset(true);
-      clearInterval(interval); // Stop the interval when slideProgress reaches 100
-      setSlideProgress(0);
-    }
+    handleSlide(interval);
   }, 250); // Interval of 250ms for smoother transition
 
   return () => clearInterval(interval); // Clean up the interval on component unmount
@@ -120,16 +133,19 @@ useEffect(() => {
   }
 }, [slideProgress, currentElement]);
 
-useEffect(()=> {
-  console.log('current shift',shift)
-},[shift])
+// useEffect(()=> {
+//   console.log('current shift',shift)
+// },[shift])
 
 
   return (
-      <div 
-      className='absolute left-[50%] -translate-x-[50%] flex
-      bottom-0'>
-          <button className='bg-gray-700 ml-auto mr-auto p-4 rounded-xl flex'>
+      <div ref={componentRef}
+      className='relative left-[50%] -translate-x-[50%] flex
+      w-[40%] justify-center
+      
+      '>
+          <button className='bg-gray-700 ml-auto mr-auto p-4 rounded-xl flex
+          md:scale-[1.5]'>
               {Array.from({ length: carouselLength }, (_, index) => (
                   <div
                       key={index}
@@ -144,13 +160,14 @@ useEffect(()=> {
                   </div>
               ))}
           </button>
-          <button className='rounded-full bg-gray-700 h-[50px] w-[50px] mt-auto mb-auto ml-6'>
+          <button className='rounded-full bg-gray-700 h-[50px] w-[50px] mt-auto mb-auto 
+          md:scale-[1.5] p-4 '>
             {showRefreshBar ? (
-               <FaRedo className="icon ml-auto mr-auto scale-[1.5]" onClick={resetSlideShow} />
+               <FaRedo className="icon ml-auto mr-auto my-auto scale-[1.5] " onClick={resetSlideShow} />
             ) : slideShowPaused ?  (
-              <FaPlay className="icon ml-auto mr-auto scale-[1.5]" onClick={togglePlay}/>
+              <FaPlay className="icon ml-auto mr-auto  my-auto scale-[1.5] " onClick={togglePlay}/>
             ) : (
-              <FaPause className="icon ml-auto mr-auto scale-[1.5]" onClick={togglePlay} />
+              <FaPause className="icon ml-auto mr-auto my-auto scale-[1.5] " onClick={togglePlay} />
             )}
           </button>
       </div>
@@ -190,10 +207,10 @@ const { isMobile } = useAppContext()
             
    relative
    
-   md:max-h-[800px]
+   max-h-[800px]
                ml-auto mr-auto
                 h-[105vw] 
-               overflow-y-hidden
+               
                 flex-shrink-0
                
                 
@@ -207,15 +224,19 @@ const { isMobile } = useAppContext()
         >
 
 <AnimatePresence>
+  
+
+
+  
   <motion.p
     // onAnimationComplete={handleAnimationComplete}
     initial={{
       opacity: 0,
-      transform: 'translate(0%,-50%)' // Replace y:30 with translateY
+      // transform: 'translate(0%,-50%)' // Replace y:30 with translateY
     }}
     animate={{
       opacity: isCurrentSlide ? 1 : 0,
-      transform: isCurrentSlide && isMobile ? 'translate(10%,10%)' : isCurrentSlide ? 'translate(35%,10%)' : 'translate(20%,-50%)', // Use transform for movement
+      // transform: isCurrentSlide && isMobile ? 'translate(0%,10%)' : isCurrentSlide ? 'translate(0%,10%)' : 'translate(0%,-50%)', // Use transform for movement
       transition: {
         delay: animationComplete ? 0.4 : 0,
         duration: 0.4
@@ -223,15 +244,17 @@ const { isMobile } = useAppContext()
     }}
     exit={{
       opacity: 0,
-      transform: 'translateX(50px)' // Replace x:50 with translateX
+      // transform: 'translateX(0px)' // Replace x:50 with translateX
     }}
-    className='absolute z-[14] text-white w-4/5 md:w-2/5 text-md sm:text-lg md:text-4xl'
+    className='absolute z-[14] top-[20%]  text-white w-[80%] max-w-[600px] text-md sm:text-xl md:text-4xl
+    left-1/2 -translate-x-1/2'
     style={{
-      transform: 'translateY(5%) translateX(15%)' // Handle positioning with transform
+      // transform: 'translateY(5%) ' // Handle positioning with transform
     }}
   >
     {description}
   </motion.p>
+
 </AnimatePresence>
 
           
@@ -240,7 +263,7 @@ const { isMobile } = useAppContext()
                 src={src}
                 alt={alt}
                 className={`w-[90%] ml-auto mr-auto object-cover 
-                h-full max-w-[1200px] overflow-y-hidden
+                h-full max-w-[1200px] 
                `}
                 style={{ filter:'brightness(0.6)',
               objectPosition:'50% 50%' }}
@@ -257,7 +280,7 @@ interface ControllerProps {
     carouselLength: number,
     currentElement: number,
     setCurrentElement: (index: number) => void,
-    inView:boolean,
+    inView?:boolean,
     shift:number,
     setShift:React.Dispatch<React.SetStateAction<number>>;
 }
@@ -271,63 +294,30 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
     const {isMobile} = useAppContext()
     const [shift, setShift] = useState(0)
 
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: !isMobile ? 0.5 : 0.8,
-      toggle:true
-    };
-
-    const [inView, setInView] = useState(false);
-
-    
-    const componentRef = useIntersectionObserver(setInView, options, false, true);
-
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver(
-    //         (entries) => {
-    //             entries.forEach((entry) => {
-    //                 if (entry.isIntersecting) {
-    //                     const index = parseInt(entry.target.id.replace('carousel-element-', ''));
-    //                     setCurrentElement(index);
-    //                 }
-    //             });
-    //         },
-    //         {
-    //             root: containerRef.current,
-    //             threshold: 0.2,
-    //         }
-    //     );
-
-    //     const elements = document.querySelectorAll('[id^="carousel-element-"]');
-    //     elements.forEach((el) => observer.observe(el));
-
-    //     return () => observer.disconnect();
-    // }, []);
+  
 
 
-    // useEffect(()=>{
-    //   setCurrentElement(0)
-    //   const element = document.getElementById('carousel-element-0');
-    //   if (element) {
-    //       element.scrollIntoView({ behavior: 'smooth', inline: 'center' });
-    //   }
-     
-    // },[])
+
 
     return (
-        <section className='relative ml-auto mr-auto w-screen mb-[10rem]
-        overflow-x-hidden
+      <>
+      {/* <section className='relative bg-green-200
+      h-[110vw] '> */}
+
+
+        <section className='relative ml-auto mr-auto w-screen mb-[6rem]
+         h-[135vw] overflow-x-hidden
+        
         '>
-          <div ref={componentRef}
+          <div 
           className='relative ml-auto mr-auto w-screen '>
             <div 
                 className=" flex 
                 w-screen relative
                 h-[105vw] 
-                md:max-h-[800px]
-                overflow-y-scroll
-                overflow-x-hidden
+                max-h-[800px]
+                
+                
                  "
                 style={{ scrollSnapType: 'x mandatory' }}
                 ref={containerRef}
@@ -344,15 +334,18 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
                 ))}
             </div>
           </div>
-            <CarouselController
+          <CarouselController
                 carouselLength={images.length}
                 currentElement={currentElement}
                 setCurrentElement={setCurrentElement}
-                inView={inView}
+                // inView={inView}
                 shift={shift}
                 setShift={setShift}
             />
         </section>
+       
+                  {/* </section> */}
+        </>
     );
 }
 

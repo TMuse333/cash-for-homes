@@ -23,7 +23,8 @@ import theresaDog from '../../public/theresa-dog.webp'
 import theresaSeated from '../../public/seated-theresa.webp'
 import Link from "next/link";
 import { introDescription } from "@/data/data";
-import handshake from '../../public/handshake.webp'
+
+import nicerHome from '../../public/nicer-home.webp'
 
 const lorem = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem ad debitis nemo qui praesentium sequi architecto vel repellat cum magni sint voluptatibus totam, animi ex atque? Tenetur itaque adipisci facilis, officia repellat, voluptatum quaerat incidunt sit assumenda quam quod.'
 
@@ -36,11 +37,7 @@ const links = [
     destination:'process',
     hasScroll:false
   },
-  {
-    name:'JV Partners',
-    destination:'jv-partners',
-    hasScroll:false
-  },
+  
   {
     name:'About us',
     destination:'about',
@@ -49,7 +46,12 @@ const links = [
   {
     name:'Contact Us',
     destination:'contact'
-  }
+  },
+  {
+    name:'JV Partners',
+    destination:'jv-partners',
+    hasScroll:false
+  },
 ]
 
 const { loggedIn, setLoggedIn } = useAppContext()
@@ -112,7 +114,7 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     src={intro}
 alt="meme"
 isVideo={true}
-heading='Welcome to Cash for Houses Ontario'
+heading='Welcome to Ontario Cash for Houses'
 subHeading=""
 description={introDescription}
 muted={false}
@@ -136,7 +138,7 @@ buttonText="Get Your Cash Offer"
     customText={<TextFormat
     reverse={true}
     isAnimated={true}/>}
-    image={handshake}
+    image={nicerHome}
    hasAnimation={true}
    reverse={false}
   //  background='bg-gradient-to-b from-blue-300 via-blue-500 to-blue-400 '
@@ -151,7 +153,7 @@ buttonText="Get Your Cash Offer"
 
     <Content
     image={theresaSeated}
-
+objectContain={true}
     customText={
       <>
     <Accordion

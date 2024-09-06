@@ -55,7 +55,7 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
              p-3
             rounded-xl hover:text-white hover:bg-gradient-to-b from-gold-light to-gold-dark
             transition-all text-black">
-                Book a consultation
+                Call us now
             </button>
             </Link>
             </div>

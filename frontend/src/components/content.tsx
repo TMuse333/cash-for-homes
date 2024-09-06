@@ -23,6 +23,7 @@ interface contentProps {
   background?:string
   video?:boolean,
   poster?:string
+  objectContain?:boolean
 }
 
 const Content: React.FC<contentProps> = ({
@@ -37,7 +38,8 @@ const Content: React.FC<contentProps> = ({
   buttonLink,
   buttonText,
   background,
-  video
+  video,
+  objectContain
 }) => {
   const [inView, setInView] = useState(false);
 
@@ -154,9 +156,9 @@ const nullVariant: Variants = {
        </motion.video>
       ) : (
         <motion.img
-        className='w-[90vw] h-[55vw] object-cover ml-auto mr-auto
+        className={`w-[90vw] h-[55vw]  ml-auto mr-auto
         md:w-[50vw] md:mr-0 max-h-[567px] max-w-[668px]
-        rounded-md'
+        rounded-md ${objectContain ? 'object-contain' : 'object-cover'}`}
          variants={hasAnimation ? imageVariants : nullVariant}
           initial={hasAnimation ? 'initial' : ''}
           animate={hasAnimation && inView ? 'animate' : ''}

@@ -23,15 +23,16 @@ const Contact = () => {
           hasScroll:false
         },
        
+      
+        {
+          name:'About Us',
+          destination:'/about'
+        },
         {
           name:'JV Partners',
           destination:'/jv-partners',
           hasScroll:false
         },
-        {
-          name:'About Us',
-          destination:'/about'
-        }
       ]
 
 

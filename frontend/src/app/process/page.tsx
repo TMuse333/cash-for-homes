@@ -23,11 +23,7 @@ const Process = () => {
             destination:'/',
             hasScroll:false
           },
-        {
-          name:'JV Partners',
-          destination:'/jv-partners',
-          hasScroll:false
-        },
+       
        
         {
           name:'About us',
@@ -37,13 +33,19 @@ const Process = () => {
         {
           name:'Contact Us',
           destination:'/contact'
-        }
+        },
+        {
+          name:'JV Partners',
+          destination:'/jv-partners',
+          hasScroll:false
+        },
       ]
 
     return (
             <>
           
-            <main className="w-screen  bg-gray-200">
+            <main className="w-screen  bg-gray-200
+   ">
                 <Navbar
                 links={links}
                 relative={true}
@@ -59,10 +61,13 @@ const Process = () => {
 
                 <SlideShowCarousel
                 {...processCarouselData}/>
+                <div className="w-screen overflow-x-hidden">
+
+ 
 
             <p className="rounded-md bg-gray-400
-            w-[95%] ml-auto mr-auto relative
-            p-8 rounded-xl sm:text-xl mt-[-8rem] mb-[4rem]
+            w-[95%] mx-auto relative
+            p-8 rounded-xl sm:text-xl mt-[0rem] mb-[4rem]
             max-w-[1200px]">
             Don&apos;t wait any longer to get the best value for your property with our straightforward and hassle-free process. Contact us today to take the first step toward a quick and easy sale. Let’s work together to make your real estate journey smooth and successful.
             <br/>
@@ -85,6 +90,7 @@ const Process = () => {
                 <Footer
                 links={links}
                 />
+                               </div>
             </main>
             
             

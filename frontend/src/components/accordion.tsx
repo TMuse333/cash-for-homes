@@ -59,7 +59,7 @@ inContent}) => {
             opacity: 1,
             x: 0,
             transition: {
-              delay: index * 0.4
+              delay: index * 0.1
             }
           }
         };
