@@ -78,7 +78,7 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     
     <>
 
-    {!loggedIn && 10 == 12 ? (
+    {!loggedIn  ? (
        <div className="top-[40%] fixed 
        left-1/2 -translate-x-1/2">
         <h1 className="text-3xl text-black

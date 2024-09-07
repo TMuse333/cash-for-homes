@@ -11,6 +11,7 @@ import Closer from "@/components/closer"
 import Footer from "@/components/footer"
 import Accordion from "@/components/accordion"
 import Link from "next/link"
+import { dolceVita } from "@/data/data"
 
 
 
