@@ -256,9 +256,9 @@ export const content1Data:ContentType= {
         description: 'Once you’ve reviewed and accepted the cash offer, we’ll handle all the legal work and details. You have the flexibility to choose the closing date that works best for you, ensuring a smooth and stress-free transaction process.'
       },
       {
-        src: '/proper-trade.webp',
+        src: '/twenty-bills.jpeg',
         alt: 'Closing and Getting Paid',
-        description: 'At closing, we’ll send all necessary documents to your lawyer. You’ll meet with your lawyer to finalize the sale, and the money will be directly received from your lawyer. It’s that simple—you get your cash quickly and securely.'
+        description: 'At closing, we’ll send all necessary documents to your lawyer. You’ll meet with your lawyer to finalize the sale, and the money will be directly given to you by your lawyer. It’s that simple—you get your cash quickly and securely.'
       }
     ],
     title: 'Quick and Easy Process',

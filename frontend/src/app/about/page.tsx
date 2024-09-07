@@ -40,9 +40,9 @@ const About = () => {
         links={links}
         />
         <main className="w-screen bg-gray-200 mt-[6rem]">
-                <Content2
+                {/* <Content2
                 {...aboutContent1}
-                />
+                /> */}
 
 <Content
             {...aboutContent3}
