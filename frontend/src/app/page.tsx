@@ -28,7 +28,9 @@ import nicerHome from '../../public/nicer-home.webp'
 import TextFormat2 from "@/components/textFormat2";
 
 const lorem = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem ad debitis nemo qui praesentium sequi architecto vel repellat cum magni sint voluptatibus totam, animi ex atque? Tenetur itaque adipisci facilis, officia repellat, voluptatum quaerat incidunt sit assumenda quam quod.'
-
+import { intro2 } from "@/data/data";
+import AppearingContent from "@/components/appearingText";
+import { dolceVita } from "@/data/data";
 
 export default function Home() {
 
@@ -76,7 +78,7 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     
     <>
 
-    {!loggedIn  ? (
+    {!loggedIn && 10 == 12 ? (
        <div className="top-[40%] fixed 
        left-1/2 -translate-x-1/2">
         <h1 className="text-3xl text-black
@@ -111,7 +113,7 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
 
  
    
-       <TextParallaxContentExample
+       {/* <TextParallaxContentExample
     src={intro}
 alt="meme"
 isVideo={true}
@@ -123,7 +125,30 @@ thumbnail={theresaDog.src}
 destination='/contact'
 buttonText="Get Your Cash Offer"
 
+    /> */}
+
+           <TextParallaxContentExample
+    src={intro2}
+alt="meme"
+isVideo={true}
+heading='Welcome to Ontario Cash for Houses'
+subHeading=""
+description={introDescription}
+muted={false}
+thumbnail={theresaDog.src}
+destination='/contact'
+buttonText="Get Your Cash Offer"
+
     />
+
+    {/* <AppearingContent
+    src={intro2}
+    id='intro-video'
+    sliderText="Welcome to Ontario Cash for Houses"
+    isVideo={true}
+    /> */}
+
+    
     <Content
     {...content2Data}
     />

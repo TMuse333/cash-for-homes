@@ -199,9 +199,13 @@ export const content1Data:ContentType= {
 
   export const dunk = '/videos/q3-lion-speech.mp4'
 
-  export const intro = './videos/theresa-intro.mp4'
+  export const intro = './videos/theresa-intro2.mp4'
+  
+  export const intro2 = './videos/theresa-intro2.mov'
 
-  export const process = './videos/theresa-process.mp4'
+  export const process = './videos/theresa-process2.mp4'
+
+  export const dolceVita = './videos/dolce-vita-homepage.mov'
 
   
 
