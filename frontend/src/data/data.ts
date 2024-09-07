@@ -445,7 +445,7 @@ export const aboutCloser = {
     title:'Ready to Take the Next Step?',
     description:`At Ontario Cash For Houses, we empower homeowners to confidently sell their properties, whether inherited, rental, urban, or rural. We offer competitive cash offers for your home, understanding that every house has a unique story. We’re compassionate, ethical, and experienced real estate problem-solvers, focused on making your home-selling process simple and fast.
 
-    Whether facing foreclosure, repairs, probate, or other challenges, we aim to provide a hassle-free experience. No realtor fees, no closing costs, no repairs needed—we can close in as little as 24 hours. Call us today for a no-obligation cash offer: (226) 917-2806.`,
+    Whether facing foreclosure, repairs, probate, or other challenges, we aim to provide a hassle-free experience. No realtor fees, no closing costs, no repairs needed—we can close in as little as 24 hours. Call us today for a no-obligation cash offer: (647) 951-2070.`,
     destination:'/contact',
     buttonText:'Book a consulation',
 } 
