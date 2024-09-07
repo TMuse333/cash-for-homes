@@ -457,8 +457,8 @@ export const aboutContent3:ContentType = {
   image:multiHome,// Directly import the image as StaticImageData
     customText: null,
     description: [
-      'We’re a family-owned business that focuses on helping homeowners like you find solutions for your problem property, whether you’re going through a foreclosure, divorce, inherited property, nuisance property, back taxes, can’t sell your property, or just need to sell your house for ANY reason. We can help!\n\n',
-      `We'll make you a full cash offer—and close fast, so there's no time to waste. Plus, we'll purchase your home AS-IS and pay all closing costs.`,
+      'We focus on helping sellers like you find solutions for your problem property, whether you’re going through a foreclosure, divorce, inherited property, nuisance property, back taxes, can’t sell your property, or just need to sell your house for ANY reason. We can help!\n\n',
+      `We'll make you a full cash offer—and close fast, so there's no time to waste. Plus, we'll purchase your home AS-IS.`,
       `We'll buy houses even in rural towns and counties. Regardless of the condition of your home, age, size or situation. Give us a call and let's talk about your property so we can learn more and make you a full cash offer.`,
     ],
     mainTitle: '',
