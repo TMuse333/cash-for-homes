@@ -93,7 +93,7 @@ const TextFormat: React.FC<TextFormatProps> = ({ isAnimated, reverse  }) => {
       <motion.h3 className="text-2xl pb-2 text-left ml-0 font-bold 
       md:mb-[-1rem] sm:text-3xl
       bg-gradient-to-b from-gray-800 to-gray-500 bg-clip-text text-transparent ">
-      Who we buy properties to help</motion.h3>
+      Who we to help</motion.h3>
       <motion.p variants={isAnimated ? textVariants : nullVariants}
        initial="initial" 
        animate={isVisible ? "animate" : "initial"}

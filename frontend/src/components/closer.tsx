@@ -97,7 +97,7 @@ destination,buttonText}) => {
                 transition-all hover:text-white
                 hover:scale-[1.05] p-3
                 rounded-xl">
-                   {buttonText}
+                Call Us Now!
                 </button>
             </Link>
             </motion.div>

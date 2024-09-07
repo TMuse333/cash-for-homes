@@ -146,7 +146,7 @@ export const content1Data:ContentType= {
     reverse: false,
     hasAnimation:true,
     buttonLink:'contact',
-    buttonText:'Book a consultation',
+    buttonText:'Call Us Now',
     alt:'A fantastic Home'
 
   };
@@ -162,7 +162,7 @@ export const content1Data:ContentType= {
     reverse: false,
     hasAnimation:true,
     buttonLink:'contact',
-    buttonText:'Book a consultation',
+    buttonText:'Call Us Now',
     alt:'A fantastic Home'
 
   };
@@ -243,12 +243,12 @@ export const content1Data:ContentType= {
       {
         src: '/evaluation.webp',
         alt: 'Property Evaluation',
-        description: 'Our team will schedule a property evaluation at a time that’s convenient for you. The condition of your property is not an issue—we assess it as is. Our experts will carefully evaluate the property, considering various factors to ensure you receive a fair and accurate cash offer.'
+        description: 'Our team will schedule a property visit at a time that’s convenient for you. The condition of your property is not an issue—we assess it as is. Our experts will carefully evaluate the property, considering various factors to ensure you receive a fair and accurate cash offer.'
       },
       {
         src: '/dark-gray-home.jpg',
         alt: 'Receiving Your Cash Offer',
-        description: 'Based on our evaluation and current market conditions, we will present you with a competitive cash offer for your property. We’re here to answer any questions you may have, and once you’re satisfied, the offer will be sent to your lawyer for review and preparation.'
+        description: 'Based on our evaluation and current market conditions, we will present you with a competitive cash offer for your property. We’re here to answer any questions you may have, and once you’re satisfied, the offer will be sent to your lawyer for review.'
       },
       {
         src: '/old-brick-home.jpg',
@@ -314,7 +314,7 @@ export const content1Data:ContentType= {
         src: canadianDollar,
         title: 'No Fees',
         alt: 'alt',
-        description: 'Our service is entirely transparent with no hidden fees or charges. We are committed to a straightforward transaction, where our only goal is to purchase your home with no strings attached.'
+        description: 'Our service is entirely transparent with no hidden fees or charges. We are committed to a straightforward transaction, where our only goal is to purchase your property with no strings attached.'
       },
       {
         src: canadianDollar,
@@ -370,6 +370,16 @@ export const content1Data:ContentType= {
     {
       question:'Province',
       placeholder:'Enter Province here',
+      required:true
+    },
+    {
+      question:'Reason for selling',
+      placeholder:'Why are you selling?',
+      required:true
+    },
+    {
+      question:'How soon do you need to sell?',
+      placeholder:'Enter amount of time here',
       required:true
     }
 
