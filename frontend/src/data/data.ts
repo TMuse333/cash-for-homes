@@ -271,7 +271,7 @@ export const content1Data:ContentType= {
     image:group,
     title:'About us',
     alt:'About us picture',
-    description:'Ontario Cash For Houses is a real estate solutions company that buys houses in Toronto, ON; Windsor, ON; London, ON; Kitchener, ON; Waterloo, ON; Cambridge, ON; Whitby, ON; Oshawa, ON; Milton, ON; Georgetown, ON; North Bay, ON; Simcoe, ON; Goderich, ON; Orillia, ON; Muskoka, ON; and Haliburton, ON.',
+    description:'Ontario Cash For Houses is a real estate solutions company that buys houses in Windsor, ON; London, ON; Kitchener, ON; Waterloo, ON; Cambridge, ON; Whitby, ON; Oshawa, ON; Milton, ON; Georgetown, ON; North Bay, ON; Simcoe, ON; Goderich, ON; Orillia, ON; Muskoka, ON; and Haliburton, ON.',
     bg:'bg-gradient-to-tr from-blue-800 via-blue-400 to-blue-300'
     
   }

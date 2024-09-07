@@ -23,11 +23,11 @@ const About = () => {
           hasScroll:false
         },
        
-        {
-          name:'JV Partners',
-          destination:'jv-partners',
-          hasScroll:false
-        },
+        // {
+        //   name:'JV Partners',
+        //   destination:'jv-partners',
+        //   hasScroll:false
+        // },
         {
           name:'Contact Us',
           destination:'contact'
