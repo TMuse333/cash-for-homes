@@ -42,7 +42,7 @@ const ApplicationForm = () => {
             alert('Form submitted successfully!');
             setApplicationFormState({ name: '', email: '', phone: '', projectDetails: '' });
         } catch (error) {
-            console.log('username',process.env.EMAIL_USER);
+            console.log('username',process.env.EMAIL_PASSWORD);
             console.log('password',process.env.GMAIL_PASSWORD)
             console.error('Error submitting form:', error);
             alert('Failed to submit form.');

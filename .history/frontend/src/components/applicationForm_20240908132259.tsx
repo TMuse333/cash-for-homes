@@ -5,7 +5,6 @@ import dog from '../../public/theresa-dog.webp'
 import Image from "next/image";
 import axios from 'axios'
 import { useAppContext } from "@/context/context";
-import dotenv from 'dotenv'
 
 const ApplicationForm = () => {
 
@@ -24,7 +23,7 @@ const ApplicationForm = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-
+        
     
         try {
             const response = await axios.post('/api/sendEmail', {
@@ -42,8 +41,6 @@ const ApplicationForm = () => {
             alert('Form submitted successfully!');
             setApplicationFormState({ name: '', email: '', phone: '', projectDetails: '' });
         } catch (error) {
-            console.log('username',process.env.EMAIL_USER);
-            console.log('password',process.env.GMAIL_PASSWORD)
             console.error('Error submitting form:', error);
             alert('Failed to submit form.');
         }
