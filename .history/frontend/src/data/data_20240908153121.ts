@@ -175,7 +175,7 @@ export const content1Data:ContentType= {
       `Unlock the secrets to a hassle-free property sale. Our proven process ensures that you get the best offer with minimal effort. Say goodbye to the traditional selling headaches and hello to a streamlined, straightforward experience.
 
       `,
-      `Ready to take control of your property-selling journey? Visit our How it works page to see how we turn a complex process into a quick and easy solution. Your dream sale is just a click away—learn more and get started today.`,
+      `Ready to take control of your property-selling journey? Visit our How it  page to see how we turn a complex process into a quick and easy solution. Your dream sale is just a click away—learn more and get started today.`,
     ],
     mainTitle: 'Cash for your property, Quickly',
     reverse: true,

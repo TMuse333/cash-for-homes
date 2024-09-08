@@ -58,7 +58,7 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
                 Call Us Now!
             </button>
             </Link>
-            <h3 className="mt-4 text-xl mb-4 sm:text-2xl md:text-3xl">(647)&nbsp;951-2070</h3>
+            <h3 className="mt-4 text-xl mb-4 sm:text-2xl ">(647)&nbsp;951-2070</h3>
             </div>
 
             <div className=" h-[70vh]  relative

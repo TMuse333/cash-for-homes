@@ -45,7 +45,7 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
   Ontario Cash for Houses
 </h1>
 
-            <p className="mt-4 sm:text-xl pr-4 pl-4 mb-5 text-black">We will quickly buy your home for cash</p>
+            <p className="mt-4 sm:text-xl pr-4 pl-4 mb-5 text-black">We will quickly buy your property for cash</p>
             {/* <p className="text-2xl mb-4 sm:text-3xl">Place address Here</p> */}
             <Link href='contact'
             passHref>
@@ -55,9 +55,10 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
              p-3
             rounded-xl hover:text-white hover:bg-gradient-to-b from-gold-light to-gold-dark
             transition-all text-black">
-                Book a consultation
+                Call Us Now!
             </button>
             </Link>
+            <h3 className="mt-4">(647)&nbsp;951-2070</h3>
             </div>
 
             <div className=" h-[70vh]  relative
