@@ -253,7 +253,7 @@ export const content1Data:ContentType= {
       {
         src: '/old-brick-home.jpg',
         alt: 'Accepting the Offer',
-        description: 'Once you’ve reviewed and accepted the cash offer, we’ll handle all the  details. You have the flexibility to choose the closing date that works best for you, ensuring a smooth and stress-free transaction process.'
+        description: 'Once you’ve reviewed and accepted the cash offer, we’ll handle all the  and details. You have the flexibility to choose the closing date that works best for you, ensuring a smooth and stress-free transaction process.'
       },
       {
         src: '/twenty-bills.jpeg',
