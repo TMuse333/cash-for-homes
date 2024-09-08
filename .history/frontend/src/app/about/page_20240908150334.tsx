@@ -44,9 +44,8 @@ const About = () => {
                 {...aboutContent1}
                 /> */}
 
-<h1 className=" text-black
-mt-[4rem] pt-6
-          text-2xl text-center mt-4 sm:text-3xl md:text-5xl">About Ontario Cash for Homes</h1>
+<h1 className=" bg-gradient-to-b from-gray-800 to-gray-500 bg-clip-text text-transparent 
+          text-2xl text-center mt-4 sm:text-3xl md:text-5xl">Abou</h1>
 
 <Content
             {...aboutContent3}
