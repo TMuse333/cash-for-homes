@@ -62,15 +62,15 @@ const Process = () => {
 
                 <SlideShowCarousel
                 {...processCarouselData}/>
-                <div className="w-screen overflow-x-hidden">
+
 
  
 
             <p className="rounded-md bg-gray-400
             w-[95%] mx-auto relative
-            p-8 rounded-xl sm:text-xl mt-[0rem] mb-[4rem]
+            p-8 rounded-xl sm:text-xl mt-[rem] mb-[4rem]
             max-w-[1200px]">
-            Don&apos;t wait any longer to get the best value for your property with our straightforward and hassle-free process. Contact us today to take the first step toward a quick and easy sale. Let’s work together to make your real estate journey smooth and successful.
+            Don&apos;t wait any longer to get a cash offer for your property with our straightforward and hassle-free process. Contact us today to take the first step toward a quick and easy sale. Let’s work together to make your real estate journey smooth and successful.
             <br/>
             <Link href="/contact">
 
@@ -91,7 +91,7 @@ const Process = () => {
                 <Footer
                 links={links}
                 />
-                               </div>
+                        
             </main>
             
             

@@ -141,7 +141,7 @@ useEffect(() => {
   return (
       <div ref={componentRef}
       className='relative left-[50%] -translate-x-[50%] flex
-      w-[40%] justify-center
+      w-[250px] justify-center md:w-[415px]
       
       '>
           <button className='bg-gray-700 ml-auto mr-auto p-4 rounded-xl flex
@@ -161,7 +161,7 @@ useEffect(() => {
               ))}
           </button>
           <button className='rounded-full bg-gray-700 h-[50px] w-[50px] mt-auto mb-auto 
-          md:scale-[1.5] p-4 '>
+          md:scale-[1.5] p-4  '>
             {showRefreshBar ? (
                <FaRedo className="icon ml-auto mr-auto my-auto scale-[1.5] " onClick={resetSlideShow} />
             ) : slideShowPaused ?  (
@@ -306,7 +306,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
 
 
         <section className='relative ml-auto mr-auto w-screen mb-[6rem]
-         h-[135vw] overflow-x-hidden
+         h-[125vw] overflow-x-hidden
         
         '>
           <div 

@@ -29,9 +29,11 @@ export async function POST(request: Request) {
         console.log(process.env.GMAIL_PASSWORD)
         console.log(process.env.EMAIL_USER)
         const body = await request.json();
-        const { name, email, phone, projectDetails } = body;
+        const { name, email, phone, address,
+        city,province,reason,time } = body;
 
-        if (!name || !email || !phone || !projectDetails) {
+        if (!name || !email || !phone || !address || !province ||
+            !city || !reason || !time) {
             return NextResponse.json({ message: 'Missing required fields' }, { status: 400 });
         }
 
@@ -39,14 +41,18 @@ export async function POST(request: Request) {
 
         const mailOptions = {
             from: `"${name}" <${email}>`,
-            to: 'q3visualdesigns@gmail.com',
+            to: 'focusflowsoftware@gmail.com',
             subject: 'New Contact Form Submission',
-            text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nProject Details: ${projectDetails}`,
+            text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n`,
             html: `
-                <p><strong>Name:</strong> ${name}</p>
-                <p><strong>Email:</strong> ${email}</p>
-                <p><strong>Phone:</strong> ${phone}</p>
-                <p><strong>Project Details:</strong> ${projectDetails}</p>
+                <p><strong>Seller Name:</strong> ${name}</p>
+                <p><strong>Seller Email:</strong> ${email}</p>
+                <p><strong>Seller Phone:</strong> ${phone}</p>
+                <p><strong>Property address:</strong> ${address}</p>
+                <p><strong>City:</strong> ${city}</p>
+                <p><strong>Province:</strong> ${province}</p>
+                <p><strong>Reason for selling:</strong> ${reason}</p>
+                <p><strong>Desired time to sell:</strong> ${time}</p>
             `,
         };
 

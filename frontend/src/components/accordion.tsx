@@ -92,7 +92,7 @@ inContent}) => {
               
                 onClick={()=>handleSectionClick(index)}
                 className={`border-b-4 border-b-[#08365f] p-3  transition-[height]
-                transition-colors
+                transition-colors overflow-x-hidden
                 w-screen ml-auto mr-auto md:w-[40vw] 
                 hover:bg-blue-400  max-w-[500px] text-black 
                 flex flex-col justify-center items-center ${expandedIndices.includes(index) ? ' rounded-lg' : ''}`}>

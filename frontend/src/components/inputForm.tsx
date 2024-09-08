@@ -1,5 +1,6 @@
 import { useAppContext } from '@/context/context';
 import React from 'react';
+import axios from 'axios'
 
 
 interface Question {
@@ -9,7 +10,8 @@ interface Question {
     choices?: string[];
     isEmail?: boolean;
     isPhoneNumber?: boolean;
-    required?:boolean
+    required?:boolean,
+    title:string
 }
 
 interface InputFormProps {
@@ -21,12 +23,14 @@ interface InputFormProps {
 const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) => {
     const { applicationFormState, setApplicationFormState } = useAppContext()
 
-    const handleChange = (question: string, value: string) => {
+    const handleChange = (title: string, value: string) => {
         setApplicationFormState((prevState) => ({
             ...prevState,
-            [question]: value
+            [title]: value
         }));
     };
+
+    
     
 
     // useEffect(() => {
@@ -35,8 +39,8 @@ const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) 
 
     return (
         <div className="text-white w-[80vw] lg:w-[50vw] md:max-w-[400px] p-6 rounded-lg ml-auto mr-auto 
-        flex justify-center items-center">
-            {title && <h2 className="text-3xl mb-4 sm:text-4xl md:text-5xl">{title}</h2>}
+        flex justify-center items-center  ">
+            {title && <h3 className="text-3xl mb-4 sm:text-4xl md:text-5xl">{title}</h3>}
             {description && <p className="text-lg mb-6 w-[100%] text-left md:text-2xl sm:text-xl">{description}</p>}
             <ul className="pt-5 text-black text-center  
             w-screen mr-auto
@@ -55,8 +59,8 @@ const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) 
                                             <input
                                                 type="checkbox"
                                                 className="mr-2"
-                                                checked={applicationFormState[`${question.question}-${choice}`] === 'true'}
-                                                onChange={(e) => handleChange(`${question.question}-${choice}`, e.target.checked ? 'true' : '')}
+                                                checked={applicationFormState[`${question.title}-${choice}`] === 'true'}
+                                                onChange={(e) => handleChange(`${question.title}-${choice}`, e.target.checked ? 'true' : '')}
                                             />
                                             <span className="text-lg md:text-xl ">{choice}</span>
                                         </label>
@@ -67,8 +71,8 @@ const InputForm: React.FC<InputFormProps> = ({ title, description, questions }) 
                             <input
                                 type="text"
                                 placeholder={question.placeholder}
-                                value={applicationFormState[question.question] || ''}
-                                onChange={(e) => handleChange(question.question, e.target.value)}
+                                value={applicationFormState[question.title] || ''}
+                                onChange={(e) => handleChange(question.title, e.target.value)}
                                 className="w-full p-2 rounded max-w-[1500px] mr-auto ml-auto text-lg md:text-xl "
                             />
                         )}

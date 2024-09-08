@@ -97,7 +97,7 @@ export const processFAQ = {
       },
       { 
           title: "How do you evaluate my property?", 
-          description: "We schedule a property evaluation at a time that’s convenient for you. Our team assesses your property’s current condition and considers various factors to ensure you receive a fair cash offer." 
+          description: "We schedule a property visit at a time that’s convenient for you. Our team assesses your property’s current condition and considers various factors to ensure you receive a fair cash offer." 
       },
       { 
           title: "How quickly can I get a cash offer?", 
@@ -105,11 +105,11 @@ export const processFAQ = {
       },
       { 
           title: "What happens after I accept the offer?", 
-          description: "Once you accept the offer, we handle all the legal work and details. You have the flexibility to choose the closing date that works best for you, making the process smooth and stress-free." 
+          description: "Once you accept the offer, we will forward it to your lawyer. You have the flexibility to choose the closing date that works best for you, making the process smooth and stress-free." 
       },
       { 
           title: "When will I receive my money?", 
-          description: "At closing, all necessary documents are sent to your lawyer. You’ll meet with your lawyer to finalize the sale, and the money will be directly transferred to you from your lawyer." 
+          description: "On the closing date you'll meet with your lawyer to finalize the sale and the money will be directly transferred to you from your lawyer.  ." 
       },
       { 
           title: "Are there any hidden fees?", 
@@ -121,7 +121,7 @@ export const processFAQ = {
       },
       { 
           title: "Why should I choose your service over others?", 
-          description: "Our service offers a hassle-free, quick, and reliable way to sell your house. With no realtor fees, no need for repairs, and fast cash offers, we make the process simple and stress-free." 
+          description: "Our service offers a hassle-free, quick, and reliable way to sell your property. With no realtor fees, no need for repairs, and fast cash offers, we make the process simple and stress-free." 
       }
   ],
   hasIntro: true,
@@ -278,7 +278,7 @@ export const content1Data:ContentType= {
 
   export const contactContent2:Content2Type = {
     image:handshake,
-    title:'Contact us',
+    title:'',
     alt:'About us picture',
     description:`Embarking on the journey to sell your property is a significant step, and we’re here to guide you toward greatness. Our dedicated team is committed to ensuring you receive the best possible cash offer for your property, helping you achieve your goals swiftly and effortlessly. With our streamlined process and personalized support, you can trust that you're making the right choice for your future. Contact us today to discover how we can turn your property into a remarkable opportunity and unlock the door to a brighter tomorrow.`,
     bg:''
@@ -339,45 +339,53 @@ export const content1Data:ContentType= {
   
 
   export const applicationQuestions = [
-    {
+    {    
+        title:'name',
         question: 'Seller name',
         placeholder: 'Enter applicant name here',
         required: true,
     },
 
     {
+        title:'email',
         question: "Seller email",
         placeholder: 'Enter applicant email here',
         isEmail: true,
         required: true,
     },
     {
+      title:'phone',
         question: 'Seller telephone number',
         placeholder: 'Enter applicant telephone number here',
         isPhoneNumber: true,
         required: true,
     },
     {
+      title:'address',
       question:'Property address',
       placeholder:'Property address',
       required:true
     },
     {
+      title:'city',
       question:'City',
       placeholder:'Enter city here',
       required:true
     },
     {
+      title:'province',
       question:'Province',
       placeholder:'Enter Province here',
       required:true
     },
     {
+      title:'reason',
       question:'Reason for selling',
       placeholder:'Why are you selling?',
       required:true
     },
     {
+      title:'time',
       question:'How soon do you need to sell?',
       placeholder:'Enter amount of time here',
       required:true
@@ -443,9 +451,9 @@ export const introDescription =
 export const aboutCloser = {
   image:'/twenty-bills.jpeg',
     title:'Ready to Take the Next Step?',
-    description:`At Ontario Cash For Houses, we empower homeowners to confidently sell their properties, whether inherited, rental, urban, or rural. We offer competitive cash offers for your home, understanding that every house has a unique story. We’re compassionate, ethical, and experienced real estate problem-solvers, focused on making your home-selling process simple and fast.
+    description:`At Ontario Cash For Houses, we empower homeowners to confidently sell their properties, whether inherited, rental, urban, or rural. We offer competitive cash offers for your property, understanding that every house has a unique story. We’re compassionate, ethical, and experienced real estate problem-solvers, focused on making your home-selling process simple and fast.
 
-    Whether facing foreclosure, repairs, probate, or other challenges, we aim to provide a hassle-free experience. No realtor fees, no closing costs, no repairs needed—we can close in as little as 24 hours. Call us today for a no-obligation cash offer: (647) 951-2070.`,
+    Whether facing foreclosure, repairs, probate, or other challenges, we aim to provide a hassle-free experience. No realtor fees, no closing costs, no repairs needed—we can close quickly. Call us today for a no-obligation cash offer: (647) 951-2070.`,
     destination:'/contact',
     buttonText:'Book a consulation',
 } 
