@@ -1,5 +1,5 @@
 "use client"
-// import ContactForm from "@/components/contactForm"
+import ContactForm from "@/components/contactForm"
 import Navbar from "@/components/navbar"
 import React from "react"
 import { accordionProps, jvParallaxContent } from "@/data/data"
