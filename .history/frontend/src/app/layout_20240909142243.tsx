@@ -18,15 +18,15 @@ export const metadata: Metadata = {
     url: "https://www.focusflowsoftware.com", // Default URL
     images: [
       {
-        url: "", // Global Open Graph image
+        url: "https://www.focusflowsoftware.com/media/gemeni-two-hand-stick.png", // Global Open Graph image
         width: 1200,
         height: 630,
-        alt: "Cash for Houses"
+        alt: "Focus Flow Software - Creative and Fast Web Design"
       }
     ],
     type: "website",
     locale: "en_US",
-    siteName: 'Ontario Cash for Houses | Giving you quick cash offers for you property'
+    siteName: 'FocusFlow Software | Creative and Fast Web Design in Halifax'
   },
   icons: {
     icon: ["/favicon.ico?v=4"

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     ],
     type: "website",
     locale: "en_US",
-    siteName: 'Ontario Cash for Houses | Giving you quick cash offers for you property'
+    siteName: 'FocusFlow Software | Creative and Fast Web Design in Halifax'
   },
   icons: {
     icon: ["/favicon.ico?v=4"
