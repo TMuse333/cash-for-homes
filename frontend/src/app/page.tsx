@@ -78,24 +78,7 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     
     <>
 
-    {!loggedIn  ? (
-       <div className="top-[40%] fixed 
-       left-1/2 -translate-x-1/2">
-        <h1 className="text-3xl text-black
-        mb-4">welcome, please enter the password</h1>
-       <input 
-         type="password" 
-         value={password} 
-         onChange={(e) => setPassword(e.target.value)} 
-         placeholder="Enter password"
-         className="border p-2 text-black"
-         onKeyDown={handleKeyDown} 
-       />
-       <button onClick={handleLogin} className="ml-2 p-2 bg-blue-500 text-white">
-         Login
-       </button>
-     </div>
-    ) : (
+   
 
     <>
     
@@ -236,7 +219,7 @@ pl-3 pr-3">Our clients have had monumental success working with us, you can be n
 
   </>
 
-    )}
+   
   </>
   );
 }

@@ -17,11 +17,20 @@ import { dunk } from "@/data/data";
 import { CircleInfoGraphic } from "@/components/circleInfographic";
 import { useAppContext } from "@/context/context";
 import canadianDollar from '../../public/canadian-dollars.jpeg'
-import twenty from 
+import twenty from '../../public/twenty-bills.jpeg'
+import { intro } from "@/data/data";
+import theresaDog from '../../public/theresa-dog.webp'
+import theresaSeated from '../../public/seated-theresa.webp'
+import Link from "next/link";
+import { introDescription } from "@/data/data";
 
+import nicerHome from '../../public/nicer-home.webp'
+import TextFormat2 from "@/components/textFormat2";
 
 const lorem = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem ad debitis nemo qui praesentium sequi architecto vel repellat cum magni sint voluptatibus totam, animi ex atque? Tenetur itaque adipisci facilis, officia repellat, voluptatum quaerat incidunt sit assumenda quam quod.'
-
+import { intro2 } from "@/data/data";
+import AppearingContent from "@/components/appearingText";
+import { dolceVita } from "@/data/data";
 
 export default function Home() {
 
@@ -31,11 +40,7 @@ const links = [
     destination:'process',
     hasScroll:false
   },
-  {
-    name:'JV Partners',
-    destination:'jv-partners',
-    hasScroll:false
-  },
+  
   {
     name:'About us',
     destination:'about',
@@ -44,7 +49,12 @@ const links = [
   {
     name:'Contact Us',
     destination:'contact'
-  }
+  },
+  // {
+  //   name:'JV Partners',
+  //   destination:'jv-partners',
+  //   hasScroll:false
+  // },
 ]
 
 const { loggedIn, setLoggedIn } = useAppContext()
@@ -68,24 +78,7 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     
     <>
 
-    {!loggedIn && 10 === 12 ? (
-       <div className="top-[40%] fixed 
-       left-1/2 -translate-x-1/2">
-        <h1 className="text-3xl text-black
-        mb-4">welcome, please enter the password</h1>
-       <input 
-         type="password" 
-         value={password} 
-         onChange={(e) => setPassword(e.target.value)} 
-         placeholder="Enter password"
-         className="border p-2 text-black"
-         onKeyDown={handleKeyDown} 
-       />
-       <button onClick={handleLogin} className="ml-2 p-2 bg-blue-500 text-white">
-         Login
-       </button>
-     </div>
-    ) : (
+   
 
     <>
     
@@ -103,18 +96,42 @@ const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
 
  
    
-       <TextParallaxContentExample
-    src={dunk}
+       {/* <TextParallaxContentExample
+    src={intro}
 alt="meme"
 isVideo={true}
-heading='Your title Here'
-subHeading="Subtitle here"
-description={lorem}
+heading='Welcome to Ontario Cash for Houses'
+subHeading=""
+description={introDescription}
 muted={false}
-thumbnail={canadianDollar.src}
+thumbnail={theresaDog.src}
+destination='/contact'
+buttonText="Get Your Cash Offer"
 
+    /> */}
+
+           <TextParallaxContentExample
+    src={intro2}
+alt="meme"
+isVideo={true}
+heading='Welcome to Ontario Cash for Houses'
+subHeading=""
+description={introDescription}
+muted={false}
+thumbnail={theresaDog.src}
+destination='/contact'
+buttonText="Get Your Cash Offer"
 
     />
+
+    {/* <AppearingContent
+    src={intro2}
+    id='intro-video'
+    sliderText="Welcome to Ontario Cash for Houses"
+    isVideo={true}
+    /> */}
+
+    
     <Content
     {...content2Data}
     />
@@ -126,13 +143,22 @@ thumbnail={canadianDollar.src}
            
        </div>
 
+       <Content
+    customText={<TextFormat2
+    />}
+    image={nicerHome}
+   hasAnimation={true}
+   reverse={false}
+  //  background='bg-gradient-to-b from-blue-300 via-blue-500 to-blue-400 '
+    />
+
     <Content
     customText={<TextFormat
     reverse={true}
     isAnimated={true}/>}
-    image={cashHome1}
+    image={nicerHome}
    hasAnimation={true}
-   reverse={false}
+   reverse={true}
   //  background='bg-gradient-to-b from-blue-300 via-blue-500 to-blue-400 '
     />
 
@@ -144,13 +170,19 @@ thumbnail={canadianDollar.src}
        </div>
 
     <Content
-    image={canadianDollar}
-
-    customText={<Accordion
+    image={theresaSeated}
+objectContain={true}
+    customText={
+      <>
+    <Accordion
     {...accordionProps}
     inContent={true}
     margin='mr-12'
+    // link="about"
   />
+
+ 
+  </>
 }
 reverse={true}
 />
@@ -167,7 +199,7 @@ reverse={true}
 />
 
 <h2 className="text-center text-black text-3xl sm:text-5xl font-semibold
-mb-4">Testimonials here</h2>
+mb-4">What they say about us</h2>
 <p className="text-center text-black mb-4 sm:text-lg
 pl-3 pr-3">Our clients have had monumental success working with us, you can be next!</p>
 
