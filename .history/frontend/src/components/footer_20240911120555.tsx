@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Link from 'next/link';
 import { motion, useMotionTemplate, useMotionValue,
     animate } from "framer-motion";
-import ScrollButton from './scrollButton';
+// import ScrollButton from './scrollButton';
 
 
 interface links {
@@ -70,7 +70,7 @@ const Footer:React.FC<links> = ({links}) => {
   pb-12
       ml-auto mr-auto
       text-center
-     bg-black
+     bg-gray-500
     '>
       <div className="
       pt-8
@@ -88,20 +88,14 @@ const Footer:React.FC<links> = ({links}) => {
              key={index}>
 
            
-            {link.hasScroll  ? (
-                <>
-                <ScrollButton
-                text={link.name}
-                id={link.destination}/>
-                </>
-            ) : (
+            
                 <Link key={index}
                 href={link.destination} 
                 passHref>
                      <p className='mt-2 text-white hover:text-[#00bfff] md:text-xl hover:text-gold
                 '>{link.name}</p>
                 </Link>
-            )}
+            
 
            
 </React.Fragment>
@@ -120,9 +114,15 @@ const Footer:React.FC<links> = ({links}) => {
        items-center justify-center
      '>
 
-
-      <p className='mt-6
-      sm:text-2xl text-white '>Q3 Designs 2024</p>
+<a 
+  href='https://www.focusflowsoftware.com' 
+  target='_blank' 
+  rel='noopener noreferrer'
+  className='mt-6 sm:text-2xl text-white hover:text-[#00bfff]'
+>
+  Created by FocusFlow Software
+</a>
+     
       {/* <Link 
             to='https://q3designs.netlify.app'
             >
