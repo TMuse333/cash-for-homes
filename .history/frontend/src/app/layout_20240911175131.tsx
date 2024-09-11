@@ -55,8 +55,7 @@ export default function RootLayout({
     <html lang="en">
 <AppProvider>
 
-<Analytics/>
-<SpeedInsights/>
+<Ana
       <body className={inter.className}>{children}</body>
       </AppProvider>
     </html>
