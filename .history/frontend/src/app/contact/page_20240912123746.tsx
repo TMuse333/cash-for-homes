@@ -1,6 +1,4 @@
 import ContactPage from "../pageComponents/contactPage"
-import { Metadata } from "next"
-
 
 export const metadata: Metadata = {
   title: "Contact Ontario Cash for Houses",

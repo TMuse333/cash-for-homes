@@ -1,6 +1,6 @@
 "use client"
 import React, {useState} from "react";
-
+import Image from "next/image";
 import { accordionProps, circleInfographicData1, content1Data, content2Data, heroImages,openingText } from "@/data/data";
 import ImageHero from "@/components/imageHero";
 import Navbar from "@/components/navbar";
@@ -19,16 +19,17 @@ import { useAppContext } from "@/context/context";
 
 
 import theresaDog from '../../../public/theresa-dog.webp'
-import theresaSeated from '../../../public/seated-theresa.webp'
+import theresaSeated from '../../public/seated-theresa.webp'
 
 import { introDescription } from "@/data/data";
 
-import nicerHome from '../../../public/nicer-home.webp'
+import nicerHome from '../../public/nicer-home.webp'
 import TextFormat2 from "@/components/textFormat2";
 
-
+const lorem = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem ad debitis nemo qui praesentium sequi architecto vel repellat cum magni sint voluptatibus totam, animi ex atque? Tenetur itaque adipisci facilis, officia repellat, voluptatum quaerat incidunt sit assumenda quam quod.'
 import { intro2 } from "@/data/data";
-
+import AppearingContent from "@/components/appearingText";
+import { dolceVita } from "@/data/data";
 
 const Homepage =() => {
 

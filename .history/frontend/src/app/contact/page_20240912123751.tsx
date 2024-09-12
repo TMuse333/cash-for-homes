@@ -1,7 +1,5 @@
 import ContactPage from "../pageComponents/contactPage"
 import { Metadata } from "next"
-
-
 export const metadata: Metadata = {
   title: "Contact Ontario Cash for Houses",
   description: "Get in touch with Ontario Cash for Houses for a fast, no-obligation cash offer on your home. We buy houses in any condition across Ontario, Canada.",

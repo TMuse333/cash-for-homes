@@ -18,10 +18,10 @@ const ApplicationForm = () => {
     //     city,province,reason,time
 
     useEffect(()=>{
-        // console.log(
-        //     'application',
-        //     applicationFormState
-        // )
+        console.log(
+            'application',
+            applicationFormState
+        )
     },[applicationFormState])
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -40,7 +40,7 @@ const ApplicationForm = () => {
                 address: applicationFormState.address,
 
             });
-            // console.log(response.data);
+            console.log(response.data);
             alert('Form submitted successfully!');
             setApplicationFormState({ name: '', email: '', phone: '', projectDetails: '' });
         } catch (error) {

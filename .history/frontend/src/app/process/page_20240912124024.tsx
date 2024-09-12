@@ -1,5 +1,5 @@
 import ProcessPage from "../pageComponents/processPage"
-import { Metadata } from "next"
+import {Metada}
 
 export const metadata: Metadata = {
   title: "Our Process | Ontario Cash for Houses",

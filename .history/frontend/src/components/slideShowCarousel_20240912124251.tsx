@@ -114,7 +114,7 @@ const handleSlide = (interval:NodeJS.Timeout) => {
 useEffect(() => {
   const interval = setInterval(() => {
     if (slideShowPaused || !inView) {
-      // console.log('not in view');
+      console.log('not in view');
       return;
     }
 
@@ -126,7 +126,7 @@ useEffect(() => {
 
 useEffect(() => {
   if (currentElement === carouselLength - 1 && slideProgress >= 100) {
-    // console.log('Reached end of carousel with slideProgress at 100');
+    console.log('Reached end of carousel with slideProgress at 100');
     setTimeout(() => {
       setShowRefreshBar(true);
     }, 300);

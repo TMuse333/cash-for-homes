@@ -160,10 +160,10 @@ const Video:React.FC<VideoProps> = (
   const [playing, setPlaying] = useState(false);
 
   const handlePlayClick = () => {
-  
+    console.log('clickage occured')
     setPlaying(true);
     if (videoRef.current) {
-     
+      console.log('passed in')
       videoRef.current.currentTime = 0;
       videoRef.current.play();
       

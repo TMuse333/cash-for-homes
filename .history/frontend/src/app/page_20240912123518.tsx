@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     ],
     type: "website",
     locale: "en_US",
-    siteName: 'Ontario Cash for Houses | Sell your house fast cash in Ontario Canada'
+    siteName: 'Ontario Cash for Houses | Giving you quick cash offers for you property'
   },
   icons: {
     icon: ["/favicon.ico?v=4"
