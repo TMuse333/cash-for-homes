@@ -6,9 +6,10 @@ export const metadata: Metadata = {
   description: "Ontario Cash for houses gives quick cash offers for houses in any condition",
   keywords: "Ontario Cash For houses, sell house fast cash ontario canada",
   openGraph: {
-    title: `Ontario Cash for Houses |Selling Houses fast in Ontario, Canada`,
-    description: `Ontario Cash for Houses offers fast, hassle-free cash offers for homes in any condition across Ontario, Canada. Whether you're looking to sell your house quickly due to foreclosure, inheritance, or simply want to avoid the traditional real estate process, we buy houses as-is, with no repairs or realtor fees. Get a fair cash offer today and close in as little as 7 days. We specialize in helping homeowners sell their property fast for cash in Ontario, including cities like Windsor, Chatham, London, and Kitchener.`,
-    url: "https://www.ontariocashforhouses.com", // Default URL
+    title: `
+    Ontario Cash for Houses offers fast, hassle-free cash offers for homes in any condition across Ontario, Canada. Whether you're looking to sell your house quickly due to foreclosure, inheritance, or simply want to avoid the traditional real estate process, we buy houses as-is, with no repairs or realtor fees. Get a fair cash offer today and close in as little as 7 days. We specialize in helping homeowners sell their property fast for cash in Ontario, including cities like Windsor, Chatham, London, and Mississauga.`,
+    description: "Ontario Cash for houses gives quick cash offers for houses in any condition",
+    url: "https://www.focusflowsoftware.com", // Default URL
     images: [
       {
         url: "", // Global Open Graph image
@@ -55,6 +56,3 @@ const Home =()=> {
   </>
   );
 }
-
-
-export default Home
