@@ -80,7 +80,7 @@ const CarouselController: React.FC<ControllerProps> = ({
 
 function togglePlay(){
   setSlideShowPaused(!slideShowPaused);
-  // console.log('pause nation');
+  console.log('pause nation');
 }
 
 function resetSlideShow(){
@@ -98,7 +98,7 @@ useEffect(()=> {
 
 const handleSlide = (interval:NodeJS.Timeout) => {
   if (slideProgress < 100) {
-    // console.log('filling the bar');
+    console.log('filling the bar');
     setShowRefreshBar(false);
     setSlideProgressReset(false);
     setSlideProgress((curr) => curr + 4); // Increment by 8 to reach 100 in a slower time
@@ -114,7 +114,7 @@ const handleSlide = (interval:NodeJS.Timeout) => {
 useEffect(() => {
   const interval = setInterval(() => {
     if (slideShowPaused || !inView) {
-      // console.log('not in view');
+      console.log('not in view');
       return;
     }
 
@@ -126,7 +126,7 @@ useEffect(() => {
 
 useEffect(() => {
   if (currentElement === carouselLength - 1 && slideProgress >= 100) {
-    // console.log('Reached end of carousel with slideProgress at 100');
+    console.log('Reached end of carousel with slideProgress at 100');
     setTimeout(() => {
       setShowRefreshBar(true);
     }, 300);

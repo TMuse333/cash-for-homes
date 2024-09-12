@@ -1,6 +1,6 @@
 "use client"
 import React, {useState} from "react";
-
+import Image from "next/image";
 import { accordionProps, circleInfographicData1, content1Data, content2Data, heroImages,openingText } from "@/data/data";
 import ImageHero from "@/components/imageHero";
 import Navbar from "@/components/navbar";
@@ -10,25 +10,27 @@ import TextFormat from "@/components/textFormat";
 
 import Footer from "@/components/footer";
 import Accordion from "@/components/accordion";
-
+import { reverse } from "dns";
 import Testimonials from "@/components/testimonials";
 import { TextParallaxContentExample } from "@/components/parallaxText";
-
+import { dunk } from "@/data/data";
 import { CircleInfoGraphic } from "@/components/circleInfographic";
 import { useAppContext } from "@/context/context";
-
-
-import theresaDog from '../../../public/theresa-dog.webp'
-import theresaSeated from '../../../public/seated-theresa.webp'
-
+import canadianDollar from '../../public/canadian-dollars.jpeg'
+import twenty from '../../public/twenty-bills.jpeg'
+import { intro } from "@/data/data";
+import theresaDog from '../../public/theresa-dog.webp'
+import theresaSeated from '../../public/seated-theresa.webp'
+import Link from "next/link";
 import { introDescription } from "@/data/data";
 
-import nicerHome from '../../../public/nicer-home.webp'
+import nicerHome from '../../public/nicer-home.webp'
 import TextFormat2 from "@/components/textFormat2";
 
-
+const lorem = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem ad debitis nemo qui praesentium sequi architecto vel repellat cum magni sint voluptatibus totam, animi ex atque? Tenetur itaque adipisci facilis, officia repellat, voluptatum quaerat incidunt sit assumenda quam quod.'
 import { intro2 } from "@/data/data";
-
+import AppearingContent from "@/components/appearingText";
+import { dolceVita } from "@/data/data";
 
 const Homepage =() => {
 

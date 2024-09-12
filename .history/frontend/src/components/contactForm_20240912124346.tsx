@@ -38,7 +38,7 @@ const ContactForm = () => {
                 phone: formData.phone,
                 projectDetails: formData.projectDetails,
             });
-            // console.log(response.data);
+            
             alert('Form submitted successfully!');
             setFormData({ name: '', email: '', phone: '', projectDetails: '' });
         } catch (error) {

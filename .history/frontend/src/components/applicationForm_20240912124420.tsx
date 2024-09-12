@@ -40,7 +40,7 @@ const ApplicationForm = () => {
                 address: applicationFormState.address,
 
             });
-            // console.log(response.data);
+            console.log(response.data);
             alert('Form submitted successfully!');
             setApplicationFormState({ name: '', email: '', phone: '', projectDetails: '' });
         } catch (error) {

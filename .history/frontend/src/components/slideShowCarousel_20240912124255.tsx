@@ -126,7 +126,7 @@ useEffect(() => {
 
 useEffect(() => {
   if (currentElement === carouselLength - 1 && slideProgress >= 100) {
-    // console.log('Reached end of carousel with slideProgress at 100');
+    console.log('Reached end of carousel with slideProgress at 100');
     setTimeout(() => {
       setShowRefreshBar(true);
     }, 300);

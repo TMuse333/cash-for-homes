@@ -1,6 +1,6 @@
 "use client"
 import React, {useState} from "react";
-
+import Image from "next/image";
 import { accordionProps, circleInfographicData1, content1Data, content2Data, heroImages,openingText } from "@/data/data";
 import ImageHero from "@/components/imageHero";
 import Navbar from "@/components/navbar";
