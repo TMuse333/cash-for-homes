@@ -271,7 +271,7 @@ export const content1Data:ContentType= {
     image:group,
     title:'About us',
     alt:'About us picture',
-    description:'Ontario Cash For Houses is a real estate solutions company that buys houses in Windsor, ON; London, ON; and Kitchener.',
+    description:'Ontario Cash For Houses is a real estate solutions company that buys houses in Windsor, ON; London ON; Kitchener.',
     bg:'bg-gradient-to-tr from-blue-800 via-blue-400 to-blue-300'
     
   }
