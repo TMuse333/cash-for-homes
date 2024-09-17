@@ -1,4 +1,4 @@
-
+"use client"
 
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -37,6 +37,8 @@ const CarouselController: React.FC<ControllerProps> = ({
  shift,
  setShift
 }) => {
+
+  CarouselController.displayName = 'CarouselController';
   const [isAnimating, setIsAnimating] = useState(false);
   const [slideProgress, setSlideProgress] = useState(0);
   const [slideProgressReset, setSlideProgressReset] = useState(false);
@@ -80,7 +82,7 @@ const CarouselController: React.FC<ControllerProps> = ({
 
 function togglePlay(){
   setSlideShowPaused(!slideShowPaused);
-  console.log('pause nation');
+  // console.log('pause nation');
 }
 
 function resetSlideShow(){
@@ -98,7 +100,7 @@ useEffect(()=> {
 
 const handleSlide = (interval:NodeJS.Timeout) => {
   if (slideProgress < 100) {
-    console.log('filling the bar');
+    // console.log('filling the bar');
     setShowRefreshBar(false);
     setSlideProgressReset(false);
     setSlideProgress((curr) => curr + 4); // Increment by 8 to reach 100 in a slower time
@@ -114,7 +116,7 @@ const handleSlide = (interval:NodeJS.Timeout) => {
 useEffect(() => {
   const interval = setInterval(() => {
     if (slideShowPaused || !inView) {
-      console.log('not in view');
+      // console.log('not in view');
       return;
     }
 
@@ -126,7 +128,7 @@ useEffect(() => {
 
 useEffect(() => {
   if (currentElement === carouselLength - 1 && slideProgress >= 100) {
-    console.log('Reached end of carousel with slideProgress at 100');
+    // console.log('Reached end of carousel with slideProgress at 100');
     setTimeout(() => {
       setShowRefreshBar(true);
     }, 300);
@@ -140,9 +142,9 @@ useEffect(() => {
 
   return (
       <div ref={componentRef}
-      className='absolute left-[50%] -translate-x-[50%] flex
+      className='relative left-[50%] -translate-x-[50%] flex
       w-[250px] justify-center md:w-[415px]
-      bottom-0 
+      
       '>
           <button className='bg-gray-700 ml-auto mr-auto p-4 rounded-xl flex
           md:scale-[1.5]'>
@@ -183,17 +185,10 @@ const CarouselElement: React.FC<SliderProps> = ({
     currentElement,
     shift
 }) => {
-  
+
 const isCurrentSlide = currentElement === index;
 const [animationComplete, setAnimationComplete] = useState(false);
 
-function handleAnimationComplete(){
-  setAnimationComplete(!animationComplete);
-  console.log('animation completed!');
-
-
-
-}
 
 const { isMobile } = useAppContext()
 
@@ -207,7 +202,7 @@ const { isMobile } = useAppContext()
             
    relative
    
-   max-h-[650px]
+   max-h-[800px]
                ml-auto mr-auto
                 h-[105vw] 
                
@@ -274,6 +269,7 @@ const { isMobile } = useAppContext()
             />
         </section>
     );
+
 }
 
 interface ControllerProps {
@@ -301,13 +297,12 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
 
     return (
       <>
-      <section className='relative 
-      h-[110vw] max-h-[650px] '>
+      {/* <section className='relative bg-green-200
+      h-[110vw] '> */}
 
 
         <section className='relative ml-auto mr-auto w-screen mb-[6rem]
-         h-[115vw] overflow-x-hidden overflow-y-hidden
-         max-h-[550px] 
+         h-[125vw] overflow-x-hidden
         
         '>
           <div 
@@ -316,7 +311,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
                 className=" flex 
                 w-screen relative
                 h-[105vw] 
-                max-h-[450px]
+                max-h-[800px]
                 
                 
                  "
@@ -325,11 +320,9 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
             >
                 {images.map((image, index) => (
                     <CarouselElement
-                        src={image.src}
+                        {...image}
                         key={index}
-                        description={image.description}
                         index={index}
-                        alt={image.alt}
                         carouselLength={images.length}
                         currentElement={currentElement}
                         shift={shift}
@@ -337,9 +330,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
                 ))}
             </div>
           </div>
-         
-        </section>
-        <CarouselController
+          <CarouselController
                 carouselLength={images.length}
                 currentElement={currentElement}
                 setCurrentElement={setCurrentElement}
@@ -347,10 +338,12 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
                 shift={shift}
                 setShift={setShift}
             />
+        </section>
        
-                  </section>
+                  {/* </section> */}
         </>
     );
 }
+SlideShowCarousel.displayName = 'SlideShowCarousel';
 
 export default SlideShowCarousel;

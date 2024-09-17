@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar";
 import ImageHero from "@/components/imageHero";
 
 // Dynamically import the other components
-import { TextParallaxContentExample } from '@/components/parallaxText';
+import {TextP}
 
 const Content = dynamic(() => import('@/components/content'));
 const Accordion = dynamic(() => import('@/components/accordion'));

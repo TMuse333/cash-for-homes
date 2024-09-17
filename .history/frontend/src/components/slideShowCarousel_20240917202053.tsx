@@ -1,4 +1,4 @@
-
+"use client"
 
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -195,7 +195,7 @@ function handleAnimationComplete(){
 
 }
 
-const { isMobile } = useAppContext()
+const { isMobile } = useGeneralContext()
 
     return (
         <section 
@@ -291,7 +291,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
     const [currentElement, setCurrentElement] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
 
-    const {isMobile} = useAppContext()
+    const {isMobile} = useGeneralContext()
     const [shift, setShift] = useState(0)
 
   
@@ -325,11 +325,9 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
             >
                 {images.map((image, index) => (
                     <CarouselElement
-                        src={image.src}
+                        {...image}
                         key={index}
-                        description={image.description}
                         index={index}
-                        alt={image.alt}
                         carouselLength={images.length}
                         currentElement={currentElement}
                         shift={shift}

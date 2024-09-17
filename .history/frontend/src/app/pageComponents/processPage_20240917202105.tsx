@@ -1,6 +1,6 @@
 "use client"
 import Navbar from "@/components/navbar"
-import SlideShowCarousel from "@/components/slideShowCarousel"
+import SlideShowCarousel} from "@/components/slideShowCarousel"
 import React from "react"
 import { processCarouselData, jvParallaxContent,
 openingText,processParallax, dunk,

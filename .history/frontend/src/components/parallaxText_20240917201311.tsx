@@ -35,7 +35,7 @@ interface VideoProps {
 
 
 
-export const TextParallaxContentExample:React.FC<Props>
+ const TextParallaxContentExample:React.FC<Props>
  = ({src,alt,isVideo, description,muted,
 thumbnail,subHeading,heading,buttonText,destination }) => {
   TextParallaxContentExample.displayName = 'TextParallaxContentExample'
@@ -248,8 +248,6 @@ const TextParallaxContent = ({
   thumbnail?:string
 
 }) => {
-
-
   return (
     <div
       style={{
@@ -294,7 +292,6 @@ const StickyImage = ({ imgUrl, isVideo, alt,muted,thumbnail }: { imgUrl: string,
     offset: ["end end", "end start"],
   });
 
-  
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.85]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
@@ -422,5 +419,5 @@ const OverlayCopy = memo(({
 });
 
 
-
+  export default TextParallaxContentExample
   

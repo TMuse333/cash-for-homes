@@ -1,12 +1,12 @@
 "use client"
 import Navbar from "@/components/navbar"
-import SlideShowCarousel from "@/components/slideShowCarousel"
+import {SlideShowCarousel from "@/components/slideShowCarousel"
 import React from "react"
 import { processCarouselData, jvParallaxContent,
 openingText,processParallax, dunk,
 accordionProps,
 processFAQ} from "@/data/data"
-import  {TextParallaxContentExample}  from "@/components/parallaxText"
+import  TextParallaxContentExample  from "@/components/parallaxText"
 import Closer from "@/components/closer"
 import Footer from "@/components/footer"
 import Accordion from "@/components/accordion"

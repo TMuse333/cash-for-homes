@@ -35,7 +35,7 @@ interface VideoProps {
 
 
 
-export const TextParallaxContentExample:React.FC<Props>
+ const TextParallaxContentExample:React.FC<Props>
  = ({src,alt,isVideo, description,muted,
 thumbnail,subHeading,heading,buttonText,destination }) => {
   TextParallaxContentExample.displayName = 'TextParallaxContentExample'

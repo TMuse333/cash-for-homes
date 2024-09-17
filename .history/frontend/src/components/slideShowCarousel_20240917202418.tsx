@@ -327,7 +327,6 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
                     <CarouselElement
                         src={image.src}
                         key={index}
-                        description={image.description}
                         index={index}
                         alt={image.alt}
                         carouselLength={images.length}

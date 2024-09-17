@@ -1,11 +1,11 @@
-
+"use client"
 
 
 import React, { useState, useEffect, useRef } from 'react';
 import { FaPause, FaPlay, FaRedo } from 'react-icons/fa';
-import {useIntersectionObserver} from './intersectionObserver'
+import {useIntersectionObserver} from '../intersectionObserver/intersectionObserver'
 import {motion, AnimatePresence} from 'framer-motion'
-import { useAppContext } from '@/context/context';
+import { useGeneralContext } from '@/context/context';
 import Image from 'next/image';
 
 
@@ -45,7 +45,7 @@ const CarouselController: React.FC<ControllerProps> = ({
 
   const [inView, setInView] = useState(false);
 
-  const {isMobile} = useAppContext()
+  const {isMobile} = useGeneralContext()
 
   const options = {
     root: null,
@@ -195,7 +195,7 @@ function handleAnimationComplete(){
 
 }
 
-const { isMobile } = useAppContext()
+const { isMobile } = useGeneralContext()
 
     return (
         <section 
@@ -291,7 +291,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
     const [currentElement, setCurrentElement] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
 
-    const {isMobile} = useAppContext()
+    const {isMobile} = useGeneralContext()
     const [shift, setShift] = useState(0)
 
   
@@ -325,11 +325,9 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
             >
                 {images.map((image, index) => (
                     <CarouselElement
-                        src={image.src}
+                        {...image}
                         key={index}
-                        description={image.description}
                         index={index}
-                        alt={image.alt}
                         carouselLength={images.length}
                         currentElement={currentElement}
                         shift={shift}
