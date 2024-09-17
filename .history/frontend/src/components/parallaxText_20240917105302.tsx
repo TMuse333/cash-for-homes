@@ -92,44 +92,57 @@ thumbnail,subHeading,heading,buttonText,destination }) => {
 
 const IMG_PADDING = 12;
 
-const Video: React.FC<VideoProps> = ({ src, muted = true, thumbnail }) => {
-  const [videoPlaying, setVideoPlaying] = useState(false);
+const Video:React.FC<VideoProps> = (
+  {src,muted,thumbnail }
+) => {
 
-  const [inView, setInView] = useState(false);
+  const [videoPlaying, setVideoPlaying] = useState(false)
+  const {textYPosition} = useAppContext()
+
+  const [inView, setInView] = useState(false)
 
   const options = {
-    root: null,
-    rootMargin: !inView ? '50px' : '500px',
-    threshold: 0.8,
-  };
+      root:null,
+      rootMargin:!inView ?'50px' : '500px',
+      threshold:0.8
+  }
 
-  const videoRef = useVideoIntersectionObserver(setInView, options, true);
-  const { scrollYProgress } = useScroll(); // Use Framer Motion's useScroll
+  const videoRef = useVideoIntersectionObserver(setInView,options,
+    true
+      )
 
-  // Check scroll position to determine if the video should play
   useEffect(() => {
     const handleScroll = () => {
-      if (scrollYProgress.get() > 0.5 && !videoPlaying && inView) { // Play video when scrolled past 50% and in view
+      if (inView && !videoPlaying) {
         setVideoPlaying(true);
-      } else if (scrollYProgress.get() <= 0.5 && videoPlaying) { // Pause video when scrolled back above 50%
-        setVideoPlaying(false);
       }
     };
 
-    const unsubscribe = scrollYProgress.onChange(handleScroll); // Listen for scroll changes
-    return () => unsubscribe(); // Cleanup
-  }, [scrollYProgress, videoPlaying, inView]);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [inView, videoPlaying]);
+
+
 
   useEffect(() => {
-    if (videoRef.current && !inView && muted) {
-      setVideoPlaying(false);
+    if(videoRef.current && !inView && muted){
+      setVideoPlaying(false)
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
-    } else if (videoRef.current && !inView && !muted) {
-      setVideoPlaying(false);
+   
+      // videoRef.current.src = ''; // Temporarily remove src
+      // videoRef.current.src = src;
+    }
+
+    else if(videoRef.current && !inView &&!muted){
+      setVideoPlaying(false)
       videoRef.current.pause();
     }
-  }, [inView]);
+
+  },[inView])
 
   useEffect(() => {
     if (videoPlaying && videoRef.current && muted) {
@@ -139,14 +152,21 @@ const Video: React.FC<VideoProps> = ({ src, muted = true, thumbnail }) => {
     }
   }, [videoPlaying]);
 
+
+
+
+
+
   const [playing, setPlaying] = useState(false);
 
   const handlePlayClick = () => {
+  
     setPlaying(true);
     if (videoRef.current) {
+     
       videoRef.current.currentTime = 0;
       videoRef.current.play();
-
+      
       // Enter fullscreen mode
       const videoElement = videoRef.current as HTMLVideoElement & {
         requestFullscreen?: () => void;
@@ -164,66 +184,87 @@ const Video: React.FC<VideoProps> = ({ src, muted = true, thumbnail }) => {
         videoElement.msRequestFullscreen();
       }
     }
-  };
+  }
+
 
   return (
-    <>
-      {muted === true ? (
+   <>
+  
+{muted === true ? (
+
+
+   
+    <motion.video
+      ref={videoRef}
+      className="w-full h-full object-contain relative z-[4000]
+      bg-black"
+      
+      preload="auto"
+     muted
+      aria-label="A great video" // For accessibility
+      loop
+    >
+      <source src={src} type="video/mp4" />
+      Your browser does not support the video tag.
+    </motion.video>
+
+) : <>
+
+{!playing ? (
+        <div className="relative w-full h-full z-[4000] bg-black">
+          <motion.img
+            src={thumbnail}
+            
+            className="w-full h-full object-contain cursor-pointer"
+            onClick={handlePlayClick}
+          />
+          <button
+            className="absolute inset-0 flex items-center justify-center
+            "
+            onClick={handlePlayClick}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-12 h-12 p-2  text-white relative
+              bg-gray-400 rounded-full hover:bg-gray-600 transition-colors
+              scale-[3] "
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M5 3l14 9-14 9V3z" />
+            </svg>
+          </button>
+        </div>
+      ) : (
         <motion.video
           ref={videoRef}
-          className="w-full h-full object-contain relative z-[4000] bg-black"
-          preload="auto"
-          muted
-          aria-label="A great video" // For accessibility
-          loop
+          className="w-screen h-screen object-contain
+          relative z-[3999] bg-black"
+          src={src}
+          muted={muted}
+          controls
+          autoPlay
+          
         >
-          <source src={src} type="video/mp4" />
           Your browser does not support the video tag.
         </motion.video>
-      ) : (
-        <>
-          {!playing ? (
-            <div className="relative w-full h-full z-[4000] bg-black">
-              <motion.img
-                src={thumbnail}
-                className="w-full h-full object-contain cursor-pointer"
-                onClick={handlePlayClick}
-              />
-              <button
-                className="absolute inset-0 flex items-center justify-center"
-                onClick={handlePlayClick}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-12 h-12 p-2 text-white relative bg-gray-400 rounded-full hover:bg-gray-600 transition-colors scale-[3]"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M5 3l14 9-14 9V3z" />
-                </svg>
-              </button>
-            </div>
-          ) : (
-            <motion.video
-              ref={videoRef}
-              className="w-screen h-screen object-contain relative z-[3999] bg-black"
-              src={src}
-              muted={muted}
-              controls
-              autoPlay
-            >
-              Your browser does not support the video tag.
-            </motion.video>
-          )}
-        </>
       )}
-    </>
+ 
   );
-};
+    
+ 
+
+
+</>}
+      
+   
+ </>
+  )
+}
 
 const TextParallaxContent = ({
   imgUrl,
@@ -374,49 +415,54 @@ const StickyImage = ({ imgUrl, isVideo, alt,muted,thumbnail }: { imgUrl: string,
   );
 };
 
-const OverlayCopy = memo(({
-  subheading,
-  heading,
-}: {
-  subheading: string;
-  heading: string;
-}) => {
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({
+const OverlayCopy = ({
+    subheading,
+    heading,
+    
+  }: {
+    subheading: string;
+    heading: string;
+  }) => {
+    const targetRef = useRef(null);
+    const { scrollYProgress } = useScroll({
       target: targetRef,
       offset: ["start end", "end start"],
-  });
+    });
 
-  const { setTextYPosition } = useAppContext();
+    const { setTextYPosition} = useAppContext()
+  
+    const y = useTransform(scrollYProgress, [0, 1], [250, -250]);
+    const opacity = useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0, 1, 0]);
 
-  const y = useTransform(scrollYProgress, [0, 1], [250, -250]);
-  const opacity = useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0, 1, 0]);
+    // Log the y position
+    useEffect(() => {
+        const unsubscribe = y.onChange((value) => {
+         
 
-  // Log the y position
-  useEffect(() => {
-      const unsubscribe = y.onChange((value) => {
-          setTextYPosition(value);
-      });
-      return unsubscribe;
-  }, [y, setTextYPosition]);
+          setTextYPosition(value)
+        });
+        return unsubscribe;
+      }, []);
 
-  return (
+
+
+  
+    return (
       <motion.div
-          style={{
-              y,
-              opacity,
-          }}
-          ref={targetRef}
-          className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
+        style={{
+          y,
+          opacity,
+        }}
+        ref={targetRef}
+        className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
       >
-          <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">
-              {subheading}
-          </p>
-          <p className="text-center text-4xl font-bold md:text-7xl">{heading}</p>
+        <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">
+          {subheading}
+        </p>
+        <p className="text-center text-4xl font-bold md:text-7xl">{heading}</p>
       </motion.div>
-  );
-});
-
+    );
+  };
 
   export default TextParallaxContentExample
   

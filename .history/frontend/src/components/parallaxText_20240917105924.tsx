@@ -374,7 +374,7 @@ const StickyImage = ({ imgUrl, isVideo, alt,muted,thumbnail }: { imgUrl: string,
   );
 };
 
-const OverlayCopy = memo(({
+const OverlayCopy = React.memo(({
   subheading,
   heading,
 }: {
