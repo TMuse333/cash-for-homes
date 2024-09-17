@@ -1,11 +1,3 @@
-import dynamic from 'next/dynamic';
-
-// Lazy load the ContactPage component
-const ContactPage = dynamic(() => import('../pageComponents/contactPage'), {
-  ssr: false, // Optional: Disable Server-Side Rendering for this component if needed
-  loading: () => <p>Loading...</p>, // Optional: Provide a fallback component while loading
-});
-
 
 import { Metadata } from "next"
 

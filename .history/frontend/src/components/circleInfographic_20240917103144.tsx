@@ -106,6 +106,7 @@ title, description, index,titleInView}) => {
         sm:w-[45vw] sm:h-[50vw]
         xl:w-[32vw] xl:h-[32vw]
         relative z-10
+        text-white
        
       `}
      
@@ -141,7 +142,7 @@ title, description, index,titleInView}) => {
             items-center justify-center mb-auto mt-auto">
 
             
-            <motion.h1
+            <motion.h3
             initial={{
                 opacity:0,
                 y:60
@@ -150,7 +151,7 @@ title, description, index,titleInView}) => {
                 opacity:animationComplete ? 1 : 0,
                 y:animationComplete ? 0 : 30
             }}
-             className="text-3xl ml-auto mr-auto pr-2 pl-2 ">{title}</motion.h1>
+             className="text-3xl ml-auto mr-auto pr-2 pl-2 ">{title}</motion.h3>
             <motion.p 
             initial={{
                 opacity:0
@@ -180,8 +181,7 @@ interface Props {
     title?:string,
     description?:string
 }
-
-export const CircleInfoGraphic:React.FC<Props> = ({
+ const CircleInfoGraphic:React.FC<Props> = ({
     images,title, description
 }) => {
 
@@ -282,3 +282,5 @@ export const CircleInfoGraphic:React.FC<Props> = ({
        </>
     )
 }
+
+export default CircleInfoGraphic

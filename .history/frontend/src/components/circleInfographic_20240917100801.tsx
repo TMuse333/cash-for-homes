@@ -142,7 +142,7 @@ title, description, index,titleInView}) => {
             items-center justify-center mb-auto mt-auto">
 
             
-            <motion.h3
+            <motion.h1
             initial={{
                 opacity:0,
                 y:60
@@ -151,7 +151,7 @@ title, description, index,titleInView}) => {
                 opacity:animationComplete ? 1 : 0,
                 y:animationComplete ? 0 : 30
             }}
-             className="text-3xl ml-auto mr-auto pr-2 pl-2 ">{title}</motion.h3>
+             className="text-3xl ml-auto mr-auto pr-2 pl-2 ">{title}</motion.h1>
             <motion.p 
             initial={{
                 opacity:0

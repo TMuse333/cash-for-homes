@@ -1,13 +1,7 @@
 
 import dynamic from "next/dynamic"
-
+import ProcessPage from "../pageComponents/processPage"
 import { Metadata } from "next"
-
-const ProcessPage = dynamic(()=>import('../pageComponents/processPage'),{
-  ssr:false,
-  loading: () => <p>loading</p>
-  
-})
 
 export const metadata: Metadata = {
   title: "Our Process | Ontario Cash for Houses",

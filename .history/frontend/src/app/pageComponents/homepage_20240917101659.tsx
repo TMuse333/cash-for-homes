@@ -64,8 +64,7 @@ buttonText="Get Your Cash Offer"
 
            <TextParallaxContentExample
     src={intro2}
-    alt="Ontario Cash for Houses introductory image featuring a friendly and inviting scene that illustrates our commitment to providing fast cash offers for homeowners looking to sell their properties."
-
+alt="meme"
 isVideo={true}
 heading='Welcome to Ontario Cash for Houses'
 subHeading=""
@@ -173,7 +172,7 @@ pl-3 pr-3">Our clients have had monumental success working with us, you can be n
   </>
 
    
-  
+  </>
   );
 };
 

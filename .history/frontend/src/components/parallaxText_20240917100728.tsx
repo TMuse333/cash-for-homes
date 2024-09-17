@@ -463,6 +463,4 @@ const OverlayCopy = ({
       </motion.div>
     );
   };
-
-  export default TextParallaxContentExample
   

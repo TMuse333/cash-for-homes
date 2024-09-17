@@ -5,8 +5,10 @@ import { Metadata } from "next"
 
 const ProcessPage = dynamic(()=>import('../pageComponents/processPage'),{
   ssr:false,
-  loading: () => <p>loading</p>
-  
+  const AboutPage = dynamic(() => import('../pageComponents/aboutPage'), {
+    ssr: false, // Optional: Disable Server-Side Rendering for this component if needed
+    loading: () => <p>Loading...</p>, // Optional: Provide a fallback component while loading
+  });
 })
 
 export const metadata: Metadata = {

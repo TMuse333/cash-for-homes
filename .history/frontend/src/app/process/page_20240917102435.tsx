@@ -5,7 +5,7 @@ import { Metadata } from "next"
 
 const ProcessPage = dynamic(()=>import('../pageComponents/processPage'),{
   ssr:false,
-  loading: () => <p>loading</p>
+  loading: () => <
   
 })
 

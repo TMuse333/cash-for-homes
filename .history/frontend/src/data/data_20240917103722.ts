@@ -302,42 +302,41 @@ export const content1Data:ContentType= {
       {
         src: twenty,
         title: 'We Pay More',
-        alt: 'Ontario Cash for Houses offers higher cash offers by saving on closing and contractor fees',
+        alt: 'alt',
         description: 'Our extensive experience in purchasing properties allows us to save significantly on closing and contractor fees. These savings enable us to present you with a more competitive offer, ensuring you receive the maximum value for your property.'
       },
       {
         src: canadianDollar,
         title: 'Avoid Making Repairs',
-        alt: 'Sell your house fast for cash in Ontario without making repairs',
+        alt: 'alt',
         description: 'We purchase houses in any condition, offering you the convenience of selling without the need for costly and time-consuming repairs. By paying in cash, we streamline the process, so you can sell your house as-is, hassle-free.'
       },
       {
         src: canadianDollar,
         title: 'No Fees',
-        alt: 'No hidden fees when selling to Ontario Cash for Houses',
+        alt: 'alt',
         description: 'Our service is entirely transparent with no hidden fees or charges. We are committed to a straightforward transaction, where our only goal is to purchase your property with no strings attached.'
       },
       {
         src: canadianDollar,
         title: 'No Commissions',
-        alt: 'Avoid hefty commissions by selling directly to Ontario Cash for Houses',
+        alt: 'alt',
         description: 'By selling directly to us, you avoid the hefty commissions that real estate agents typically charge.'
       },
       {
         src: canadianDollar,
         title: 'Close Fast',
-        alt: 'Fast closing options available when selling your house for cash in Ontario',
+        alt: 'alt',
         description: 'Our ability to pay in cash allows us to close deals at a pace that suits your needs. Whether you wish to close in as little as a week or need more time to make arrangements, we accommodate your schedule, providing flexibility and peace of mind.'
       },
       {
         src: canadianDollar,
         title: 'We Pay Cash',
-        alt: 'Selling to Ontario Cash for Houses means receiving cash offers without bank delays',
+        alt: 'alt',
         description: 'Paying in cash gives us the unique advantage of bypassing the often cumbersome processes that banks impose on traditional buyers. This means fewer delays, more certainty, and a smoother transaction for you, the seller.'
       },
     ]
   }
-  
   
 
   export const applicationQuestions = [
@@ -463,22 +462,22 @@ export const aboutCloser = {
 
 
 
-export const aboutContent3: ContentType = {
-  image: multiHome, // Directly import the image as StaticImageData
-  customText: null,
-  description: [
-    'We focus on helping sellers like you find solutions for your problem property, whether you’re going through a foreclosure, divorce, inherited property, nuisance property, back taxes, can’t sell your property, or just need to sell your house for ANY reason. We can help!\n\n',
-    `We'll make you a full cash offer—and close fast, so there's no time to waste. Plus, we'll purchase your home AS-IS.`,
-    `We'll buy houses even in rural towns and counties. Regardless of the condition of your home, age, size, or situation. Give us a call and let's talk about your property so we can learn more and make you a full cash offer.`,
-  ],
-  mainTitle: '',
-  reverse: false,
-  hasAnimation: true,
-  // buttonLink: 'contact',
-  // buttonText: 'Book a consultation',
-  alt: 'Ontario Cash for Houses: A welcoming home representing our commitment to helping sellers resolve property issues quickly and easily, no matter the condition or situation.'
-}
+export const aboutContent3:ContentType = {
+  image:multiHome,// Directly import the image as StaticImageData
+    customText: null,
+    description: [
+      'We focus on helping sellers like you find solutions for your problem property, whether you’re going through a foreclosure, divorce, inherited property, nuisance property, back taxes, can’t sell your property, or just need to sell your house for ANY reason. We can help!\n\n',
+      `We'll make you a full cash offer—and close fast, so there's no time to waste. Plus, we'll purchase your home AS-IS.`,
+      `We'll buy houses even in rural towns and counties. Regardless of the condition of your home, age, size or situation. Give us a call and let's talk about your property so we can learn more and make you a full cash offer.`,
+    ],
+    mainTitle: '',
+    reverse: false,
+    hasAnimation:true,
+    // buttonLink:'contact',
+    // buttonText:'Book a consultation',
+    alt:'A fantastic Home'
 
+}
 
 export const aboutContent4:ContentType = {
   image:canadianDollar,// Directly import the image as StaticImageData

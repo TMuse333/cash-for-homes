@@ -82,10 +82,10 @@ destination,buttonText}) => {
               variants={textVariants}
               initial='initial'
               animate={inView ? 'animate' : 'initial'}>
-            <motion.h4
+            <motion.h
            
             className="pl-4 text-3xl  ">{title}
-            </motion.h4>
+            </motion.h1>
           
             <p className="mt-4 text-left pl-4 pr-4
             max-w-[800px] sm:text-xl ">{description}</p>

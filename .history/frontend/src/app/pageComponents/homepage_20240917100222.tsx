@@ -1,40 +1,66 @@
 "use client"
+import React, {useState} from "react";
 
-import dynamic from 'next/dynamic';
-import Navbar from "@/components/navbar";
+import { accordionProps, circleInfographicData1, content1Data, content2Data, heroImages,openingText } from "@/data/data";
 import ImageHero from "@/components/imageHero";
-
-// Dynamically import the other components
-const TextParallaxContentExample = dynamic(() => import('@/components/parallaxText'));
-
-const Content = dynamic(() => import('@/components/content'));
-const Accordion = dynamic(() => import('@/components/accordion'));
-const CircleInfoGraphic = dynamic(() => import('@/components/circleInfographic'));
-const Testimonials = dynamic(() => import('@/components/testimonials'));
-const Closer = dynamic(() => import('@/components/closer'));
-const Footer = dynamic(() => import('@/components/footer'));
-
-// Import static data, images, and components that are not lazy-loaded
-import { accordionProps, circleInfographicData1, content2Data, intro2, introDescription, openingText,
-heroImages } from "@/data/data";
+import Navbar from "@/components/navbar";
+import Content from "@/components/content";
+import Closer from "@/components/closer";
 import TextFormat from "@/components/textFormat";
+
+import Footer from "@/components/footer";
+import Accordion from "@/components/accordion";
+
+import Testimonials from "@/components/testimonials";
+import { TextParallaxContentExample } from "@/components/parallaxText";
+
+import { CircleInfoGraphic } from "@/components/circleInfographic";
+
+
+
+import theresaDog from '../../../public/theresa-dog.webp'
+import theresaSeated from '../../../public/seated-theresa.webp'
+
+import { introDescription } from "@/data/data";
+
+import nicerHome from '../../../public/nicer-home.webp'
 import TextFormat2 from "@/components/textFormat2";
 
-// Images
-import theresaDog from '../../../public/theresa-dog.webp';
-import nicerHome from '../../../public/nicer-home.webp';
-import theresaSeated from '../../../public/seated-theresa.webp';
 
-const Homepage = () => {
-  const links = [
-    { name: 'How it works', destination: 'process', hasScroll: false },
-    { name: 'About us', destination: 'about', hasScroll: false },
-    { name: 'Contact Us', destination: 'contact' },
-  ];
+import { intro2 } from "@/data/data";
+
+//
+const Homepage =() => {
+
+const links = [
+  {
+    name:'How it works',
+    destination:'process',
+    hasScroll:false
+  },
+  
+  {
+    name:'About us',
+    destination:'about',
+    hasScroll:false
+  },
+  {
+    name:'Contact Us',
+    destination:'contact'
+  },
+  // {
+  //   name:'JV Partners',
+  //   destination:'jv-partners',
+  //   hasScroll:false
+  // },
+]
 
   return (
+    
     <>
-      <Navbar
+    <>
+    
+    <Navbar
     links={links}
     />
   <main className="bg-gray-200 mt-[6rem]
@@ -44,12 +70,9 @@ const Homepage = () => {
     images={heroImages}
     />
 
-   
-
- 
-   
-       {/* <TextParallaxContentExample
-    src={intro}
+\
+           <TextParallaxContentExample
+    src={intro2}
 alt="meme"
 isVideo={true}
 heading='Welcome to Ontario Cash for Houses'
@@ -60,31 +83,8 @@ thumbnail={theresaDog.src}
 destination='/contact'
 buttonText="Get Your Cash Offer"
 
-    /> */}
-
-           <TextParallaxContentExample
-    src={intro2}
-    alt="Ontario Cash for Houses introductory image featuring a friendly and inviting scene that illustrates our commitment to providing fast cash offers for homeowners looking to sell their properties."
-
-isVideo={true}
-heading='Welcome to Ontario Cash for Houses'
-subHeading=""
-description={introDescription}
-muted={false}
-thumbnail={theresaDog.src}
-destination='/contact'
-buttonText="Get Your Cash Offer"
-
     />
 
-    {/* <AppearingContent
-    src={intro2}
-    id='intro-video'
-    sliderText="Welcome to Ontario Cash for Houses"
-    isVideo={true}
-    /> */}
-
-    
     <Content
     {...content2Data}
     />
@@ -173,8 +173,8 @@ pl-3 pr-3">Our clients have had monumental success working with us, you can be n
   </>
 
    
-  
+  </>
   );
-};
+}
 
-export default Homepage;
+export default Homepage

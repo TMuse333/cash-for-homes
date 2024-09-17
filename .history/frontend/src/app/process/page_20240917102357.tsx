@@ -3,10 +3,8 @@ import dynamic from "next/dynamic"
 
 import { Metadata } from "next"
 
-const ProcessPage = dynamic(()=>import('../pageComponents/processPage'),{
-  ssr:false,
-  loading: () => <p>loading</p>
-  
+const ProcessPage = dynamic(()=>import('../pageComponents/processPage.tsx'),{
+  ssr:false
 })
 
 export const metadata: Metadata = {

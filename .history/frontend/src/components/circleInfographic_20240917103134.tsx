@@ -151,7 +151,7 @@ title, description, index,titleInView}) => {
                 opacity:animationComplete ? 1 : 0,
                 y:animationComplete ? 0 : 30
             }}
-             className="text-3xl ml-auto mr-auto pr-2 pl-2 ">{title}</motion.h3>
+             className="text-3xl ml-auto mr-auto pr-2 pl-2 ">{title}</motion.h1>
             <motion.p 
             initial={{
                 opacity:0

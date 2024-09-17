@@ -3,9 +3,8 @@ import dynamic from "next/dynamic"
 
 import { Metadata } from "next"
 
-const ProcessPage = dynamic(()=>import('../pageComponents/processPage'),{
+const ProcessPage = dynamic(()=>import('../pageComponents/processPage.tsx'),{
   ssr:false,
-  loading: () => <p>loading</p>
   
 })
 

@@ -1,5 +1,3 @@
-import dynamic from "next/dynamic";
-
 const AboutPage = dynamic(() => import('../pageComponents/aboutPage'), {
   ssr: false, // Optional: Disable Server-Side Rendering for this component if needed
   loading: () => <p>Loading...</p>, // Optional: Provide a fallback component while loading
