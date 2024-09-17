@@ -185,7 +185,7 @@ const Video: React.FC<VideoProps> = ({ src, muted = true, thumbnail }) => {
                 src={thumbnail}
                 className="w-full h-full object-contain cursor-pointer"
                 onClick={handlePlayClick}
-                alt='A video explaining how Ontario Cash for Houses will sell your property for cash quickly'
+                alt='A video explaining '
               />
               <button
                 className="absolute inset-0 flex items-center justify-center"

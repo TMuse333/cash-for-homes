@@ -102,7 +102,7 @@ buttonText="Get Your Cash Offer"
     image={nicerHome}
    hasAnimation={true}
    reverse={false}
-   alt="A quality home in a ontario neighborhood to signify that ontario cash for houses can take any property and sell it quick for cash"  //  background='bg-gradient-to-b from-blue-300 via-blue-500 to-blue-400 '
+   alt="A "  //  background='bg-gradient-to-b from-blue-300 via-blue-500 to-blue-400 '
     />
 
     <Content
