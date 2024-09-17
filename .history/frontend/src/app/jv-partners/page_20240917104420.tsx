@@ -3,7 +3,7 @@
 import Navbar from "@/components/navbar"
 import React from "react"
 import { accordionProps, jvParallaxContent } from "@/data/data"
-import { TextParallaxContentExample } from "@/components/parallaxText"
+import  TextParallaxContentExample from "@/components/parallaxText"
 import Footer from "@/components/footer"
 import Accordion from "@/components/accordion"
 import Content2 from "@/components/content2"
