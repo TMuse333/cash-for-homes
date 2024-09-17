@@ -71,7 +71,7 @@ destination,buttonText}) => {
         animate={inView ? 'animate' : 'initial'}
         >
             <img src={image}
-            alt="A background image of cash to signifies how you cash sell your houses fast for cash with ontario cash for houses"
+            alt=""
             className='absolute w-full h-full
             object-cover'
                 style={{
