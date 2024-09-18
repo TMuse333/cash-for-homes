@@ -1,5 +1,5 @@
 "use client"
-
+/* eslint-disable */
 
 import React, { useState, useEffect, useRef, forwardRef } from 'react';
 import { FaPause, FaPlay, FaRedo } from 'react-icons/fa';

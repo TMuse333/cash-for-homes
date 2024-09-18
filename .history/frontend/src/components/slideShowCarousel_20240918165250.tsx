@@ -8,6 +8,7 @@ import {motion, AnimatePresence} from 'framer-motion'
 import { useAppContext } from '@/context/context';
 import Image from 'next/image';
 import PropTypes from 'prop-types'
+imp
 
 interface CarouselProps {
     images: {

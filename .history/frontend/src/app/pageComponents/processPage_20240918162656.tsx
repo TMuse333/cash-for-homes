@@ -49,13 +49,11 @@ const ProcessPage = () => {
           
             <main className="w-screen  bg-gray-200
    ">
-
                 <Navbar
                 links={links}
                 relative={true}
                 />
-                <h1 className="text-2xl text-black my-8
-                text-center md:text-4xl">Sell a house with Ontario Cash for Houses</h1>
+                
                 <TextParallaxContentExample
                 {...processParallax}
                

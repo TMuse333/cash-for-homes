@@ -350,8 +350,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
         </>
     );
 }
-CarouselElement.displayName = "CarouselElement"
-CarouselController.displayName="CarouselController"
+
 SlideShowCarousel.displayName = 'SlideShowCarousel'
 
 export default SlideShowCarousel;

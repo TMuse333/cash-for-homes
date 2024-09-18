@@ -9,7 +9,6 @@ import { Metadata } from "next"
   
 // })
 
-import ProcessPage from "../pageComponents/processPage"
 
 export const metadata: Metadata = {
   title: "Our Process | Ontario Cash for Houses",

@@ -293,9 +293,9 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
     const {isMobile} = useAppContext()
     const [shift, setShift] = useState(0)
 
-    // SlideShowCarousel.propTypes = {
-    //   prop : PropTypes.node
-    // };
+    SlideShowCarousel.propTypes = {
+      prop: PropTypes
+    };
   
 
 
@@ -350,8 +350,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
         </>
     );
 }
-CarouselElement.displayName = "CarouselElement"
-CarouselController.displayName="CarouselController"
-SlideShowCarousel.displayName = 'SlideShowCarousel'
+
+
 
 export default SlideShowCarousel;

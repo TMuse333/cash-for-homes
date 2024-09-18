@@ -8,16 +8,9 @@ import {motion, AnimatePresence} from 'framer-motion'
 import { useAppContext } from '@/context/context';
 import Image from 'next/image';
 import PropTypes from 'prop-types'
+import { processCarouselData} from '@/data/data'
 
-interface CarouselProps {
-    images: {
-        src: string,
-        alt: string,
-        description: string
-    }[]
-    title?: string,
-    description?: string
-}
+
 
 interface SliderProps {
     src: string,
@@ -34,7 +27,6 @@ const CarouselController: React.FC<ControllerProps> = ({
   currentElement,
   setCurrentElement,
 
- shift,
  setShift
 }) => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -175,101 +167,101 @@ CarouselController.displayName="CarouselController"
       </div>
   );
 }
-/* eslint-disable react/display-name */
-const CarouselElement: React.FC<SliderProps> = ({
-    src,
-    alt,
-    description,
-    index,
-    carouselLength,
-    currentElement,
-    shift
-}) => {
+
+// const CarouselElement: React.FC<SliderProps> = ({
+//     src,
+//     alt,
+//     description,
+//     index,
+//     carouselLength,
+//     currentElement,
+//     shift
+// }) => {
   
-const isCurrentSlide = currentElement === index;
-const [animationComplete, setAnimationComplete] = useState(false);
+// const isCurrentSlide = currentElement === index;
+// const [animationComplete, setAnimationComplete] = useState(false);
 
 
-const { isMobile } = useAppContext()
+// const { isMobile } = useAppContext()
 
-    return (
-        <section 
+//     return (
+//         <section 
             
-            className=
-            {`
+//             className=
+//             {`
          
-            w-screen
+//             w-screen
             
-   relative
+//    relative
    
-   max-h-[800px]
-               ml-auto mr-auto
-                h-[105vw] 
+//    max-h-[800px]
+//                ml-auto mr-auto
+//                 h-[105vw] 
                
-                flex-shrink-0
+//                 flex-shrink-0
                
                 
-                 `}
-           style={{
-            transform:`translateX(${(shift * 100)}%)`,
-            transition:'transform 1s ease-in'
+//                  `}
+//            style={{
+//             transform:`translateX(${(shift * 100)}%)`,
+//             transition:'transform 1s ease-in'
          
-            //  scrollSnapAlign: 'center',
-         }}
-        >
+//             //  scrollSnapAlign: 'center',
+//          }}
+//         >
 
-<AnimatePresence>
+// <AnimatePresence>
   
 
 
   
-  <motion.p
-    // onAnimationComplete={handleAnimationComplete}
-    initial={{
-      opacity: 0,
-      // transform: 'translate(0%,-50%)' // Replace y:30 with translateY
-    }}
-    animate={{
-      opacity: isCurrentSlide ? 1 : 0,
-      // transform: isCurrentSlide && isMobile ? 'translate(0%,10%)' : isCurrentSlide ? 'translate(0%,10%)' : 'translate(0%,-50%)', // Use transform for movement
-      transition: {
-        delay: animationComplete ? 0.4 : 0,
-        duration: 0.4
-      }
-    }}
-    exit={{
-      opacity: 0,
-      // transform: 'translateX(0px)' // Replace x:50 with translateX
-    }}
-    className='absolute z-[14] top-[20%]  text-white w-[80%] max-w-[600px] text-md sm:text-xl md:text-4xl
-    left-1/2 -translate-x-1/2'
-    style={{
-      // transform: 'translateY(5%) ' // Handle positioning with transform
-    }}
-  >
-    {description}
-  </motion.p>
+//   <motion.p
+//     // onAnimationComplete={handleAnimationComplete}
+//     initial={{
+//       opacity: 0,
+//       // transform: 'translate(0%,-50%)' // Replace y:30 with translateY
+//     }}
+//     animate={{
+//       opacity: isCurrentSlide ? 1 : 0,
+//       // transform: isCurrentSlide && isMobile ? 'translate(0%,10%)' : isCurrentSlide ? 'translate(0%,10%)' : 'translate(0%,-50%)', // Use transform for movement
+//       transition: {
+//         delay: animationComplete ? 0.4 : 0,
+//         duration: 0.4
+//       }
+//     }}
+//     exit={{
+//       opacity: 0,
+//       // transform: 'translateX(0px)' // Replace x:50 with translateX
+//     }}
+//     className='absolute z-[14] top-[20%]  text-white w-[80%] max-w-[600px] text-md sm:text-xl md:text-4xl
+//     left-1/2 -translate-x-1/2'
+//     style={{
+//       // transform: 'translateY(5%) ' // Handle positioning with transform
+//     }}
+//   >
+//     {description}
+//   </motion.p>
 
-</AnimatePresence>
+// </AnimatePresence>
 
           
-            <Image
-            id={`carousel-element-${index}`}
-                src={src}
-                alt={alt}
-                className={`w-[90%] ml-auto mr-auto object-cover 
-                h-full max-w-[1200px] 
-               `}
-                style={{ filter:'brightness(0.6)',
-              objectPosition:'50% 50%' }}
-              layout="position"
-              width={1000} // Base width as a percentage
-              height={55} // Base height as a percentage
-              objectFit="cover"
-            />
-        </section>
-    );
-}
+//             <Image
+//             id={`carousel-element-${index}`}
+//                 src={src}
+//                 alt={alt}
+//                 className={`w-[90%] ml-auto mr-auto object-cover 
+//                 h-full max-w-[1200px] 
+//                `}
+//                 style={{ filter:'brightness(0.6)',
+//               objectPosition:'50% 50%' }}
+//               layout="position"
+//               width={1000} // Base width as a percentage
+//               height={55} // Base height as a percentage
+//               objectFit="cover"
+//             />
+//         </section>
+//     );
+// }
 
 
 
@@ -286,7 +278,7 @@ interface ControllerProps {
 
 
 
-const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description }) => {
+const SlideShowCarousel  = () => {
     const [currentElement, setCurrentElement] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
 
@@ -324,34 +316,34 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
                 style={{ scrollSnapType: 'x mandatory' }}
                 ref={containerRef}
             >
-                {images.map((image, index) => (
+                {/* {processCarouselData.map((image, index) => (
                     <CarouselElement
                         {...image}
                         key={index}
                         index={index}
-                        carouselLength={images.length}
+                        carouselLength={processCarouselData.length}
                         currentElement={currentElement}
                         shift={shift}
                     />
-                ))}
+                ))} */}
             </div>
           </div>
-          <CarouselController
-                carouselLength={images.length}
+          {/* <CarouselController
+                carouselLength={5}
                 currentElement={currentElement}
                 setCurrentElement={setCurrentElement}
                 // inView={inView}
                 shift={shift}
                 setShift={setShift}
-            />
+            /> */}
         </section>
        
                   {/* </section> */}
         </>
     );
 }
-CarouselElement.displayName = "CarouselElement"
-CarouselController.displayName="CarouselController"
-SlideShowCarousel.displayName = 'SlideShowCarousel'
+// CarouselElement.displayName = "CarouselElement"
+// CarouselController.displayName="CarouselController"
+// SlideShowCarousel.displayName = 'SlideShowCarousel'
 
 export default SlideShowCarousel;

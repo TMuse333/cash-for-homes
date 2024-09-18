@@ -1,13 +1,13 @@
 "use client"
 
 
-import React, { useState, useEffect, useRef, forwardRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FaPause, FaPlay, FaRedo } from 'react-icons/fa';
 import {useIntersectionObserver} from './intersectionObserver'
 import {motion, AnimatePresence} from 'framer-motion'
 import { useAppContext } from '@/context/context';
 import Image from 'next/image';
-import PropTypes from 'prop-types'
+
 
 interface CarouselProps {
     images: {
@@ -137,8 +137,6 @@ useEffect(() => {
 //   console.log('current shift',shift)
 // },[shift])
 
-CarouselController.displayName="CarouselController"
-
 
   return (
       <div ref={componentRef}
@@ -175,7 +173,7 @@ CarouselController.displayName="CarouselController"
       </div>
   );
 }
-/* eslint-disable react/display-name */
+ eslint-disable react/display-name */
 const CarouselElement: React.FC<SliderProps> = ({
     src,
     alt,
@@ -271,10 +269,6 @@ const { isMobile } = useAppContext()
     );
 }
 
-
-
-CarouselElement.displayName='CarouselElement'
-
 interface ControllerProps {
     carouselLength: number,
     currentElement: number,
@@ -293,9 +287,6 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
     const {isMobile} = useAppContext()
     const [shift, setShift] = useState(0)
 
-    // SlideShowCarousel.propTypes = {
-    //   prop : PropTypes.node
-    // };
   
 
 
@@ -350,8 +341,5 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
         </>
     );
 }
-CarouselElement.displayName = "CarouselElement"
-CarouselController.displayName="CarouselController"
-SlideShowCarousel.displayName = 'SlideShowCarousel'
 
 export default SlideShowCarousel;

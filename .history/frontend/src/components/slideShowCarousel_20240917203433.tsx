@@ -1,13 +1,13 @@
-"use client"
 
 
-import React, { useState, useEffect, useRef, forwardRef } from 'react';
+
+import React, { useState, useEffect, useRef } from 'react';
 import { FaPause, FaPlay, FaRedo } from 'react-icons/fa';
 import {useIntersectionObserver} from './intersectionObserver'
 import {motion, AnimatePresence} from 'framer-motion'
 import { useAppContext } from '@/context/context';
 import Image from 'next/image';
-import PropTypes from 'prop-types'
+
 
 interface CarouselProps {
     images: {
@@ -27,6 +27,15 @@ interface SliderProps {
     carouselLength:number,
     currentElement:number,
     shift:number
+}
+
+interface ControllerProps {
+  carouselLength: number,
+  currentElement: number,
+  setCurrentElement: (index: number) => void,
+  inView?:boolean,
+  shift:number,
+  setShift:React.Dispatch<React.SetStateAction<number>>;
 }
 
 const CarouselController: React.FC<ControllerProps> = ({
@@ -80,7 +89,7 @@ const CarouselController: React.FC<ControllerProps> = ({
 
 function togglePlay(){
   setSlideShowPaused(!slideShowPaused);
-  // console.log('pause nation');
+  console.log('pause nation');
 }
 
 function resetSlideShow(){
@@ -98,7 +107,7 @@ useEffect(()=> {
 
 const handleSlide = (interval:NodeJS.Timeout) => {
   if (slideProgress < 100) {
-    // console.log('filling the bar');
+    console.log('filling the bar');
     setShowRefreshBar(false);
     setSlideProgressReset(false);
     setSlideProgress((curr) => curr + 4); // Increment by 8 to reach 100 in a slower time
@@ -114,7 +123,7 @@ const handleSlide = (interval:NodeJS.Timeout) => {
 useEffect(() => {
   const interval = setInterval(() => {
     if (slideShowPaused || !inView) {
-      // console.log('not in view');
+      console.log('not in view');
       return;
     }
 
@@ -126,7 +135,7 @@ useEffect(() => {
 
 useEffect(() => {
   if (currentElement === carouselLength - 1 && slideProgress >= 100) {
-    // console.log('Reached end of carousel with slideProgress at 100');
+    console.log('Reached end of carousel with slideProgress at 100');
     setTimeout(() => {
       setShowRefreshBar(true);
     }, 300);
@@ -137,14 +146,12 @@ useEffect(() => {
 //   console.log('current shift',shift)
 // },[shift])
 
-CarouselController.displayName="CarouselController"
-
 
   return (
       <div ref={componentRef}
-      className='relative left-[50%] -translate-x-[50%] flex
+      className='absolute left-[50%] -translate-x-[50%] flex
       w-[250px] justify-center md:w-[415px]
-      
+      bottom-0 
       '>
           <button className='bg-gray-700 ml-auto mr-auto p-4 rounded-xl flex
           md:scale-[1.5]'>
@@ -175,7 +182,7 @@ CarouselController.displayName="CarouselController"
       </div>
   );
 }
-/* eslint-disable react/display-name */
+
 const CarouselElement: React.FC<SliderProps> = ({
     src,
     alt,
@@ -189,6 +196,13 @@ const CarouselElement: React.FC<SliderProps> = ({
 const isCurrentSlide = currentElement === index;
 const [animationComplete, setAnimationComplete] = useState(false);
 
+function handleAnimationComplete(){
+  setAnimationComplete(!animationComplete);
+  console.log('animation completed!');
+
+
+
+}
 
 const { isMobile } = useAppContext()
 
@@ -202,7 +216,7 @@ const { isMobile } = useAppContext()
             
    relative
    
-   max-h-[800px]
+   max-h-[650px]
                ml-auto mr-auto
                 h-[105vw] 
                
@@ -273,29 +287,17 @@ const { isMobile } = useAppContext()
 
 
 
-CarouselElement.displayName='CarouselElement'
-
-interface ControllerProps {
-    carouselLength: number,
-    currentElement: number,
-    setCurrentElement: (index: number) => void,
-    inView?:boolean,
-    shift:number,
-    setShift:React.Dispatch<React.SetStateAction<number>>;
-}
 
 
+export const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description }) => {
 
-const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description }) => {
+  SlideShowCarousel.displayName = 'SlideshowCarousel'
     const [currentElement, setCurrentElement] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
 
     const {isMobile} = useAppContext()
     const [shift, setShift] = useState(0)
 
-    // SlideShowCarousel.propTypes = {
-    //   prop : PropTypes.node
-    // };
   
 
 
@@ -303,12 +305,13 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
 
     return (
       <>
-      {/* <section className='relative bg-green-200
-      h-[110vw] '> */}
+      <section className='relative 
+      h-[110vw] max-h-[650px] '>
 
 
         <section className='relative ml-auto mr-auto w-screen mb-[6rem]
-         h-[125vw] overflow-x-hidden
+         h-[115vw] overflow-x-hidden overflow-y-hidden
+         max-h-[550px] 
         
         '>
           <div 
@@ -317,18 +320,20 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
                 className=" flex 
                 w-screen relative
                 h-[105vw] 
-                max-h-[800px]
+                max-h-[450px]
                 
                 
                  "
-                style={{ scrollSnapType: 'x mandatory' }}
+                // style={{ scrollSnapType: 'x mandatory' }}
                 ref={containerRef}
             >
                 {images.map((image, index) => (
                     <CarouselElement
-                        {...image}
-                        key={index}
+                        src={image.src}
+                        key={image.src}
+                        description={image.description}
                         index={index}
+                        alt={image.alt}
                         carouselLength={images.length}
                         currentElement={currentElement}
                         shift={shift}
@@ -336,7 +341,9 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
                 ))}
             </div>
           </div>
-          <CarouselController
+         
+        </section>
+        <CarouselController
                 carouselLength={images.length}
                 currentElement={currentElement}
                 setCurrentElement={setCurrentElement}
@@ -344,14 +351,10 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
                 shift={shift}
                 setShift={setShift}
             />
-        </section>
        
-                  {/* </section> */}
+                  </section>
         </>
     );
 }
-CarouselElement.displayName = "CarouselElement"
-CarouselController.displayName="CarouselController"
-SlideShowCarousel.displayName = 'SlideShowCarousel'
 
-export default SlideShowCarousel;
+SlideShowCarousel.displayName = 'SlideshowCarousel'

@@ -8,16 +8,9 @@ import {motion, AnimatePresence} from 'framer-motion'
 import { useAppContext } from '@/context/context';
 import Image from 'next/image';
 import PropTypes from 'prop-types'
+import { processCarouselData} from '@data/data'
 
-interface CarouselProps {
-    images: {
-        src: string,
-        alt: string,
-        description: string
-    }[]
-    title?: string,
-    description?: string
-}
+
 
 interface SliderProps {
     src: string,
@@ -286,7 +279,7 @@ interface ControllerProps {
 
 
 
-const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description }) => {
+const SlideShowCarousel:  = () => {
     const [currentElement, setCurrentElement] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
 

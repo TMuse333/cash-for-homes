@@ -350,7 +350,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
         </>
     );
 }
-CarouselElement.displayName = "CarouselElement"
+CarouselElement.displayName = "Carousel"
 CarouselController.displayName="CarouselController"
 SlideShowCarousel.displayName = 'SlideShowCarousel'
 

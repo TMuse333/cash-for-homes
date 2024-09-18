@@ -8,16 +8,9 @@ import {motion, AnimatePresence} from 'framer-motion'
 import { useAppContext } from '@/context/context';
 import Image from 'next/image';
 import PropTypes from 'prop-types'
+import { processCarouselData} from '@/data/data'
 
-interface CarouselProps {
-    images: {
-        src: string,
-        alt: string,
-        description: string
-    }[]
-    title?: string,
-    description?: string
-}
+
 
 interface SliderProps {
     src: string,
@@ -34,7 +27,6 @@ const CarouselController: React.FC<ControllerProps> = ({
   currentElement,
   setCurrentElement,
 
- shift,
  setShift
 }) => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -286,7 +278,7 @@ interface ControllerProps {
 
 
 
-const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description }) => {
+const SlideShowCarousel  = () => {
     const [currentElement, setCurrentElement] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
 
@@ -324,34 +316,34 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
                 style={{ scrollSnapType: 'x mandatory' }}
                 ref={containerRef}
             >
-                {images.map((image, index) => (
+                {/* {processCarouselData.map((image, index) => (
                     <CarouselElement
                         {...image}
                         key={index}
                         index={index}
-                        carouselLength={images.length}
+                        carouselLength={processCarouselData.length}
                         currentElement={currentElement}
                         shift={shift}
                     />
-                ))}
+                ))} */}
             </div>
           </div>
-          <CarouselController
-                carouselLength={images.length}
+          {/* <CarouselController
+                carouselLength={5}
                 currentElement={currentElement}
                 setCurrentElement={setCurrentElement}
                 // inView={inView}
                 shift={shift}
                 setShift={setShift}
-            />
+            /> */}
         </section>
        
                   {/* </section> */}
         </>
     );
 }
-CarouselElement.displayName = "CarouselElement"
-CarouselController.displayName="CarouselController"
-SlideShowCarousel.displayName = 'SlideShowCarousel'
+// CarouselElement.displayName = "CarouselElement"
+// CarouselController.displayName="CarouselController"
+// SlideShowCarousel.displayName = 'SlideShowCarousel'
 
 export default SlideShowCarousel;

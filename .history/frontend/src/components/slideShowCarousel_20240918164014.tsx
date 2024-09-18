@@ -286,16 +286,14 @@ interface ControllerProps {
 
 
 
-const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description }) => {
+const SlideShowCarousel: React.FC<CarouselProps> = ({prop, images, title, description }) => {
     const [currentElement, setCurrentElement] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
 
     const {isMobile} = useAppContext()
     const [shift, setShift] = useState(0)
 
-    // SlideShowCarousel.propTypes = {
-    //   prop : PropTypes.node
-    // };
+  
   
 
 
@@ -350,8 +348,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
         </>
     );
 }
-CarouselElement.displayName = "CarouselElement"
-CarouselController.displayName="CarouselController"
-SlideShowCarousel.displayName = 'SlideShowCarousel'
+
+
 
 export default SlideShowCarousel;

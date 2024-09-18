@@ -1,12 +1,12 @@
 "use client"
 import Navbar from "@/components/navbar"
-import SlideShowCarousel from "@/components/slideShowCarousel"
+import {SlideShowCarousel} from "@/components/slideShowCarousel"
 import React from "react"
 import { processCarouselData, jvParallaxContent,
 openingText,processParallax, dunk,
 accordionProps,
 processFAQ} from "@/data/data"
-import  {TextParallaxContentExample } from "@/components/parallaxText"
+import  {TextParallaxContentExample}  from "@/components/parallaxText"
 import Closer from "@/components/closer"
 import Footer from "@/components/footer"
 import Accordion from "@/components/accordion"
@@ -49,13 +49,14 @@ const ProcessPage = () => {
           
             <main className="w-screen  bg-gray-200
    ">
-
                 <Navbar
                 links={links}
                 relative={true}
                 />
-                <h1 className="text-2xl text-black my-8
-                text-center md:text-4xl">Sell a house with Ontario Cash for Houses</h1>
+
+                <h1 className="text-black text-center px-4
+                text-2xl py-6 sm:text-3xl md:text-4xl">Selling a property fast with Ontario Cash For Houses </h1>
+                
                 <TextParallaxContentExample
                 {...processParallax}
                
@@ -64,8 +65,8 @@ const ProcessPage = () => {
                 <p className="text-center text-gray-800 text-2xl sm:text-3xl md:text-4xl mb-4">Quick and simple</p>
                 
 
-                {/* <SlideShowCarousel
-                {...processCarouselData}/> */}
+                <SlideShowCarousel
+                {...processCarouselData}/>
 
 
  

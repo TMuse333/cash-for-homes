@@ -54,8 +54,7 @@ const ProcessPage = () => {
                 links={links}
                 relative={true}
                 />
-                <h1 className="text-2xl text-black my-8
-                text-center md:text-4xl">Sell a house with Ontario Cash for Houses</h1>
+                <h1>Sell a house with Ontario Cash for Houses</h1>
                 <TextParallaxContentExample
                 {...processParallax}
                

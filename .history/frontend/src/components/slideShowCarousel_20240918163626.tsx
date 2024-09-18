@@ -7,7 +7,7 @@ import {useIntersectionObserver} from './intersectionObserver'
 import {motion, AnimatePresence} from 'framer-motion'
 import { useAppContext } from '@/context/context';
 import Image from 'next/image';
-import PropTypes from 'prop-types'
+
 
 interface CarouselProps {
     images: {
@@ -137,7 +137,7 @@ useEffect(() => {
 //   console.log('current shift',shift)
 // },[shift])
 
-CarouselController.displayName="CarouselController"
+Carou
 
 
   return (
@@ -293,9 +293,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
     const {isMobile} = useAppContext()
     const [shift, setShift] = useState(0)
 
-    // SlideShowCarousel.propTypes = {
-    //   prop : PropTypes.node
-    // };
+    SlideShowCarousel.displayName='SlideShowCarousel'
   
 
 
@@ -350,8 +348,7 @@ const SlideShowCarousel: React.FC<CarouselProps> = ({ images, title, description
         </>
     );
 }
-CarouselElement.displayName = "CarouselElement"
-CarouselController.displayName="CarouselController"
-SlideShowCarousel.displayName = 'SlideShowCarousel'
+
+
 
 export default SlideShowCarousel;
