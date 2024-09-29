@@ -18,8 +18,7 @@ const Footer = dynamic(() => import('@/components/footer'),{ssr:false});
 // Import static data, images, and components that are not lazy-loaded
 import { accordionProps, circleInfographicData1, content2Data, intro2, introDescription, openingText,
 heroImages } from "@/data/data";
- const TextFormat = dynamic(()=>import('@/components/textFormat'))
- const TextFormat2 = dynamic(()=>import('@/components/textFormat2'))
+ const textFormat = dynamic(()=>import())
 
 // Images
 import theresaDog from '../../../public/theresa-dog.webp';

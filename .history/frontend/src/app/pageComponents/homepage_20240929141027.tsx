@@ -18,8 +18,8 @@ const Footer = dynamic(() => import('@/components/footer'),{ssr:false});
 // Import static data, images, and components that are not lazy-loaded
 import { accordionProps, circleInfographicData1, content2Data, intro2, introDescription, openingText,
 heroImages } from "@/data/data";
- const TextFormat = dynamic(()=>import('@/components/textFormat'))
- const TextFormat2 = dynamic(()=>import('@/components/textFormat2'))
+import TextFormat from "@/components/textFormat";
+import TextFormat2 from "@/components/textFormat2";
 
 // Images
 import theresaDog from '../../../public/theresa-dog.webp';
@@ -49,7 +49,19 @@ const Homepage = () => {
 
  
    
-  
+       {/* <TextParallaxContentExample
+    src={intro}
+alt="meme"
+isVideo={true}
+heading='Welcome to Ontario Cash for Houses'
+subHeading=""
+description={introDescription}
+muted={false}
+thumbnail={theresaDog.src}
+destination='/contact'
+buttonText="Get Your Cash Offer"
+
+    /> */}
 
            <TextParallaxContentExample
     src={intro2}

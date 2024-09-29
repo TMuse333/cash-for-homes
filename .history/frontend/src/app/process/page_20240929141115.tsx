@@ -9,7 +9,7 @@ const ProcessPage = dynamic(()=>import('../pageComponents/processPage'),{
   
 })
 
-
+import ProcessPage from "../pageComponents/processPage"
 
 export const metadata: Metadata = {
   title: "Our Process | Ontario Cash for Houses",

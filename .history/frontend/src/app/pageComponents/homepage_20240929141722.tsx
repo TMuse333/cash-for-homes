@@ -19,7 +19,6 @@ const Footer = dynamic(() => import('@/components/footer'),{ssr:false});
 import { accordionProps, circleInfographicData1, content2Data, intro2, introDescription, openingText,
 heroImages } from "@/data/data";
  const TextFormat = dynamic(()=>import('@/components/textFormat'))
- const TextFormat2 = dynamic(()=>import('@/components/textFormat2'))
 
 // Images
 import theresaDog from '../../../public/theresa-dog.webp';

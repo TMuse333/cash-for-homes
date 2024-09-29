@@ -1,10 +1,10 @@
 "use client"
 
 import Navbar from "@/components/navbar"
-import { aboutCloser,  aboutContent3} from "@/data/data"
+import { aboutCloser,  aboutContent3, aboutContent4 } from "@/data/data"
 import React from "react"
 import Content from "../../components/content";
-
+import { content1Data, openingText } from "@/data/data";
 import Closer from "../../components/closer";
 import Footer from "@/components/footer"
 
@@ -40,7 +40,9 @@ const AboutPage = () => {
         links={links}
         />
         <main className="w-screen bg-gray-200 mt-[6rem]">
-        
+                {/* <Content2
+                {...aboutContent1}
+                /> */}
 
 <h1 className=" text-black
 mt-[4rem] pt-6
@@ -50,7 +52,11 @@ mt-[4rem] pt-6
             {...aboutContent3}
             />
 
-           
+            {/* <Content
+            {...aboutContent4}
+            reverse={true}
+            background='bg-gradient-to-tr from-blue-400 via-blue-300 to-blue-200'
+            /> */}
 
             <Closer
             {...aboutCloser}

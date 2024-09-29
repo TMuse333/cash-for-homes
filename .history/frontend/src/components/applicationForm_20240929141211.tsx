@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, } from "react";
+import React, { useEffect,  } from "react";
 import { applicationQuestions } from "@/data/data";
 import InputForm from "./inputForm";
 import dog from '../../public/theresa-dog.webp'

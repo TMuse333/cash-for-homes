@@ -40,7 +40,9 @@ const AboutPage = () => {
         links={links}
         />
         <main className="w-screen bg-gray-200 mt-[6rem]">
-        
+                {/* <Content2
+                {...aboutContent1}
+                /> */}
 
 <h1 className=" text-black
 mt-[4rem] pt-6

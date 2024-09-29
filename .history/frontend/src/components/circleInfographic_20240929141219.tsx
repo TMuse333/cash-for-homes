@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-import { motion} from 'framer-motion'
+import { motion,useTransform, useScroll} from 'framer-motion'
 import {useIntersectionObserver} from "./intersectionObserver";
 
 import {StaticImageData} from 'next/image'

@@ -40,7 +40,9 @@ const AboutPage = () => {
         links={links}
         />
         <main className="w-screen bg-gray-200 mt-[6rem]">
-        
+                {/* <Content2
+                {...aboutContent1}
+                /> */}
 
 <h1 className=" text-black
 mt-[4rem] pt-6
@@ -50,7 +52,11 @@ mt-[4rem] pt-6
             {...aboutContent3}
             />
 
-           
+            {/* <Content
+            {...aboutContent4}
+            reverse={true}
+            background='bg-gradient-to-tr from-blue-400 via-blue-300 to-blue-200'
+            /> */}
 
             <Closer
             {...aboutCloser}

@@ -1,7 +1,7 @@
 
 
 // Assuming you're using TypeScript, ensure the imports and types are correct
-import React, { useState, ChangeEvent } from 'react';
+import React, { useState, ChangeEvent,  } from 'react';
 import Image from 'next/image';
 
 import logo from '../../public/abandoned-home.webp';

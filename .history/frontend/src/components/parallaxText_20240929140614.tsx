@@ -2,7 +2,7 @@ import  { ReactNode, useRef, useEffect, useState, memo } from "react";
 import { motion, useScroll, useTransform, motionValue, MotionValue} from "framer-motion";
 // import { FiArrowUpRight } from "react-icons/fi";
 // import laptop from '../../media/laptop.jpg'
-import {  useAppContext } from "@/context/context";
+import { AppContext, useAppContext } from "@/context/context";
 import { useVideoIntersectionObserver} from "./intersectionObserver";
 import Link from "next/link";
 
