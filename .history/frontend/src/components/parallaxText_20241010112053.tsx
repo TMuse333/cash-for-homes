@@ -363,7 +363,7 @@ const StickyImage = ({ imgUrl, isVideo, alt,muted,thumbnail }: { imgUrl: string,
           alt={alt}
           muted={muted}
           thumbnail={thumbnail}
-          
+          f
          />
         
         )

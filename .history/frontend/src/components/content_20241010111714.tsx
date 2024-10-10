@@ -166,7 +166,6 @@ const MotionImage = motion(Image)
           animate={hasAnimation && inView ? 'animate' : ''}
           src={imageSrc}
           alt={alt}
-          fetchPriority="low"
           />
       ) }
       

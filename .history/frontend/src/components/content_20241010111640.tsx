@@ -11,7 +11,7 @@ import Link from 'next/link';
 import {StaticImageData} from 'next/image'
 interface contentProps {
   image:  StaticImageData | string;
-  alt:string
+  alt?:string
   customText: React.ReactNode;
   description?: string[] | null  ;
   reverse: boolean | null;
@@ -157,7 +157,7 @@ const MotionImage = motion(Image)
            Your browser does not support the video tag.
        </motion.video>
       ) : (
-        <MotionImage
+        <motion.img
         className={`w-[90vw] h-[55vw]  ml-auto mr-auto
         md:w-[50vw] md:mr-0 max-h-[567px] max-w-[668px]
         rounded-md ${objectContain ? 'object-contain' : 'object-cover'}`}
@@ -166,7 +166,6 @@ const MotionImage = motion(Image)
           animate={hasAnimation && inView ? 'animate' : ''}
           src={imageSrc}
           alt={alt}
-          fetchPriority="low"
           />
       ) }
       

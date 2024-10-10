@@ -104,7 +104,7 @@ buttonText="Get Your Cash Offer"
     image={nicerHome}
    hasAnimation={true}
    reverse={true}
-   alt='An image of a nicer home to demonstrate that ontario cash for houses will buy homes in any condition to help you sell your house stress free'
+   
   //  background='bg-gradient-to-b from-blue-300 via-blue-500 to-blue-400 '
     />
 
@@ -116,7 +116,6 @@ buttonText="Get Your Cash Offer"
        </div>
 
     <Content
-    alt='An image of theresa describing the reasons why ontario cash for houses is different from the rest and will help you out!'
     image={theresaSeated}
 objectContain={true}
     customText={

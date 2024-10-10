@@ -125,13 +125,20 @@ title, description, index,titleInView}) => {
             onAnimationComplete={()=>setAnimationComplete(true)}
             src={image.src}
             fetchPriority="low"
-            alt='the alt'
             />
-       
+        {/*        ${inView ? 'glow' : ''}`}*/}
             <div className="relative flex flex-col justify-center
             items-center mt-auto mb-auto"
            >
-           
+            {/* <Image className="w-[20%]
+           h-[50%]
+            max-w-[115px] max-h-[115px] 
+            sm:w-[10vw]  object-cover 
+            mr-auto ml-auto text-center mb-5
+            mt-[-2rem]"
+            src={image}
+            alt='image'
+            /> */}
             <section className="h-[200px]  flex flex-col
             items-center justify-center mb-auto mt-auto">
 

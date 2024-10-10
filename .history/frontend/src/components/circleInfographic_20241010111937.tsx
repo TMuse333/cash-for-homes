@@ -125,7 +125,7 @@ title, description, index,titleInView}) => {
             onAnimationComplete={()=>setAnimationComplete(true)}
             src={image.src}
             fetchPriority="low"
-            alt='the alt'
+            alt=''
             />
        
             <div className="relative flex flex-col justify-center

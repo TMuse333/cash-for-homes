@@ -11,7 +11,7 @@ import Link from 'next/link';
 import {StaticImageData} from 'next/image'
 interface contentProps {
   image:  StaticImageData | string;
-  alt:string
+  alt?:string
   customText: React.ReactNode;
   description?: string[] | null  ;
   reverse: boolean | null;
@@ -166,7 +166,6 @@ const MotionImage = motion(Image)
           animate={hasAnimation && inView ? 'animate' : ''}
           src={imageSrc}
           alt={alt}
-          fetchPriority="low"
           />
       ) }
       

@@ -116,7 +116,6 @@ buttonText="Get Your Cash Offer"
        </div>
 
     <Content
-    alt='An image of theresa describing the reasons why ontario cash for houses is different from the rest and will help you out!'
     image={theresaSeated}
 objectContain={true}
     customText={
