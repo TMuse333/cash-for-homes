@@ -37,9 +37,7 @@ const Homepage = () => {
 
   return (
     <>
-    <Head>
-    <meta name="google-site-verification" content="XXaljy6jYzsr11VpxSUrTHYrn_MT1s8RGSu1o0RCFzU" />
-    </Head>
+    <Head
       <Navbar
     links={links}
     />

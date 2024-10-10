@@ -33,13 +33,8 @@ const Homepage = () => {
     { name: 'Contact Us', destination: 'contact' },
   ];
 
-
-
   return (
     <>
-    <Head>
-    <meta name="google-site-verification" content="XXaljy6jYzsr11VpxSUrTHYrn_MT1s8RGSu1o0RCFzU" />
-    </Head>
       <Navbar
     links={links}
     />
