@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 
 
-
+<meta name="google-site-verification" content="XXaljy6jYzsr11VpxSUrTHYrn_MT1s8RGSu1o0RCFzU" />
 
 
 export default function RootLayout({

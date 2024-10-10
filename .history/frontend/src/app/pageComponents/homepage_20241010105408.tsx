@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import Navbar from "@/components/navbar";
 import ImageHero from "@/components/imageHero";
 import React, { } from "react";
-
+import Head from 'next/head';
 // Dynamically import the other components
 const TextParallaxContentExample = dynamic(() => import('@/components/parallaxText'),{ssr:true});
 
