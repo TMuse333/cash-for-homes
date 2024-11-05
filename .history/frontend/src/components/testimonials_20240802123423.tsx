@@ -1,3 +1,0 @@
-interface TestimonialProps {
-    title:'string'
-}
