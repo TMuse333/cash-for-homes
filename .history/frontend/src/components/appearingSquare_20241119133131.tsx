@@ -59,7 +59,7 @@ const AppearingContent: React.FC<ContentProps> = ({
     });
 
     // Scaling the section when scrolling past it
-    const scale = useTransform(scrollYProgress, [0.25, 1], [1, 0.55]);
+    const scale = useTransform(scrollYProgress, [0.25, 1], [1, 0.15]);
 
     return (
         <motion.section
@@ -128,11 +128,6 @@ max-h-[500px] h-[50vh]">
 
                    
                 </div>
-                <p id={`p-${id}`} className="text-left px-4 opacity-1 my-6
-                text-black
-                mx-auto max-w-[900px] md:text-lg">
-                  {description}
-                </p>
             </section>
         </motion.section>
     );

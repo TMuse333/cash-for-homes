@@ -121,28 +121,21 @@ objectContain={true}
 reverse={true}
 /> */}
 
-<h2 className="text-center text-black text-3xl sm:text-5xl font-semibold
-mb-4">
-  Benefits of selling your house for cash with Ontario Cash for Houses?
-</h2>
-<p className=" text-black mb-4 sm:text-lg
-pl-3 pr-3 px-6 text-left w-[90%] mx-auto">
-  Discover the benefits of selling your home quickly and hassle-free with Ontario Cash for Houses. We offer competitive cash offers for homes in any condition, eliminating the need for repairs, agent fees, and commissions. Our process is straightforward and fast, allowing you to sell your house as-is and close the deal on your terms. Learn how our transparent process, flexible closing options, and all-cash offers can help you get the best value for your property with no hidden costs or delays.
-</p>
-
+<div className="mt-5
+        w-[90vw] h-[5px]
+         bg-gradient-to-r from-blue-700 via-blue-700 to-blue-600
+        ml-auto mr-auto rounded-[200rem] mb-8">
+           
+       </div>
 
 <CircleInfoGraphic
 {...circleInfographicData1}
 />
 
-<h2 className="text-center text-black text-3xl sm:text-5xl font-semibold mb-4
-px-6">
-  What Our Clients Say About Selling Their House Fast for Cash
-</h2>
-<p className="text-left mx-auto w-[90%] text-black mb-4 sm:text-lg pl-3 pr-3">
-  Our clients have had monumental success working with us. Whether they needed to sell a house quickly, avoid costly repairs, or simply get a fair cash offer fast, we’ve helped homeowners across Ontario achieve their goals. You can be next! Experience a hassle-free, transparent process with no hidden fees, and sell your house fast for cash with confidence. 
-</p>
-
+<h2 className="text-center text-black text-3xl sm:text-5xl font-semibold
+mb-4">What they say about us</h2>
+<p className="text-center text-black mb-4 sm:text-lg
+pl-3 pr-3">Our clients have had monumental success working with us, you can be next!</p>
 
 <Testimonials
 />

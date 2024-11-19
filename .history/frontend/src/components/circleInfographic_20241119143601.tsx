@@ -116,9 +116,6 @@ title, description, index,titleInView}) => {
             alt='the alt'
             width={600}
             height={1300}
-            style={{
-                filter:'brightness(0.3)'
-            }}
             />
        
             <div className="relative flex flex-col justify-center

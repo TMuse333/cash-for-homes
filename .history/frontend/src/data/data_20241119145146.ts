@@ -190,7 +190,7 @@ export const content1Data:ContentType= {
     image:'/twenty-bills.jpeg',
     title:'Ready to Take the Next Step?',
     description:`
-    You deserve a smooth, stress-free selling experience, and we’re here to ensure it. With our expertise in buying houses fast for cash, a transparent process, and a commitment to providing the best cash offers, selling your property has never been easier. Whether your home needs repairs or you simply need to sell quickly, we make it simple and hassle-free. Don’t wait—unlock the potential of your property today and discover how quickly and easily you can sell your property for cash. Get started now with a fast, no-obligation cash offer!`,
+    `,
     buttonText:'Book a consulation',
     destination:'/contact'
   }

@@ -59,7 +59,7 @@ const AppearingContent: React.FC<ContentProps> = ({
     });
 
     // Scaling the section when scrolling past it
-    const scale = useTransform(scrollYProgress, [0.25, 1], [1, 0.55]);
+    const scale = useTransform(scrollYProgress, [0.25, 1], [1, 0.15]);
 
     return (
         <motion.section

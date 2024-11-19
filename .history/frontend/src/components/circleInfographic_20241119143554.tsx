@@ -107,7 +107,7 @@ title, description, index,titleInView}) => {
     
         >
             <MotionImage className="absolute h-full w-full object-cover"
-           
+            variants={imageVariants(index)}
             initial='initial'
             animate={inView ? 'animate' : 'initial'}
             onAnimationComplete={()=>setAnimationComplete(true)}
@@ -116,9 +116,6 @@ title, description, index,titleInView}) => {
             alt='the alt'
             width={600}
             height={1300}
-            style={{
-                filter:'brightness(0.3)'
-            }}
             />
        
             <div className="relative flex flex-col justify-center
