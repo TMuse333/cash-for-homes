@@ -125,7 +125,7 @@ const MotionImage = motion(Image)
     ${background ? `${background}` : ''}`}>
 
 
-    <article
+    <motion.article
       ref={componentRef}
       className={`flex flex-col justify-center align-center pt-8 pb-8
        relative mr-auto ml-auto transition-all
@@ -157,13 +157,13 @@ const MotionImage = motion(Image)
            Your browser does not support the video tag.
        </motion.video>
       ) : (
-        <Image
+        <MotionImage
         className={`w-[90vw] h-[55vw]  ml-auto mr-auto
         md:w-[50vw] md:mr-0 max-h-[567px] max-w-[668px]
         rounded-md ${objectContain ? 'object-contain' : 'object-cover'}`}
-        //  variants={hasAnimation ? imageVariants : nullVariant}
-        //   initial={hasAnimation ? 'initial' : ''}
-        //   animate={hasAnimation && inView ? 'animate' : ''}
+         variants={hasAnimation ? imageVariants : nullVariant}
+          initial={hasAnimation ? 'initial' : ''}
+          animate={hasAnimation && inView ? 'animate' : ''}
           src={imageSrc}
           alt={alt}
           // fetchPriority="low"
@@ -230,7 +230,7 @@ const MotionImage = motion(Image)
          
         </div>
       )}
-    </article>
+    </motion.article>
     </section>
   );
 };

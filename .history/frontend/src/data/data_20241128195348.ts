@@ -529,23 +529,17 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        link: '/blog/dont-need-to-renovate-when-sell-house-cash-fast-ontario',
-        src: '/blogs/blog2/sell-house-cash-fast-ontario-renovation.webp',
-        alt: 'House undergoing renovation, illustrating why renovations are unnecessary to sell house cash fast in Ontario',
-        title: 'Why You Don’t Need to Renovate Before Selling Your Home',
-        description: 'Discover why you can sell your house cash fast in Ontario Canada without renovations or repairs. Learn how to save time and money by selling as-is.',
-        date: 'November 28th, 2024'
-      },
-      {
-        src: '/twenty-bills.jpeg',
-        alt: 'Twenty dollar bills to signify what happens when you sell house fast cash Ontario',
-        title: "5 Signs It’s Time to Sell Your House Fast for Cash in Ontario",
-        description: "Thinking about selling your house for cash in Ontario? Discover the top 5 signs it’s time for a fast cash sale and how it can save you time, money, and stress—read more now!",
-        link: '/blog/signs-to-sell-house-fast-cash-ontario',
-        date: 'November 25th, 2024'
+        link
       }
-    ];
-    
+      {
+        src:'/twenty-bills.jpeg',
+        alt:'Twenty dollar bills to signify what happens when you sell house fast cash ontario',
+        title:'5 signs its time to sell your house fast for cash in ontario',
+        description:'Thinking about selling your house for cash in Ontario? Discover the top 5 signs it’s time for a fast cash sale and how it can save you time, money, and stress—read more now!',
+        link:'/blog/signs-to-sell-house-fast-cash-ontario',
+        date:'November 25th, 2025'
+      }
+    ]
     
     
 

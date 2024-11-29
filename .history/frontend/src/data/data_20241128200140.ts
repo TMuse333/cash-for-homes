@@ -539,8 +539,8 @@ export const aboutContent4:ContentType = {
       {
         src: '/twenty-bills.jpeg',
         alt: 'Twenty dollar bills to signify what happens when you sell house fast cash Ontario',
-        title: "5 Signs It’s Time to Sell Your House Fast for Cash in Ontario",
-        description: "Thinking about selling your house for cash in Ontario? Discover the top 5 signs it’s time for a fast cash sale and how it can save you time, money, and stress—read more now!",
+        title: "5 Signs It’s Time to Sell Your House Fast for Cash in Ontario',
+        description: 'Thinking about selling your house for cash in Ontario? Discover the top 5 signs it’s time for a fast cash sale and how it can save you time, money, and stress—read more now!',
         link: '/blog/signs-to-sell-house-fast-cash-ontario',
         date: 'November 25th, 2024'
       }
