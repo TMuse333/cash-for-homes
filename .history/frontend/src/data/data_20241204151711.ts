@@ -529,15 +529,6 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src: '/blogs/blog3/sell-house-cash-fast-ontario-inherited-home.webp',
-        alt: 'A home with a SOLD sign to represent selling an inherited house for cash in Ontario',
-        title: "How to Sell a Home for Cash Fast in Ontario That You’ve Inherited Without Stress",
-        description: "Inherited a home in Ontario? Learn how to sell it for cash quickly without stress. Discover the step-by-step process and tips for a hassle-free transaction—read more now!",
-        link: '/blog/how-to-sell-house-cash-fast-ontario-for-inherited-home',
-        date: 'December 4th, 2024'
-    },
-    
-      {
         link: '/blog/dont-need-to-renovate-when-sell-house-cash-fast-ontario',
         src: '/blogs/blog2/sell-house-cash-fast-ontario-renovation.webp',
         alt: 'House undergoing renovation, illustrating why renovations are unnecessary to sell house cash fast in Ontario',
@@ -552,8 +543,10 @@ export const aboutContent4:ContentType = {
         description: "Thinking about selling your house for cash in Ontario? Discover the top 5 signs it’s time for a fast cash sale and how it can save you time, money, and stress—read more now!",
         link: '/blog/signs-to-sell-house-fast-cash-ontario',
         date: 'November 25th, 2024'
-      },
-     
+      }
+      {
+        
+      }
     ];
     
     

@@ -529,7 +529,7 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src: '/blogs/blog3/sell-house-cash-fast-ontario-inherited-home.webp',
+        src: '/inherited-home-sale.jpeg',
         alt: 'A home with a SOLD sign to represent selling an inherited house for cash in Ontario',
         title: "How to Sell a Home for Cash Fast in Ontario That You’ve Inherited Without Stress",
         description: "Inherited a home in Ontario? Learn how to sell it for cash quickly without stress. Discover the step-by-step process and tips for a hassle-free transaction—read more now!",
