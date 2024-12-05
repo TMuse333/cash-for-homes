@@ -10,16 +10,10 @@
   
 }
 
-.markdown-styles{
-  color:black;
-}
-
 .markdown-styles h2{
-  
+  color:black;
   font-size: 2rem;
 }
-
-
 
 @media (prefers-color-scheme: dark) {
   :root {

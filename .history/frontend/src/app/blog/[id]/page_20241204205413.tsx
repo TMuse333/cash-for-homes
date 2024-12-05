@@ -151,15 +151,13 @@ export default async function Post({ params }: PostProps) {
         ))}
 
    
-<section className='w-[95vw]
-md:w-[85vw] mx-auto
-max-w-[1000px] mb-12'>
-
-
-<ReactMarkdown 
-className=' markdown-styles'
->{postData.contentHtml}</ReactMarkdown>
+<section className='w-[95vw] mx-auto
+max-w-[1200px]'>
+  
 </section>
+<ReactMarkdown 
+className='text-black'
+>{postData.contentHtml+"slatty"}</ReactMarkdown>
 
        
 

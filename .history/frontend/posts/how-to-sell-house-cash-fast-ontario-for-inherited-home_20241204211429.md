@@ -34,7 +34,7 @@ contentBoxes:
     reverse: false
     alt: "Inherited home in need of repairs to show why selling as-is is beneficial."
 
-  - image: "/blogs/blog3/sell-house-cash-fast-ontario-inherited-home.webp"
+  - image: "/blogs/blog3/quick-sale-inherited-property.webp"
     description: 
       - "The traditional home-selling process can take weeks or even months due to listing, staging, and waiting for offers. For inherited homes, this timeline can be especially inconvenient if you're handling estate matters or live far from the property."
       - "Selling for cash offers a fast and hassle-free solution. Cash buyers in Ontario are experienced in streamlining the sale process, often closing deals in as little as seven days. This makes it an ideal choice for sellers looking for a quick and efficient transaction."
@@ -42,7 +42,7 @@ contentBoxes:
     reverse: true
     alt: "Image of a smooth cash home sale process for inherited property in Ontario."
 
-  - image: "/blogs/blog3/sell-house-cash-fast-ontario-inherited-home-meeting.webp"
+  - image: "/blogs/blog3/simplified-inherited-home-sale.webp"
     description: 
       - "The emotional weight of selling a loved one’s home can make the process harder than expected. Inherited properties often carry memories and sentimental value, which adds another layer of complexity."
       - "Selling for cash minimizes the emotional strain by offering a fast and straightforward transaction. Ontario cash buyers understand the unique needs of those selling inherited homes and provide compassionate, professional service to make the process as seamless as possible."

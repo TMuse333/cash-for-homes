@@ -42,7 +42,7 @@ contentBoxes:
     reverse: true
     alt: "Image of a smooth cash home sale process for inherited property in Ontario."
 
-  - image: "/blogs/blog3/sell-house-cash-fast-ontario-inherited-home-meeting.webp"
+  - image: "/blogs/blog3/sell-house-cash-fast-ontario-inherited-home-meeting.jpeg"
     description: 
       - "The emotional weight of selling a loved one’s home can make the process harder than expected. Inherited properties often carry memories and sentimental value, which adds another layer of complexity."
       - "Selling for cash minimizes the emotional strain by offering a fast and straightforward transaction. Ontario cash buyers understand the unique needs of those selling inherited homes and provide compassionate, professional service to make the process as seamless as possible."

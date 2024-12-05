@@ -50,4 +50,4 @@ contentBoxes:
     alt: "Image showing a house in need of repairs to highlight why renovations aren't necessary to sell house cash fast Ontario Canada"
 ---
 
-
+slatty
