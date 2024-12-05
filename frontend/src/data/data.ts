@@ -528,6 +528,16 @@ export const aboutContent4:ContentType = {
     }
 
     export const blogCarousel = [
+      
+        {
+          src: '/handshake.webp',
+          alt: 'Avoid mistakes when selling a house for cash in Ontario',
+          title: 'How to Avoid Common Mistakes When Selling Your House for Cash in Ontario',
+          description: 'Discover essential tips to avoid common mistakes when selling your house for cash in Ontario. Learn how to maximize your sale value, avoid hidden fees, and make informed decisions—read now!',
+          link: '/blog/avoid-common-mistakes-selling-house-cash-ontario',
+          date: 'December 5th, 2024'
+        }
+      ,
       {
         src: '/blogs/blog3/sell-house-cash-fast-ontario-inherited-home.webp',
         alt: 'A home with a SOLD sign to represent selling an inherited house for cash in Ontario',
