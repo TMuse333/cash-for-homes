@@ -529,12 +529,12 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src: "/blogs/blog1/sell-home-fast-cash-ontario-money.jpg",
+        src: "/media/sell-house-as-is.webp",
         alt: "Selling your house as-is in Ontario",
         title: "Why Selling Your House As-Is Could Save You Time and Money",
         description: "Learn how selling your house as-is can save you both time and money. Discover the advantages of avoiding costly repairs and the benefits of a hassle-free, cash sale. Read more to find out why selling as-is might be your best option.",
-        link: "/blog/why-selling-house-as-is-saves-time-money",
-        date: "December 7th, 2024"
+        link: "/blog/why-selling-your-house-as-is-could-save-you-time-and-money",
+        date: "December 5th, 2024"
       }
       
       

@@ -534,7 +534,7 @@ export const aboutContent4:ContentType = {
         title: "Why Selling Your House As-Is Could Save You Time and Money",
         description: "Learn how selling your house as-is can save you both time and money. Discover the advantages of avoiding costly repairs and the benefits of a hassle-free, cash sale. Read more to find out why selling as-is might be your best option.",
         link: "/blog/why-selling-house-as-is-saves-time-money",
-        date: "December 7th, 2024"
+        date: "December 5th, 2024"
       }
       
       
