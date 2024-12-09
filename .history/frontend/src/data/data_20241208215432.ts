@@ -529,14 +529,10 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src: '/blogs/divorce/sell-house-divorce-ontario.webp',
-        alt: 'selling your house for cash in ontario after a divorce',
-        title: "How to Sell Your House for Cash After a Divorce in Ontario",
-        description: "Divorce can be a challenging time, and selling your house for cash may offer a quick and stress-free solution. Learn how to navigate the process and make informed decisions during this transition. Read more to find out how we can help you sell your home quickly and efficiently.",
-        link: '/blog/how-to-sell-house-cash-divorce-ontario',
-        date: "December 8th, 2024"
+        src:'/blogs/divorce/sell-house-divorce-ontario.jpg',
+        alt:'selling your house for cash in ontario after a divorce',
+        link:'blog/how-to-sell-house-cash-divorce-ontario'
       },
-      
       {
         src: "/blogs/blog1/sell-home-fast-cash-ontario-money.jpg",
         alt: "Selling your house as-is in Ontario",
