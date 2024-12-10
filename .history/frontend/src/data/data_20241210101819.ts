@@ -83,7 +83,7 @@ export const accordionProps = {
 
 
 export const processFAQ = {
-  items: [
+  text: [
       { 
           title: "What is the first step in your process?", 
           description: "The first step is an initial phone call where we gather basic information about your property and situation. This helps us understand your needs and allows us to offer a tailored solution.",
@@ -117,29 +117,29 @@ export const processFAQ = {
       { 
           title: "When will I receive my money?", 
           description: "On the closing date you'll meet with your lawyer to finalize the sale and the money will be directly transferred to you from your lawyer.  ." ,
-          src:'',
+          src:'/',
           alt:''
       },
       { 
           title: "Are there any hidden fees?", 
           description: "No, there are no hidden fees. You receive a straightforward cash offer without any realtor fees, commissions, or additional costs." ,
-          src:'',
+          src:'/',
           alt:''
       },
       { 
           title: "Can I choose my closing date?", 
           description: "Yes, you have the flexibility to choose a closing date that fits your schedule. We accommodate your needs to make the process as convenient as possible for you." ,
-          src:'',
+          src:'/',
           alt:''
       },
       { 
           title: "Why should I choose your service over others?", 
           description: "Our service offers a hassle-free, quick, and reliable way to sell your property. With no realtor fees, no need for repairs, and fast cash offers, we make the process simple and stress-free." ,
-          src:'',
+          src:'/',
           alt:''
       }
   ],
-  
+  hasIntro: true,
   intro: "Frequently Asked Questions",
   description: "Selling your property can be daunting, but we aim to make it as simple and straightforward as possible. Below, you'll find answers to common questions about our process and how we can help you sell your property quickly and easily.",
   link: ''

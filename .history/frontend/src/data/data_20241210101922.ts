@@ -87,7 +87,7 @@ export const processFAQ = {
       { 
           title: "What is the first step in your process?", 
           description: "The first step is an initial phone call where we gather basic information about your property and situation. This helps us understand your needs and allows us to offer a tailored solution.",
-          src:'',
+          src:'/',
           alt:'' 
       },
       { 

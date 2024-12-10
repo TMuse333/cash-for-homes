@@ -61,7 +61,7 @@ export default async function Post({ params }: PostProps) {
       },
     {
       name:'How it works',
-      destination:'/process',
+      destination:'process',
       hasScroll:false
     },
     
@@ -72,7 +72,7 @@ export default async function Post({ params }: PostProps) {
    
     {
       name:'Contact Us',
-      destination:'/contact'
+      destination:'contact'
     }
   ]
   return (

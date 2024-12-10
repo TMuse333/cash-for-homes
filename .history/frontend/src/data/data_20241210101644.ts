@@ -83,7 +83,7 @@ export const accordionProps = {
 
 
 export const processFAQ = {
-  items: [
+  text: [
       { 
           title: "What is the first step in your process?", 
           description: "The first step is an initial phone call where we gather basic information about your property and situation. This helps us understand your needs and allows us to offer a tailored solution.",
@@ -104,42 +104,30 @@ export const processFAQ = {
       },
       { 
           title: "How quickly can I get a cash offer?", 
-          description: "After evaluating your property, we present you with a cash offer based on the evaluation and market conditions. This offer is competitive, fair, and comes without any obligations.",
-          src:'',
-          alt:'' 
+          description: "After evaluating your property, we present you with a cash offer based on the evaluation and market conditions. This offer is competitive, fair, and comes without any obligations." 
       },
       { 
           title: "What happens after I accept the offer?", 
-          description: "Once you accept the offer, we will forward it to your lawyer. You have the flexibility to choose the closing date that works best for you, making the process smooth and stress-free." ,
-          src:'',
-          alt:''
+          description: "Once you accept the offer, we will forward it to your lawyer. You have the flexibility to choose the closing date that works best for you, making the process smooth and stress-free." 
       },
       { 
           title: "When will I receive my money?", 
-          description: "On the closing date you'll meet with your lawyer to finalize the sale and the money will be directly transferred to you from your lawyer.  ." ,
-          src:'',
-          alt:''
+          description: "On the closing date you'll meet with your lawyer to finalize the sale and the money will be directly transferred to you from your lawyer.  ." 
       },
       { 
           title: "Are there any hidden fees?", 
-          description: "No, there are no hidden fees. You receive a straightforward cash offer without any realtor fees, commissions, or additional costs." ,
-          src:'',
-          alt:''
+          description: "No, there are no hidden fees. You receive a straightforward cash offer without any realtor fees, commissions, or additional costs." 
       },
       { 
           title: "Can I choose my closing date?", 
-          description: "Yes, you have the flexibility to choose a closing date that fits your schedule. We accommodate your needs to make the process as convenient as possible for you." ,
-          src:'',
-          alt:''
+          description: "Yes, you have the flexibility to choose a closing date that fits your schedule. We accommodate your needs to make the process as convenient as possible for you." 
       },
       { 
           title: "Why should I choose your service over others?", 
-          description: "Our service offers a hassle-free, quick, and reliable way to sell your property. With no realtor fees, no need for repairs, and fast cash offers, we make the process simple and stress-free." ,
-          src:'',
-          alt:''
+          description: "Our service offers a hassle-free, quick, and reliable way to sell your property. With no realtor fees, no need for repairs, and fast cash offers, we make the process simple and stress-free." 
       }
   ],
-  
+  hasIntro: true,
   intro: "Frequently Asked Questions",
   description: "Selling your property can be daunting, but we aim to make it as simple and straightforward as possible. Below, you'll find answers to common questions about our process and how we can help you sell your property quickly and easily.",
   link: ''

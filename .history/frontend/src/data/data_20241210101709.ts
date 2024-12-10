@@ -83,7 +83,7 @@ export const accordionProps = {
 
 
 export const processFAQ = {
-  items: [
+  text: [
       { 
           title: "What is the first step in your process?", 
           description: "The first step is an initial phone call where we gather basic information about your property and situation. This helps us understand your needs and allows us to offer a tailored solution.",
@@ -139,7 +139,7 @@ export const processFAQ = {
           alt:''
       }
   ],
-  
+  hasIntro: true,
   intro: "Frequently Asked Questions",
   description: "Selling your property can be daunting, but we aim to make it as simple and straightforward as possible. Below, you'll find answers to common questions about our process and how we can help you sell your property quickly and easily.",
   link: ''

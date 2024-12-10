@@ -54,7 +54,7 @@ const ProcessPage = () => {
                 </p>
 
                <ImageAccordion
-             {...processFAQ}
+             {...process}
                />
 
                 <Footer links={links} />
