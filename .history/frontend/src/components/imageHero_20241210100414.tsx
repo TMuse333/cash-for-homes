@@ -74,8 +74,8 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
                         src={handshake}
                         alt={'Sell cash for house quick handshake'}
                         className={`w-full min-h-[500px]  h-[68%] md:h-full top-0 object-cover
-                         absolute  object-center opacity-1   rounded-xl
-                           `}
+                         absolute  object-center opacity-1  transition-opacity rounded-xl
+                          duration-1000 `}
                     />
             
             </div>

@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ links,relative }) => {
     }
 
     return (
-        <nav className={` top-0 z-[20] w-screen left-0 bg-gray-300 h-[50px] 
+        <nav className={` top-0 z-[20] w-screen left-0 bg-gray-300 h-[40px] 
          flex justify-between items-center border-b-4 border-blue-500 text-gray-500
           z-[100] text-black ${relative ? 'relative' : 'fixed'}`}>
             <div className="relative flex justify-between 
@@ -32,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ links,relative }) => {
                 ">Ontario Cash for Houses</p>
                 </Link>
                 <div
-                    className={`absolute right-[5%] top-[30%] flex flex-col justify-center items-center lg:relative lg:top-auto lg:right-auto`}
+                    className={`absolute right-[5%] top-1/2 flex flex-col justify-center items-center lg:relative lg:top-auto lg:right-auto`}
                     onClick={handleSubmenuClick}
                 >
                     <div className="   lg:hidden w-[140px] lg:w-auto flex flex-col justify-center items-center">

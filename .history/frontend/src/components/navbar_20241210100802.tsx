@@ -32,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ links,relative }) => {
                 ">Ontario Cash for Houses</p>
                 </Link>
                 <div
-                    className={`absolute right-[5%] top-[30%] flex flex-col justify-center items-center lg:relative lg:top-auto lg:right-auto`}
+                    className={`absolute right-[5%] top-[30] flex flex-col justify-center items-center lg:relative lg:top-auto lg:right-auto`}
                     onClick={handleSubmenuClick}
                 >
                     <div className="   lg:hidden w-[140px] lg:w-auto flex flex-col justify-center items-center">

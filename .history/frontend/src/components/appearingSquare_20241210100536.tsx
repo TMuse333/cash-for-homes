@@ -131,7 +131,7 @@ max-h-[500px] h-[50vh]">
                 <p id={`p-${id}`} className="text-left px-4 opacity-1 my-6
                 text-black
                 mx-auto max-w-[900px] md:text-lg
-                whitespace-pre-line">
+                ">
                   {description}
                 </p>
             </section>

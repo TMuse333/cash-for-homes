@@ -64,7 +64,7 @@ const Testimonials: React.FC<TestimonialProps> = ({ testimonials = testimonialsD
     return (
         <section className='bg-gradient-to-b from-gray-600 via-gray-600 to-gray-400 border border-white ml-auto mr-auto max-w-[1200px] w-screen 
           relative mb-8 rounded-lg
-         h-[550px] sm:w-[90vw]
+          w-[90vw]
         '>
            <IoIosArrowForward className="absolute sm:text-5xl top-[40%] right-0 text-2xl hover:text-blue-200
            hover:scale-[1.15] transition-all" onClick={nextTestimonial} />
