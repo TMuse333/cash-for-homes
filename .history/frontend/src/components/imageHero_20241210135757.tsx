@@ -28,7 +28,7 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
 
     return (
         <header className="flex w-screen flex flex-col relative
-         overflow-x-hidden
+        mt-8 sm:mt-5 overflow-x-hidden
         md:flex-row overflow-y-scroll
         pb-10 md:h-screen h-auto
         bg-gradient-to-tr from-blue-800 via-blue-400 to-blue-300 ">

@@ -47,7 +47,7 @@ const [slideComplete, setSlideComplete] = useState(false)
       <Navbar
     links={links}
     />
-  <main className="bg-gray-200 mt-[2.5rem]
+  <main className="bg-gray-200 mt-[2rem]
   overflow-x-hidden
    
  ">
