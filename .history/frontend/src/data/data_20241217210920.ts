@@ -549,13 +549,8 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src:'/blogs/stressed-man-selling-cash-for-house.webp',
-        alt:'This is how you can sell house fast for cash in ontario canada during a financial crisis',
-        link:'/blog/how-to-sell-house-quickly-financial-crisis',
-        title:'How to Sell Your House for cash fast in ontario During a Financial Crisis',
-        date:'December 17th, 2024',
-        description: 'Learn how to sell your house fast for cash in Ontario during financial difficulties'
-
+        src:'frontend/public/blogs/stressed-man-selling-cash-for-house.webp',
+        alt:'This is '
       },
       {
         src: '/blogs/divorce/sell-house-divorce-ontario.webp',

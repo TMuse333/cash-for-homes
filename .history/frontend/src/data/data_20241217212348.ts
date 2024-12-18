@@ -549,7 +549,7 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src:'/blogs/stressed-man-selling-cash-for-house.webp',
+        src:'/public/blogs/stressed-man-selling-cash-for-house.webp',
         alt:'This is how you can sell house fast for cash in ontario canada during a financial crisis',
         link:'/blog/how-to-sell-house-quickly-financial-crisis',
         title:'How to Sell Your House for cash fast in ontario During a Financial Crisis',
