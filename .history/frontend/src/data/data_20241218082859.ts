@@ -549,13 +549,8 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src: '/blogs/burned-house.webp',
-        alt: 'Learn how to sell a fire-damaged house for cash in Ontario with ease',
-        link: '/blog/sell-a-fire-damaged-house-for-cash-fast-ontario',
-        title: 'Can You Sell a Fire-Damaged House for Cash in Ontario?',
-        date: 'December 18th, 2024',
-        description: 'Discover how to sell your fire-damaged house for cash in Ontario without repairs or delays. Ontario Cash for Houses makes it simple and stress-free.'
-      },
+        src:'frontend/public/blogs/burned-house.webp'
+      }
       {
         src:'/blogs/stressed-man-selling-cash-for-house.webp',
         alt:'This is how you can sell house fast for cash in ontario canada during a financial crisis',
