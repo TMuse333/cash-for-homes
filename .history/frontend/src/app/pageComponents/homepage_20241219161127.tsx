@@ -19,7 +19,7 @@ const Footer = dynamic(() => import('@/components/footer'),{ssr:false});
 import {
     circleInfographicData1, intro2, introDescription, openingText,
 heroImages, blogCarousel,
-experienceCard1,experienceCard2} from "../../data/data";
+experienceCard1,experienceCard2} from "../../../posts/data/data";
 //  const TextFormat = dynamic(()=>import('@/components/textFormat'))
 //  const TextFormat2 = dynamic(()=>import('@/components/textFormat2'))
 

@@ -548,15 +548,15 @@ export const aboutContent4:ContentType = {
     }
 
     export const blogCarousel = [
-      {
-        src: '/blogs/blog1/sell-home-fast-cash-ontario-money.jpg',
-        alt: 'Discover how to avoid hidden costs when selling a house in Ontario and sell fast for cash',
-        link: '/blog/avoid-selling-hidden-costs-selling-house-ontario-canada',
-        title: 'Avoiding Hidden Costs When Selling a House in Ontario',
-        date: 'December 19th, 2024',
-        description: 'Learn how to avoid hidden costs like repairs, agent commissions, and closing fees when selling your house in Ontario. Ontario Cash for Houses offers a fast and cost-effective solution for a stress-free sale.'
-      }
-,      
+//       {
+//         src: '/blogs/blog1/sell-home-fast-cash-ontario-money.jpg',
+//         alt: 'Discover how to avoid hidden costs when selling a house in Ontario and sell fast for cash',
+//         link: '/blog/avoid-selling-hidden-costs-selling-house-ontario-canada',
+//         title: 'Avoiding Hidden Costs When Selling a House in Ontario',
+//         date: 'December 19th, 2024',
+//         description: 'Learn how to avoid hidden costs like repairs, agent commissions, and closing fees when selling your house in Ontario. Ontario Cash for Houses offers a fast and cost-effective solution for a stress-free sale.'
+//       }
+// ,      
       {
         src: '/blogs/burned-house.webp',
         alt: 'Learn how to sell a fire-damaged house for cash in Ontario with ease',

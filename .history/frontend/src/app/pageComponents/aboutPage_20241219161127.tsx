@@ -1,7 +1,7 @@
 "use client"
 
 import Navbar from "@/components/navbar"
-import { aboutCloser,  aboutContent3} from "../../data/data"
+import { aboutCloser,  aboutContent3} from "../../../posts/data/data"
 import React from "react"
 import Content from "../../components/content";
 

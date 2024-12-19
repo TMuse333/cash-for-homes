@@ -4,7 +4,7 @@ import ApplicationForm from "@/components/applicationForm";
 import Content2 from "@/components/content2";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import { contactContent2 } from "../../data/data";
+import { contactContent2 } from "../../../posts/data/data";
 import React from "react";
 
 

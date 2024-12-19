@@ -2,7 +2,7 @@
 import Navbar from "@/components/navbar";
 import dynamic from 'next/dynamic';
 import React from "react";
-import { processCarouselData, processParallax, processFAQ } from "../../data/data";
+import { processCarouselData, processParallax, processFAQ } from "../../../posts/data/data";
 import Link from "next/link";
 import ImageAccordion from "@/components/imageAccordion";
 
