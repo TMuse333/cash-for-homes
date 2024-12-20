@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   keywords: "Ontario Cash For houses, sell house fast cash ontario canada, sell house cash fast ontario",
   openGraph: {
     title: `Ontario Cash for Houses | sell cash fast house ontario`,
-    description: `Looking to sell a house fast for cash in Ontario? Ontario Cash for Houses provides quick, hassle-free cash offers for homes in any condition across Ontario, Canada. Whether you're facing foreclosure, dealing with an inheritance, or want to skip the traditional real estate process, we buy houses as-is with no repairs or realtor fees. Get a fair cash offer today and close in as little as 7 days. Specializing in helping Ontario homeowners sell their property fast for cash, including areas like Windsor, Chatham, London, and Kitchener.`
+    description: `Looking to sell cash fast house Ontario? Ontario Cash for Houses provides quick, hassle-free cash offers for homes in any condition across Ontario, Canada. Whether you're facing foreclosure, dealing with an inheritance, or want to skip the traditional real estate process, we buy houses as-is with no repairs or realtor fees. Get a fair cash offer today and close in as little as 7 days. Specializing in helping Ontario homeowners sell their property fast for cash, including areas like Windsor, Chatham, London, and Kitchener.`
 ,
     url: "https://www.ontariocashforhouses.com", // Default URL
     images: [
