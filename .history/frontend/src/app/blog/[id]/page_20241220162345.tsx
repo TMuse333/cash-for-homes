@@ -160,14 +160,14 @@ max-w-[1000px] mb-12'>
 <ReactMarkdown 
 className=' markdown-styles'
 >{postData.contentHtml}</ReactMarkdown>
-{/* <button className='mt-2 p-3
+<button className='mt-2 p-3
               bg-[#00bfff] hover:text-[#00bfff]
               hover:bg-white transition-all rounded-2xl mr-2'>
                 <Link href='/process'>
                 Learn more
                 </Link>
-                </button> */}
-                {/* {postData.buttonDestination &&
+                </button>
+                {postData.buttonDestination &&
                 postData.buttonText && (
                   <button className='mt-2 p-3
                   hover:bg-[#00bfff] hover:text-white
@@ -177,7 +177,7 @@ className=' markdown-styles'
                   {postData.buttonText}
                     </Link>
                     </button>
-                )} */}
+                )}
 </section>
 
        

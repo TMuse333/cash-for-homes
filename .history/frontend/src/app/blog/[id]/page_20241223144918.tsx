@@ -167,7 +167,7 @@ className=' markdown-styles'
                 Learn more
                 </Link>
                 </button> */}
-                {/* {postData.buttonDestination &&
+                {postData.buttonDestination &&
                 postData.buttonText && (
                   <button className='mt-2 p-3
                   hover:bg-[#00bfff] hover:text-white
@@ -177,7 +177,7 @@ className=' markdown-styles'
                   {postData.buttonText}
                     </Link>
                     </button>
-                )} */}
+                )}
 </section>
 
        

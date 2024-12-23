@@ -551,10 +551,10 @@ export const aboutContent4:ContentType = {
       {
         src: '/blogs/fast-house-sale.webp',
         alt: 'Avoiding common mistakes when selling a house for cash in Ontario',
-        title: 'The Benefits of Selling Your House for Cash in Ontario',
-        description: 'Selling your house for cash in Ontario offers numerous benefits, including fast closings, the ability to sell as-is, and avoiding costly repairs. Learn how Ontario Cash for Houses simplifies the process, allowing you to sell your house cash fast Ontario without the stress of traditional real estate sales.',
-        date: 'December 23rd, 2024',
-        link:'/blog/benefits-of-selling-house-for-cash-fast-ontario',
+        title: 'How to Avoid Common Mistakes When Selling Your House for Cash in Ontario',
+        description: 'Selling your home for cash in Ontario can be quick and profitable, but there are common mistakes that homeowners should avoid. Learn how to research cash buyers, compare offers, and ensure a smooth, hassle-free cash sale with Ontario Cash for Houses.',
+        date: 'December 4th, 2024',
+        link:'/benefits-of-selling-house-for-cash-fast-ontario',
       },
       
       {

@@ -549,14 +549,8 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src: '/blogs/fast-house-sale.webp',
-        alt: 'Avoiding common mistakes when selling a house for cash in Ontario',
-        title: 'The Benefits of Selling Your House for Cash in Ontario',
-        description: 'Selling your house for cash in Ontario offers numerous benefits, including fast closings, the ability to sell as-is, and avoiding costly repairs. Learn how Ontario Cash for Houses simplifies the process, allowing you to sell your house cash fast Ontario without the stress of traditional real estate sales.',
-        date: 'December 23rd, 2024',
-        link:'/blog/benefits-of-selling-house-for-cash-fast-ontario',
+        src:'/blogs/fast-house-sale.webp'
       },
-      
       {
         src: '/blogs/high-cost-vacant-house-ontario.webp',
         alt: 'Vacant property in Ontario with hidden maintenance and insurance costs',
