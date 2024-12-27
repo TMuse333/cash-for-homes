@@ -103,20 +103,20 @@ export default async function Post({ params }: PostProps) {
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={postData.metaOpenGraph.title || postData.title} />
-      <meta name="twitter:description" content={postData.metaOpenGraph.description || postData.metaDescription} />
+      <meta name="twitter:title" content={postData.metaOpenGraph.title || title} />
+      <meta name="twitter:description" content={postData.metaOpenGraph.description || metaDescription} />
       {postData.metaOpenGraph.images.length > 0 && (
-        <meta name="twitter:image" content={postData.metaOpenGraph.images[0].url} />
+        <meta name="twitter:image" content={metaOpenGraph.images[0].url} />
       )}
 
       {/* Article-Specific Meta Tags */}
-      <meta name="article:published_time" content={postData.date} />
+      <meta name="article:published_time" content={new Date(date).toISOString()} />
       <meta name="article:author" content="Ontario Cash for Houses" />
       <meta name="article:section" content="Real Estate" />
-      <meta name="article:tag" content={postData.metaKeywords} />
+      <meta name="article:tag" content={metaKeywords} />
 
       {/* Canonical URL */}
-      <link rel="canonical" href={postData.metaOpenGraph.url} />
+      <link rel="canonical" href={metaOpenGraph.url} />
 
       {/* Additional SEO Enhancements */}
       <meta name="robots" content="index, follow" />

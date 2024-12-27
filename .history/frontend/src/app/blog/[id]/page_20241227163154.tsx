@@ -110,7 +110,7 @@ export default async function Post({ params }: PostProps) {
       )}
 
       {/* Article-Specific Meta Tags */}
-      <meta name="article:published_time" content={postData.date} />
+      <meta name="article:published_time" content={new Date(date).toISOString()} />
       <meta name="article:author" content="Ontario Cash for Houses" />
       <meta name="article:section" content="Real Estate" />
       <meta name="article:tag" content={postData.metaKeywords} />

@@ -89,34 +89,34 @@ export default async function Post({ params }: PostProps) {
       <meta name="keywords" content={postData.metaKeywords} />
 
       {/* Open Graph Meta Tags */}
-      <meta property="og:title" content={postData.metaOpenGraph.title || postData.title} />
-      <meta property="og:description" content={postData.metaOpenGraph.description || postData.metaDescription} />
-      <meta property="og:url" content={postData.metaOpenGraph.url} />
+      <meta property="og:title" content={postData.metaOpenGraph.title || title} />
+      <meta property="og:description" content={postData.metaOpenGraph.description || metaDescription} />
+      <meta property="og:url" content={metaOpenGraph.url} />
       {postData.metaOpenGraph.images.length > 0 && (
         <>
-          <meta property="og:image" content={postData.metaOpenGraph.images[0].url} />
-          <meta property="og:image:width" content={postData.metaOpenGraph.images[0].width.toString()} />
-          <meta property="og:image:height" content={postData.metaOpenGraph.images[0].height.toString()} />
+          <meta property="og:image" content={metaOpenGraph.images[0].url} />
+          <meta property="og:image:width" content={metaOpenGraph.images[0].width.toString()} />
+          <meta property="og:image:height" content={metaOpenGraph.images[0].height.toString()} />
         </>
       )}
       <meta property="og:type" content="article" />
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={postData.metaOpenGraph.title || postData.title} />
-      <meta name="twitter:description" content={postData.metaOpenGraph.description || postData.metaDescription} />
-      {postData.metaOpenGraph.images.length > 0 && (
-        <meta name="twitter:image" content={postData.metaOpenGraph.images[0].url} />
+      <meta name="twitter:title" content={metaOpenGraph.title || title} />
+      <meta name="twitter:description" content={metaOpenGraph.description || metaDescription} />
+      {metaOpenGraph.images.length > 0 && (
+        <meta name="twitter:image" content={metaOpenGraph.images[0].url} />
       )}
 
       {/* Article-Specific Meta Tags */}
-      <meta name="article:published_time" content={postData.date} />
+      <meta name="article:published_time" content={new Date(date).toISOString()} />
       <meta name="article:author" content="Ontario Cash for Houses" />
       <meta name="article:section" content="Real Estate" />
-      <meta name="article:tag" content={postData.metaKeywords} />
+      <meta name="article:tag" content={metaKeywords} />
 
       {/* Canonical URL */}
-      <link rel="canonical" href={postData.metaOpenGraph.url} />
+      <link rel="canonical" href={metaOpenGraph.url} />
 
       {/* Additional SEO Enhancements */}
       <meta name="robots" content="index, follow" />

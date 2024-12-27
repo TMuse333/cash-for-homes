@@ -1,7 +1,7 @@
 ---
 metaTitle: "Top Benefits of Selling Your House for Cash in Ontario"
 metaDescription: "Discover the top benefits of selling your house for cash in Ontario, including a faster process, no repairs, and flexible closing dates."
-metaKeywords: "Ontario Cash for Houses, sell house cash fast Ontario, benefits cash home sale Ontario, cash home buyers Ontario, benefits of selling house cash ontario"
+metaKeywords: "Ontario Cash for Houses, sell house cash fast Ontario, benefits cash home sale Ontario, cash home buyers Ontario "
 metaOpenGraph:
   title: "Why Selling Your House for Cash in Ontario Is a Smart Choice"
   description: "Learn about the advantages of selling your house for cash in Ontario, from a quick sale to skipping repairs and flexible closing terms."

@@ -78,49 +78,9 @@ export default async function Post({ params }: PostProps) {
   ]
   return (
     <>
- <Head>
-      {/* Page Title */}
-      <title>{postData.metaTitle}</title>
+    <Head>
+      
 
-      {/* Meta Description for Search Engines */}
-      <meta name="description" content={postData.metaDescription} />
-
-      {/* Meta Keywords for Search Engines */}
-      <meta name="keywords" content={postData.metaKeywords} />
-
-      {/* Open Graph Meta Tags */}
-      <meta property="og:title" content={postData.metaOpenGraph.title || postData.title} />
-      <meta property="og:description" content={postData.metaOpenGraph.description || postData.metaDescription} />
-      <meta property="og:url" content={postData.metaOpenGraph.url} />
-      {postData.metaOpenGraph.images.length > 0 && (
-        <>
-          <meta property="og:image" content={postData.metaOpenGraph.images[0].url} />
-          <meta property="og:image:width" content={postData.metaOpenGraph.images[0].width.toString()} />
-          <meta property="og:image:height" content={postData.metaOpenGraph.images[0].height.toString()} />
-        </>
-      )}
-      <meta property="og:type" content="article" />
-
-      {/* Twitter Meta Tags */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={postData.metaOpenGraph.title || postData.title} />
-      <meta name="twitter:description" content={postData.metaOpenGraph.description || postData.metaDescription} />
-      {postData.metaOpenGraph.images.length > 0 && (
-        <meta name="twitter:image" content={postData.metaOpenGraph.images[0].url} />
-      )}
-
-      {/* Article-Specific Meta Tags */}
-      <meta name="article:published_time" content={postData.date} />
-      <meta name="article:author" content="Ontario Cash for Houses" />
-      <meta name="article:section" content="Real Estate" />
-      <meta name="article:tag" content={postData.metaKeywords} />
-
-      {/* Canonical URL */}
-      <link rel="canonical" href={postData.metaOpenGraph.url} />
-
-      {/* Additional SEO Enhancements */}
-      <meta name="robots" content="index, follow" />
-      <meta http-equiv="content-language" content="en-CA" />
     </Head>
      <Navbar
      links={links}
@@ -169,9 +129,9 @@ export default async function Post({ params }: PostProps) {
         {postData.contentBoxes.map((box,index) => (
             <>
             <section key={index}>
-              
+              <
        <Content
-     
+       key={index}
        image={box.image}
        description={box.description}
        mainTitle={box.mainTitle}
@@ -186,9 +146,8 @@ export default async function Post({ params }: PostProps) {
      <div className='w-[80vw] max-w-[1200px] mx-auto
         h-[5px] bg-[#00bfff] bg-opacity-[0.6]
         my-14'
-        
+        key={index}
         />
-        </section>
         </>
         ))}
 

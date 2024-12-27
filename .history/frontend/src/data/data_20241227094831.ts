@@ -548,14 +548,6 @@ export const aboutContent4:ContentType = {
     }
 
     export const blogCarousel = [
-      {
-        src: '/blogs/release-stress-selling-house-ontario.webp',
-        alt: 'Release the stress of managing multiple tenants by selling for cash in Ontario',
-        title: 'Release the Stress of Managing Multiple Tenants by Selling Your House for Cash',
-        description: 'Discover how selling your rental property for cash in Ontario can help you release the stress of managing multiple tenants. Learn about the benefits of selling for cash and how Ontario Cash for Houses makes the process quick and hassle-free.',
-        date: 'December 27th, 2024',
-        link: '/blog/release-stress-managing-multiple-tenants-sell-house-cash-ontario',
-      },
       
       {
         src: '/blogs/fast-house-sale.webp',
