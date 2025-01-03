@@ -83,45 +83,63 @@ export const accordionProps = {
 
 
 export const processFAQ = {
-  text: [
+  items: [
       { 
           title: "What is the first step in your process?", 
-          description: "The first step is an initial phone call where we gather basic information about your property and situation. This helps us understand your needs and allows us to offer a tailored solution." 
+          description: "The first step is an initial phone call where we gather basic information about your property and situation. This helps us understand your needs and allows us to offer a tailored solution.",
+          src:'',
+          alt:'' 
       },
       { 
           title: "Do I need to make any repairs before selling?", 
-          description: "No, you don’t need to make any repairs. We buy houses in any condition, so you can sell your property as-is without worrying about repairs or renovations." 
+          description: "No, you don’t need to make any repairs. We buy houses in any condition, so you can sell your property as-is without worrying about repairs or renovations." ,
+          src:'',
+          alt:''
       },
       { 
           title: "How do you evaluate my property?", 
-          description: "We schedule a property visit at a time that’s convenient for you. Our team assesses your property’s current condition and considers various factors to ensure you receive a fair cash offer." 
+          description: "We schedule a property visit at a time that’s convenient for you. Our team assesses your property’s current condition and considers various factors to ensure you receive a fair cash offer." ,
+          src:'',
+          alt:''
       },
       { 
           title: "How quickly can I get a cash offer?", 
-          description: "After evaluating your property, we present you with a cash offer based on the evaluation and market conditions. This offer is competitive, fair, and comes without any obligations." 
+          description: "After evaluating your property, we present you with a cash offer based on the evaluation and market conditions. This offer is competitive, fair, and comes without any obligations.",
+          src:'',
+          alt:'' 
       },
       { 
           title: "What happens after I accept the offer?", 
-          description: "Once you accept the offer, we will forward it to your lawyer. You have the flexibility to choose the closing date that works best for you, making the process smooth and stress-free." 
+          description: "Once you accept the offer, we will forward it to your lawyer. You have the flexibility to choose the closing date that works best for you, making the process smooth and stress-free." ,
+          src:'',
+          alt:''
       },
       { 
           title: "When will I receive my money?", 
-          description: "On the closing date you'll meet with your lawyer to finalize the sale and the money will be directly transferred to you from your lawyer.  ." 
+          description: "On the closing date you'll meet with your lawyer to finalize the sale and the money will be directly transferred to you from your lawyer.  ." ,
+          src:'',
+          alt:''
       },
       { 
           title: "Are there any hidden fees?", 
-          description: "No, there are no hidden fees. You receive a straightforward cash offer without any realtor fees, commissions, or additional costs." 
+          description: "No, there are no hidden fees. You receive a straightforward cash offer without any realtor fees, commissions, or additional costs." ,
+          src:'',
+          alt:''
       },
       { 
           title: "Can I choose my closing date?", 
-          description: "Yes, you have the flexibility to choose a closing date that fits your schedule. We accommodate your needs to make the process as convenient as possible for you." 
+          description: "Yes, you have the flexibility to choose a closing date that fits your schedule. We accommodate your needs to make the process as convenient as possible for you." ,
+          src:'',
+          alt:''
       },
       { 
           title: "Why should I choose your service over others?", 
-          description: "Our service offers a hassle-free, quick, and reliable way to sell your property. With no realtor fees, no need for repairs, and fast cash offers, we make the process simple and stress-free." 
+          description: "Our service offers a hassle-free, quick, and reliable way to sell your property. With no realtor fees, no need for repairs, and fast cash offers, we make the process simple and stress-free." ,
+          src:'',
+          alt:''
       }
   ],
-  hasIntro: true,
+  
   intro: "Frequently Asked Questions",
   description: "Selling your property can be daunting, but we aim to make it as simple and straightforward as possible. Below, you'll find answers to common questions about our process and how we can help you sell your property quickly and easily.",
   link: ''
@@ -442,7 +460,9 @@ export const content1Data:ContentType= {
 //   buttonText?:string
 
 export const introDescription = 
-`Sell your house fast in Ontario, Canada, no matter its condition or your unique situation. Whether you're facing foreclosure, dealing with an inherited property, or simply need to sell quickly for cash, Ontario Cash For Houses is here to help. We specialize in buying houses fast across Ontario, offering a fast, hassle-free solution for homeowners who need to sell their property quickly and efficiently. Our streamlined process ensures that you get a fair cash offer for your house with no delays, real estate agent fees, or commissions. As Ontario's trusted cash home buyers, we take care of all the paperwork and details, making sure you can move forward with peace of mind. Our competitive, all-cash offer ensures that you get the best value for your home—whether it needs repairs, is in poor condition, or you just want to avoid the stress of a traditional home sale. Join the many satisfied homeowners across Ontario who have chosen us to sell their house fast for cash, and experience a quick, convenient, and stress-free sale that fits your schedule. Contact us today to get started and see how easy it is to sell your house fast in Ontario`
+`Sell your house fast in Ontario, Canada, no matter its condition or your unique situation. Whether you're facing foreclosure, dealing with an inherited property, or simply need to sell quickly for cash, Ontario Cash For Houses is here to help. We specialize in buying houses fast across Ontario, offering a fast, hassle-free solution for homeowners who need to sell their property quickly and efficiently. Our streamlined process ensures that you get a fair cash offer for your house with no delays, real estate agent fees, or commissions.
+
+As Ontario's trusted cash home buyers, we take care of all the paperwork and details, making sure you can move forward with peace of mind. Our competitive, all-cash offer ensures that you get the best value for your home—whether it needs repairs, is in poor condition, or you just want to avoid the stress of a traditional home sale. Join the many satisfied homeowners across Ontario who have chosen us to sell their house fast for cash, and experience a quick, convenient, and stress-free sale that fits your schedule. Contact us today to get started and see how easy it is to sell your house fast in Ontario.`
 
 
 
@@ -529,6 +549,98 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
+        src:'sell-house-cash-fast-ontario-new-year'
+      }
+      {
+        src: '/blogs/release-stress-selling-house-ontario.webp',
+        alt: 'Release the stress of managing multiple tenants by selling for cash in Ontario',
+        title: 'Release the Stress of Managing Multiple Tenants by Selling Your House for Cash',
+        description: 'Discover how selling your rental property for cash in Ontario can help you release the stress of managing multiple tenants. Learn about the benefits of selling for cash and how Ontario Cash for Houses makes the process quick and hassle-free.',
+        date: 'December 27th, 2024',
+        link: '/blog/release-stress-managing-multiple-tenants-sell-house-cash-ontario',
+      },
+      
+      {
+        src: '/blogs/fast-house-sale.webp',
+        alt: 'Avoiding common mistakes when selling a house for cash in Ontario',
+        title: 'The Benefits of Selling Your House for Cash in Ontario',
+        description: 'Selling your house for cash in Ontario offers numerous benefits, including fast closings, the ability to sell as-is, and avoiding costly repairs. Learn how Ontario Cash for Houses simplifies the process, allowing you to sell your house cash fast Ontario without the stress of traditional real estate sales.',
+        date: 'December 23rd, 2024',
+        link:'/blog/benefits-of-selling-house-for-cash-fast-ontario',
+      },
+      
+      {
+        src: '/blogs/high-cost-vacant-house-ontario.webp',
+        alt: 'Vacant property in Ontario with hidden maintenance and insurance costs',
+        title: 'The Hidden Costs of Keeping a Vacant Property in Ontario and How Selling for Cash Can Help',
+        description: 'Owning a vacant property in Ontario comes with hidden costs like maintenance, insurance premiums, and property taxes. Discover how selling your property for cash with Ontario Cash for Houses can help you avoid these expenses and sell your property quickly.',
+        date: 'December 20th, 2024',
+        link: '/blog/hidden-costs-of-keeping-vacant-property-in-ontario'
+      }
+,      
+      {
+        src: '/blogs/blog1/sell-home-fast-cash-ontario-money.jpg',
+        alt: 'Discover how to avoid hidden costs when selling a house in Ontario and sell fast for cash',
+        link: '/blog/avoid-selling-hidden-costs-selling-house-ontario-canada',
+        title: 'Avoiding Hidden Costs When Selling a House in Ontario',
+        date: 'December 19th, 2024',
+        description: 'Learn how to avoid hidden costs like repairs, agent commissions, and closing fees when selling your house in Ontario. Ontario Cash for Houses offers a fast and cost-effective solution for a stress-free sale.'
+      }
+,      
+      {
+        src: '/blogs/burned-house.webp',
+        alt: 'Learn how to sell a fire-damaged house for cash in Ontario with ease',
+        link: '/blog/sell-a-fire-damaged-house-for-cash-fast-ontario',
+        title: 'Can You Sell a Fire-Damaged House for Cash in Ontario?',
+        date: 'December 18th, 2024',
+        description: 'Discover how to sell your fire-damaged house for cash in Ontario without repairs or delays. Ontario Cash for Houses makes it simple and stress-free.'
+      },
+      {
+        src:'/blogs/stressed-man-selling-cash-for-house.webp',
+        alt:'This is how you can sell house fast for cash in ontario canada during a financial crisis',
+        link:'/blog/how-to-sell-house-quickly-financial-crisis',
+        title:'How to Sell Your House for cash fast in ontario During a Financial Crisis',
+        date:'December 17th, 2024',
+        description: 'Learn how to sell your house fast for cash in Ontario during financial difficulties'
+
+      },
+      {
+        src: '/blogs/divorce/sell-house-divorce-ontario.webp',
+        alt: 'selling your house for cash in ontario after a divorce',
+        title: "How to Sell Your House for Cash After a Divorce in Ontario",
+        description: "Divorce can be challenging—selling your house for cash offers a quick, stress-free solution. Learn how we can help you sell your home quickly and efficiently.",
+        link: '/blog/how-to-sell-house-cash-divorce-ontario',
+        date: "December 8th, 2024"
+      },
+      
+      {
+        src: "/blogs/blog1/sell-home-fast-cash-ontario-money.jpg",
+        alt: "Selling your house as-is in Ontario",
+        title: "Why Selling Your House As-Is Could Save You Time and Money",
+        description: "Learn how selling your house as-is can save you both time and money. Discover the advantages of avoiding costly repairs and the benefits of a hassle-free, cash sale. Read more to find out why selling as-is might be your best option.",
+        link: "/blog/why-selling-house-as-is-saves-time-money",
+        date: "December 7th, 2024"
+      }
+      ,
+        {
+          src: '/handshake.webp',
+          alt: 'Avoid mistakes when selling a house for cash in Ontario',
+          title: 'How to Avoid Common Mistakes When Selling Your House for Cash in Ontario',
+          description: 'Discover essential tips to avoid common mistakes when selling your house for cash in Ontario. Learn how to maximize your sale value, avoid hidden fees, and make informed decisions—read now!',
+          link: '/blog/avoid-common-mistakes-selling-house-cash-ontario',
+          date: 'December 5th, 2024'
+        }
+      ,
+      {
+        src: '/blogs/blog3/sell-house-cash-fast-ontario-inherited-home.webp',
+        alt: 'A home with a SOLD sign to represent selling an inherited house for cash in Ontario',
+        title: "How to Sell a Home for Cash Fast in Ontario That You’ve Inherited Without Stress",
+        description: "Inherited a home in Ontario? Learn how to sell it for cash quickly without stress. Discover the step-by-step process and tips for a hassle-free transaction—read more now!",
+        link: '/blog/how-to-sell-house-cash-fast-ontario-for-inherited-home',
+        date: 'December 4th, 2024'
+    },
+    
+      {
         link: '/blog/dont-need-to-renovate-when-sell-house-cash-fast-ontario',
         src: '/blogs/blog2/sell-house-cash-fast-ontario-renovation.webp',
         alt: 'House undergoing renovation, illustrating why renovations are unnecessary to sell house cash fast in Ontario',
@@ -539,11 +651,12 @@ export const aboutContent4:ContentType = {
       {
         src: '/twenty-bills.jpeg',
         alt: 'Twenty dollar bills to signify what happens when you sell house fast cash Ontario',
-        title: "5 Signs It’s Time to Sell Your House Fast for Cash in Ontario',
-        description: 'Thinking about selling your house for cash in Ontario? Discover the top 5 signs it’s time for a fast cash sale and how it can save you time, money, and stress—read more now!',
+        title: "5 Signs It’s Time to Sell Your House Fast for Cash in Ontario",
+        description: "Thinking about selling your house for cash in Ontario? Discover the top 5 signs it’s time for a fast cash sale and how it can save you time, money, and stress—read more now!",
         link: '/blog/signs-to-sell-house-fast-cash-ontario',
         date: 'November 25th, 2024'
-      }
+      },
+     
     ];
     
     

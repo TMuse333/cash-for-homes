@@ -549,7 +549,7 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src: '/blogs/sell-house-fast-new-year.webp',
+        src: '/blogs/sell-house-cash-fast-ontario-new-year.webp',
         alt: 'Selling your house fast for cash for the new year!',
         title: 'Start the New Year Fresh by Selling Your House for Cash',
         description: 'Learn how selling your house for cash in Ontario can help you start the new year stress-free. Discover the benefits of a quick cash sale and how Ontario Cash for Houses makes the process easy and fast.',
