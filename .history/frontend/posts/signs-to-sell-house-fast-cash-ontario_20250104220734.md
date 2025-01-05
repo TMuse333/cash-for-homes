@@ -2,7 +2,7 @@
 
 metaTitle: "Top 5 Signs It’s Time to Sell Your Home for Cash in Ontario"
 metaDescription: "Learn the top 5 signs that selling your house for cash in Ontario is the fastest and easiest option. Skip the hassle and sell your house cash fast Ontario."
-metaKeywords: "sell house cash fast Ontario, cash home buyers, sell house as-is Ontario"
+metaKeywords: "sell house cash fast Ontario,ontario cash for houses cash home buyers, sell house as-is Ontario"
 metaOpenGraph:
   title: "Sell Your House for Cash Fast in Ontario | Top 5 Signs"
   description: "Discover the top 5 signs it’s time to sell your house for cash in Ontario. Avoid the hassle of repairs, staging, and waiting—sell your house cash fast and stress-free."
@@ -37,7 +37,7 @@ contentBoxes:
     alt: "Image showing financial stress for the to help show
      why and how to sell house cash fast ontario"
 
-  - image: "/blogs/blog1/sell-house-cash-fast-ontario-canada-any-condition.webp"
+  - image: "/blogs/blog2/sell-house-cash-fast-ontario-canada-any-condition.webp"
     description: 
       - "When your house needs costly repairs or renovations, it can feel like an uphill battle to make it market-ready. If you don’t have the resources or time to address major issues, selling your home as-is to a cash buyer is the perfect solution."
       - "Skip the burden of expensive upgrades and repairs by choosing to sell your house cash fast in Ontario. Cash buyers specialize in purchasing homes in any condition, saving you time and money while offering a fair price for your property."

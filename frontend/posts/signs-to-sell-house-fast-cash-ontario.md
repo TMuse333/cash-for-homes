@@ -37,7 +37,7 @@ contentBoxes:
     alt: "Image showing financial stress for the to help show
      why and how to sell house cash fast ontario"
 
-  - image: "/blogs/blog1/sell-house-cash-fast-ontario-canada-any-condition.webp"
+  - image: "/blogs/blog2/sell-house-cash-fast-ontario-renovation.webp"
     description: 
       - "When your house needs costly repairs or renovations, it can feel like an uphill battle to make it market-ready. If you don’t have the resources or time to address major issues, selling your home as-is to a cash buyer is the perfect solution."
       - "Skip the burden of expensive upgrades and repairs by choosing to sell your house cash fast in Ontario. Cash buyers specialize in purchasing homes in any condition, saving you time and money while offering a fair price for your property."
