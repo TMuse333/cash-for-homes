@@ -550,7 +550,7 @@ export const aboutContent4:ContentType = {
     export const blogCarousel = [
       {
         link:'/blog/sell-house-for-cash-in-winter',
-        src:'/blogs/sell-house-for-cash-winter.webp',
+        src:'/blogs/sell-house-for-cash-winter',
         date: 'January 9th, 2025',
         alt:'Selling your house for cash during the winter is a fantastic opportunity!',
         title: "Why Selling Your House for Cash This Winter is the Smart Move",
