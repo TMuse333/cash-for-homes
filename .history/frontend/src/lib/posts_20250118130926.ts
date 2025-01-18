@@ -38,7 +38,7 @@ interface PostData {
   metaKeywords: string;
   metaOpenGraph: MetaOpenGraphProps;
   title: string;
-  h1?:string
+  h1:string
   header1: string;
   description1: string;
   header2: string;
@@ -90,7 +90,7 @@ export async function getPostData(id: string): Promise<PostData> {
     metaKeywords: matterResult.data.metaKeywords,
     metaOpenGraph: matterResult.data.metaOpenGraph,
     title: matterResult.data.title,
-    h1: matterResult.data.h1,
+    h1: matterResult
     header1: matterResult.data.header1,
     description1: matterResult.data.description1,
     header2: matterResult.data.header2,

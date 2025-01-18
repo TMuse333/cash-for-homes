@@ -550,11 +550,7 @@ export const aboutContent4:ContentType = {
     export const blogCarousel = [
       {
         link:'/blog/selling-house-for-cash-after-life-change-in-ontario',
-        src:'/blogs/new-house-sale.webp',
-        date:'January 18th, 2025',
-        alt: 'How Ontario Cash for Houses helps homeowners in life transitions',
-        title: "Moving On After a Sudden Life Change: How Ontario Cash for Houses Helped Lisa Rebuild",
-        description: "Discover how Ontario Cash for Houses assisted Lisa in Oakville to sell her home quickly after a major life change. Learn how our hassle-free cash home buying process can help you too during tough times."
+        
       },
       {
         link:'/blog/sell-house-for-cash-in-winter',

@@ -143,7 +143,7 @@ export default async function Post({ params }: PostProps) {
           text-black"
          >
             <h1 className="text-4xl font-bold mb-4">
-              {postData.h1 ? postData.h1 : postData.title }</h1>
+              {postData.h1 ? postData.title postData.h1 }</h1>
             <p className="text-black">
               {postData.date}, &nbsp; written by Theresa Benteau, owner of Ontario Cash for Houses
             </p>

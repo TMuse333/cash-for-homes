@@ -38,7 +38,7 @@ interface PostData {
   metaKeywords: string;
   metaOpenGraph: MetaOpenGraphProps;
   title: string;
-  h1?:string
+  h1:string
   header1: string;
   description1: string;
   header2: string;

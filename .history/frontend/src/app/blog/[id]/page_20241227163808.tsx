@@ -142,8 +142,7 @@ export default async function Post({ params }: PostProps) {
           <section className="flex flex-col w-screen md:w-[80vw] justify-center items-center mx-auto max-w-[1200px] px-4
           text-black"
          >
-            <h1 className="text-4xl font-bold mb-4">
-              {postData.h1 ? postData.h1 : postData.title }</h1>
+            <h1 className="text-4xl font-bold mb-4">{postData.title}</h1>
             <p className="text-black">
               {postData.date}, &nbsp; written by Theresa Benteau, owner of Ontario Cash for Houses
             </p>
