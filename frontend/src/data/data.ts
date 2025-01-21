@@ -549,6 +549,15 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
+        link: '/blog/selling-house-for-cash-fast-to-downsize',
+        src: '/blogs/blogs2/elderly-selling-house-for-cash-fast.webp',
+        date: 'January 21st, 2025',
+        alt: 'Finding Peace Through Downsizing with Ontario Cash for Houses',
+        title: "Finding Peace Through Downsizing: How Ontario Cash for Houses Helped an Elderly Couple",
+        description: "Learn how an elderly couple in Ontario downsized without stress by selling their house fast for cash. Discover how Ontario Cash for Houses provides a hassle-free solution for homeowners."
+      }
+,      
+      {
         link:'/blog/selling-house-for-cash-after-life-change-in-ontario',
         src:'/blogs/new-house-sale.webp',
         date:'January 18th, 2025',

@@ -549,10 +549,67 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src:'/blogs/high-cost-vacant-house-ontario.webp',
-        date:'December 20th, 2024',
-        link:''
+        link: '/blog/selling-house-for-cash-fast-to-downsize',
+        src: '/blogs/blogs2/elderly-selling-house-for-cash-fast.webp',
+        date: 'January 21st, 2025',
+        alt: 'Finding Peace Through Downsizing with Ontario Cash for Houses',
+        title: "Finding Peace Through Downsizing: How Ontario Cash for Houses Helped an Elderly Couple",
+        description: "Learn how an elderly couple in Ontario downsized without stress by selling their house fast for cash. Discover how Ontario Cash for Houses provides a hassle-free solution for homeowners."
+      }
+,      
+      {
+        link:'/blog/selling-house-for-cash-after-life-change-in-ontario',
+        src:'/blogs/new-house-sale.webp',
+        date:'January 18th, 2025',
+        alt: 'How Ontario Cash for Houses helps homeowners in life transitions',
+        title: "Moving On After a Sudden Life Change: How Ontario Cash for Houses Helped Lisa Rebuild",
+        description: "Discover how Ontario Cash for Houses assisted Lisa in Oakville to sell her home quickly after a major life change. Learn how our hassle-free cash home buying process can help you too during tough times."
       },
+      {
+        link:'/blog/sell-house-for-cash-in-winter',
+        src:'/blogs/sell-house-for-cash-winter.webp',
+        date: 'January 9th, 2025',
+        alt:'Selling your house for cash during the winter is a fantastic opportunity!',
+        title: "Why Selling Your House for Cash This Winter is the Smart Move",
+        description: "Learn how selling your house for cash in Ontario can help you save on winter costs and eliminate financial burdens. Discover the benefits of a fast cash sale today."
+
+      },
+      {
+        src: '/blogs/sell-house-fast-new-year.webp',
+        alt: 'Selling your house fast for cash for the new year!',
+        title: 'Start the New Year Fresh by Selling Your House for Cash',
+        description: 'Learn how selling your house for cash in Ontario can help you start the new year stress-free. Discover the benefits of a quick cash sale and how Ontario Cash for Houses makes the process easy and fast.',
+        date: 'January 2nd, 2025',
+        link: '/blog/sell-house-cash-fast-ontario-new-year',
+      },
+      
+      {
+        src: '/blogs/release-stress-selling-house-ontario.webp',
+        alt: 'Release the stress of managing multiple tenants by selling for cash in Ontario',
+        title: 'Release the Stress of Managing Multiple Tenants by Selling Your House for Cash',
+        description: 'Discover how selling your rental property for cash in Ontario can help you release the stress of managing multiple tenants. Learn about the benefits of selling for cash and how Ontario Cash for Houses makes the process quick and hassle-free.',
+        date: 'December 27th, 2024',
+        link: '/blog/release-stress-managing-multiple-tenants-sell-house-cash-ontario',
+      },
+      
+      {
+        src: '/blogs/fast-house-sale.webp',
+        alt: 'Avoiding common mistakes when selling a house for cash in Ontario',
+        title: 'The Benefits of Selling Your House for Cash in Ontario',
+        description: 'Selling your house for cash in Ontario offers numerous benefits, including fast closings, the ability to sell as-is, and avoiding costly repairs. Learn how Ontario Cash for Houses simplifies the process, allowing you to sell your house cash fast Ontario without the stress of traditional real estate sales.',
+        date: 'December 23rd, 2024',
+        link:'/blog/benefits-of-selling-house-for-cash-fast-ontario',
+      },
+      
+      {
+        src: '/blogs/high-cost-vacant-house-ontario.webp',
+        alt: 'Vacant property in Ontario with hidden maintenance and insurance costs',
+        title: 'The Hidden Costs of Keeping a Vacant Property in Ontario and How Selling for Cash Can Help',
+        description: 'Owning a vacant property in Ontario comes with hidden costs like maintenance, insurance premiums, and property taxes. Discover how selling your property for cash with Ontario Cash for Houses can help you avoid these expenses and sell your property quickly.',
+        date: 'December 20th, 2024',
+        link: '/blog/hidden-costs-of-keeping-vacant-property-in-ontario'
+      }
+,      
       {
         src: '/blogs/blog1/sell-home-fast-cash-ontario-money.jpg',
         alt: 'Discover how to avoid hidden costs when selling a house in Ontario and sell fast for cash',
@@ -597,15 +654,15 @@ export const aboutContent4:ContentType = {
         date: "December 7th, 2024"
       }
       ,
-        {
-          src: '/handshake.webp',
-          alt: 'Avoid mistakes when selling a house for cash in Ontario',
-          title: 'How to Avoid Common Mistakes When Selling Your House for Cash in Ontario',
-          description: 'Discover essential tips to avoid common mistakes when selling your house for cash in Ontario. Learn how to maximize your sale value, avoid hidden fees, and make informed decisions—read now!',
-          link: '/blog/avoid-common-mistakes-selling-house-cash-ontario',
-          date: 'December 5th, 2024'
-        }
-      ,
+      //   {
+      //     src: '/handshake.webp',
+      //     alt: 'Avoid mistakes when selling a house for cash in Ontario',
+      //     title: 'How to Avoid Common Mistakes When Selling Your House for Cash in Ontario',
+      //     description: 'Discover essential tips to avoid common mistakes when selling your house for cash in Ontario. Learn how to maximize your sale value, avoid hidden fees, and make informed decisions—read now!',
+      //     link: '/blog/avoid-common-mistakes-selling-house-cash-ontario',
+      //     date: 'December 5th, 2024'
+      //   }
+      // ,
       {
         src: '/blogs/blog3/sell-house-cash-fast-ontario-inherited-home.webp',
         alt: 'A home with a SOLD sign to represent selling an inherited house for cash in Ontario',
