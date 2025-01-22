@@ -1,5 +1,0 @@
-import React from "react";
-
-interface Content2Props {
-    
-}
