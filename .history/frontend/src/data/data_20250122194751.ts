@@ -549,7 +549,7 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src: '/blogs/blogs2/stressed-homeowner.webp',
+        src: '/blogs/blogs2/stressed-landlord-sells-house-fast-for-cash.webp',
         link: '/blog/landlord-sells-house-for-cash-fast-ontario',
         date: 'January 22nd, 2025',
         alt: 'Landlord Finds Relief by Selling Rental Property for Cash Fast',

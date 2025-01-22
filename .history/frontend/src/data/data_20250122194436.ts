@@ -549,14 +549,9 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src: '/blogs/blogs2/stressed-homeowner.webp',
-        link: '/blog/landlord-sells-house-for-cash-fast-ontario',
-        date: 'January 22nd, 2025',
-        alt: 'Landlord Finds Relief by Selling Rental Property for Cash Fast',
-        title: 'How Ontario Cash for Houses Helped a Landlord Exit the Rental Market',
-        description: 'Discover how Peter, a long-time landlord in Ontario, sold his rental property fast for cash with Ontario Cash for Houses, leaving the stress of property management behind.'
-      }
-      ,
+        src:'/blogs/blogs2/stressed-homeowner.webp',
+        link:''
+      },
       {
         link: '/blog/selling-house-for-cash-fast-to-downsize',
         src: '/blogs/blogs2/elderly-selling-house-for-cash-fast.webp',
