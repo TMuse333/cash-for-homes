@@ -549,13 +549,8 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src:"/blogs/blogs2/retiree-happy.webp",
-        link: '/blog/retiree-sells-vacation-property',
-        date:'January 25th, 2025',
-        title: "A Fresh Start in Retirement",
-description: "Discover how John simplified his life and found freedom in retirement by selling his property quickly and stress-free with Ontario Cash for Houses."
-
-      },
+        
+      }
       {
         src: '/blogs/blogs2/stressed-homeowner.webp',
         link: '/blog/landlord-sells-house-for-cash-fast-ontario',
