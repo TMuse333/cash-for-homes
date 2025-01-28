@@ -549,13 +549,7 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src:'/blogs/blogs2/happy-man-money.webp',
-        alt:'A happy man who saved  his finances by using cash home buyers to sell his house fast for cash in ontario canada',
-        link:'/blog/john-restores-credit-sell-house-cash-fast-ontario',
-        date:'January 28th, 2025',
-        title: "A New Chapter for John",
-description: "Learn how John overcame financial struggles, resolved debts, and regained peace of mind by selling his house quickly and stress-free with Ontario Cash for Houses.",
-
+        
       },
       {
         src:"/blogs/blogs2/retiree-happy.webp",
