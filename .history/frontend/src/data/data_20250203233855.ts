@@ -553,16 +553,16 @@ export const aboutContent4:ContentType = {
         alt:'A couple using cash home buyers to sell their house fast for cash in ontario canada',
         link:'/blog/couple-sells-home-fast-for-job-relocation',
         date:'February 3rd, 2025',
-        title: "The Couple Who Sold Fast to Relocate for a Dream Job",
-        description: "Discover how Sarah and Mike secured a fast, hassle-free home sale with Ontario Cash for Houses, allowing them to relocate for a once-in-a-lifetime career opportunity without delays."
-      },
+
+      }
       {
         src:'/blogs/blogs2/happy-man-money.webp',
         alt:'A happy man who saved  his finances by using cash home buyers to sell his house fast for cash in ontario canada',
         link:'/blog/john-restores-credit-sell-house-cash-fast-ontario',
         date:'January 28th, 2025',
-        title: "A New Chapter for John",
-description: "Learn how John overcame financial struggles, resolved debts, and regained peace of mind by selling his house quickly and stress-free with Ontario Cash for Houses.",
+        title: "The Couple Who Sold Fast to Relocate for a Dream Job",
+        description: "Discover how Sarah and Mike secured a fast, hassle-free home sale with Ontario Cash for Houses, allowing them to relocate for a once-in-a-lifetime career opportunity without delays."
+        
 
       },
       {

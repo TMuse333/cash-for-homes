@@ -555,7 +555,7 @@ export const aboutContent4:ContentType = {
         date:'February 3rd, 2025',
         title: "The Couple Who Sold Fast to Relocate for a Dream Job",
         description: "Discover how Sarah and Mike secured a fast, hassle-free home sale with Ontario Cash for Houses, allowing them to relocate for a once-in-a-lifetime career opportunity without delays."
-      },
+      }
       {
         src:'/blogs/blogs2/happy-man-money.webp',
         alt:'A happy man who saved  his finances by using cash home buyers to sell his house fast for cash in ontario canada',
