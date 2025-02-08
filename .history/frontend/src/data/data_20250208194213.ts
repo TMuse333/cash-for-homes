@@ -556,7 +556,7 @@ export const aboutContent4:ContentType = {
         title: "How to Avoid Scams When Selling Your House for Cash",
         description: "Selling your house for cash in Ontario? Learn how to identify red flags, verify buyers, and protect yourself from scams to ensure a safe and smooth transaction."
       }
-,      
+      
       {
         src: "/blogs/blogs2/siblings-sell-house-cash-fast-in-ontario.webp",
         alt: "Three siblings stressed over inheriting a home, looking for cash home buyers in Ontario Canada",

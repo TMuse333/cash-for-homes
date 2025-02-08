@@ -549,15 +549,6 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src: "/blogs/blogs2/avoid-scams-selling-house-for-cash-fast.webp",
-        alt: "Homeowner researching how to avoid scams when selling a house for cash in Ontario Canada",
-        link: "/blog/avoid-scams-selling-house-for-cash-fast-ontario",
-        date: "February 8th, 2025",
-        title: "How to Avoid Scams When Selling Your House for Cash",
-        description: "Selling your house for cash in Ontario? Learn how to identify red flags, verify buyers, and protect yourself from scams to ensure a safe and smooth transaction."
-      }
-,      
-      {
         src: "/blogs/blogs2/siblings-sell-house-cash-fast-in-ontario.webp",
         alt: "Three siblings stressed over inheriting a home, looking for cash home buyers in Ontario Canada",
       link: "/blog/sell-inherited-house-fast-ontario",
