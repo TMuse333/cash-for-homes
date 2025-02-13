@@ -549,12 +549,12 @@ export const aboutContent4:ContentType = {
 
     export const blogCarousel = [
       {
-        src: "/blogs/blogs2/elderly-selling-house-for-cash-fast.webp",
-        alt: "Retired couple happy after selling home fast in Ontario",
-        link: "/blog/avoiding-foreclosure-sell-home-fast-ontario",
-        date: "February 13th, 2025",
-        title: "Avoiding Foreclosure: How Ontario Cash for Houses Helped a Retired Couple Save Their Home",
-        description: "Learn how Ontario Cash for Houses helped David and Susan, a retired couple in Hamilton, Ontario, sell their home quickly and avoid foreclosure with a fair and stress-free cash sale."
+        "src": "/blogs/blogs2/elderly-selling-house-for-cash-fast.webp",
+        "alt": "Retired couple happy after selling home fast in Ontario",
+        "link": "/blog/avoiding-foreclosure-sell-home-fast-ontario",
+        "date": "February 3rd, 2025",
+        "title": "Avoiding Foreclosure: How Ontario Cash for Houses Helped a Retired Couple Save Their Home",
+        "description": "Learn how Ontario Cash for Houses helped David and Susan, a retired couple in Hamilton, Ontario, sell their home quickly and avoid foreclosure with a fair and stress-free cash sale."
     }
 ,    
       {

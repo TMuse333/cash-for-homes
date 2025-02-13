@@ -554,7 +554,7 @@ export const aboutContent4:ContentType = {
         link: "/blog/avoiding-foreclosure-sell-home-fast-ontario",
         date: "February 13th, 2025",
         title: "Avoiding Foreclosure: How Ontario Cash for Houses Helped a Retired Couple Save Their Home",
-        description: "Learn how Ontario Cash for Houses helped David and Susan, a retired couple in Hamilton, Ontario, sell their home quickly and avoid foreclosure with a fair and stress-free cash sale."
+        "description": "Learn how Ontario Cash for Houses helped David and Susan, a retired couple in Hamilton, Ontario, sell their home quickly and avoid foreclosure with a fair and stress-free cash sale."
     }
 ,    
       {
